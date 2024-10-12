@@ -90,6 +90,9 @@ Each QuickStatements command follows a simplified format with columns specifying
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Usage
+>[!NOTE]
+>
+>To use QuickStatements, you must be 4 days old on the platform and you must have made 50 edits.
 
 QuickStatements can be used via:
 
@@ -97,6 +100,8 @@ QuickStatements can be used via:
 2. **Batch Processing**: Execute large batches of commands through structured inputs.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
 
 ## QuickStatements Command Examples
 
@@ -111,16 +116,114 @@ LAST|Den|"This is a sample item for demonstration purposes."
 LAST|P31|Q5  # Adds a claim that the item is an instance of a human
 ```
 
+### 2. Add Statements (Claims)
+
+Adding statements to an existing item (e.g., Douglas Adams - Q42).
+
+```plaintext
+Q42|P569|1952-03-11  # Adds the date of birth (P569) for Douglas Adams
+Q42|P19|Q84          # Adds the place of birth (P19) as Cambridge (Q84)
+```
+
+### 3. Add Qualifiers
+
+You can add qualifiers to existing statements to provide more detail.
+
+```plaintext
+Q42|P69|Q3918|P580|1971|P582|1974  # Adds education (P69) at St John's College (Q3918) with start (P580) and end (P582) dates
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### 4. Add References
+
+Adding references to an existing statement:
+
+```plaintext
+Q42|P69|Q3918|S854|"https://example.com/education"  # Adds a URL reference for the education claim
+```
+
+### 5. Modify Labels, Descriptions, and Aliases
+Modify Labels, descriptions, and aliases in different languages:
+```plaintext
+Q42|Len|"Douglas Adams"  # Changes the English label to "Douglas Adams"
+Q42|Lde|"Douglas Adams"  # Changes the German label to "Douglas Adams"
+Q42|Aen|"Douglas Noel Adams"  # Adds an alias in English
+Q42|Den|"British author and screenwriter"  # Modifies the English description
+```
+
+### 6. Remove Statements or Items
+Remove statements or delete items entirely:
+```plaintext
+Q42|P19|DELETE  # Deletes the place of birth (P19) statement for Q42
+Q100000|DELETE  # Deletes the entire item Q100000
+```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+---
+
+## Best Practices
+- Test with Small Batches: Always test your commands with a small set of items to avoid unintended changes.
+- Review Edits: Double-check all data before running large batches.
+- Use References: Ensure that statements are properly sourced with references to enhance data quality.
+- Monitor Progress: After submission, keep track of your batch’s progress and check for errors.
+
+## Importing CSV/TSV Data
+You can prepare your data in CSV or TSV format, where each line represents one operation. A sample format:
+```plaintext
+Q42,P69,Q3918,P580,1971,P582,1974
+Q42,P19,Q84
+Q42,P569,1952-03-11
+```
+After preparing the CSV, upload it via the QuickStatements web interface to run the batch.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Error Handling
+
+When an error occurs during execution, QuickStatements will indicate which command failed. Common issues include:
+- Incorrect item or property IDs.
+- Syntax errors in date formats or missing data fields.
+- Permissions or throttling by Wikidata for large-scale edits.
+In these cases, review the failed commands and correct the issues before re-running.
+
+## Conclusion
+QuickStatements is an essential tool for bulk editing on Wikidata, enabling users to manage large sets of data efficiently. By following this guide, you can create, update, and manage items with ease, improving the quality and accuracy of Wikidata.
+
+For more advanced use cases, refer to the [Wikidata documentation](https://www.wikidata.org/wiki/Help:QuickStatements) for further details and updates.
+
 
 
 ## ️💚️ MENTORS 💙 
 <!-- ALL-CONTRIBUTORS-LIST:START -->
 <!-- prettier-ignore -->
-| [<img src="https://avatars3.githubusercontent.com/u/3171900?v=3" width="100px;"/><br /><sub><b>Juan Herrera</b></sub>](http://juandavidherrera.com/en)<br />        | [<img src="![image](https://github.com/user-attachments/assets/4d0112e0-00b8-421d-a043-67282f13d413)" width="100px;"/><br /><sub><b>Artur Corrêa Souza</b></sub>](https://phabricator.wikimedia.org/p/ACorrea-WMB/)<br /> | [<img src="https://avatars0.githubusercontent.com/u/8260962?v=3" width="100px;"/><br /><sub><b>Daniel Correa</b></sub>](https://github.com/danielcb29)<br />          |
+| [<img src="https://github.com/user-attachments/assets/1deb350c-3202-48b3-bef2-ead6c6f9a06d" width="100px;"/><br /><sub><b>Ederporto, EPorto (WMB)</b></sub>](https://phabricator.wikimedia.org/p/Ederporto/)<br />        | [<img src="https://github.com/user-attachments/assets/4d0112e0-00b8-421d-a043-67282f13d413" width="100px;"/><br /><sub><b>Artur Corrêa Souza</b></sub>](https://phabricator.wikimedia.org/p/ACorrea-WMB/)<br /> | [<img src="https://github.com/user-attachments/assets/b8c0a206-9e85-4b2c-a41d-13986e126565" width="100px;"/><br /><sub><b>MGalves (WMB)</b></sub>](https://phabricator.wikimedia.org/p/MGalves_WMB/)<br />          |
 | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
+# Navigation
 
+[Home](#home-section) | [About](#about-section) | [Services](#services-section) | [Contact](#contact-section)
 
+---
+
+<details id="home-section">
+  <summary>Home</summary>
+  <p>Welcome to the home page.</p>
+</details>
+
+<details id="about-section">
+  <summary>About</summary>
+  <p>This is the about section.</p>
+</details>
+
+<details id="services-section">
+  <summary>Services</summary>
+  <p>Details about the services offered.</p>
+</details>
+
+<details id="contact-section">
+  <summary>Contact</summary>
+  <p>Contact us through this section.</p>
+</details>
