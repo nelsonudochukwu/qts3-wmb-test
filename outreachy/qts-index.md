@@ -30,7 +30,7 @@
   </ol>
 </details>
 
----
+
 
 ## Overview
 
@@ -38,7 +38,7 @@
 
 This documentation provides a comprehensive guide to using QuickStatements, covering its features, usage, and best practices.
 
----
+
 
 ## Features
 
@@ -59,7 +59,7 @@ This documentation provides a comprehensive guide to using QuickStatements, cove
 8. **Batch Execution**
    - Process hundreds or thousands of operations in a single batch.
 
----
+
 
 ## Prerequisites
 
@@ -67,7 +67,7 @@ This documentation provides a comprehensive guide to using QuickStatements, cove
 - **Permissions**: Ensure you have permission to perform bulk edits, especially for large-scale operations.
 - **Structured Data**: Your data must be well-structured in CSV/TSV format or similar to be easily imported and processed.
 
----
+
 
 ## Syntax and Command Structure
 
@@ -84,7 +84,7 @@ Each QuickStatements command follows a simplified format with columns specifying
 | Descriptions | Brief summaries that describe the items.                                                         |
 | Aliases      | Alternate names or terms by which an item is known.                                              |
 
----
+
 
 ## Usage
 
@@ -93,7 +93,7 @@ QuickStatements can be used via:
 1. **Web Interface**: Upload a CSV or TSV file or paste commands directly into the web interface.
 2. **Batch Processing**: Execute large batches of commands through structured inputs.
 
----
+
 
 ## QuickStatements Command Examples
 
