@@ -114,6 +114,32 @@ LAST|Den|"This is a sample item for demonstration purposes."
 LAST|P31|Q5  # Adds a claim that the item is an instance of a human
 ```
 
+### 2. Add Statements (Claims)
+
+Adding statements to an existing item (e.g., Douglas Adams - Q42).
+
+```plaintext
+Q42|P569|1952-03-11  # Adds the date of birth (P569) for Douglas Adams
+Q42|P19|Q84          # Adds the place of birth (P19) as Cambridge (Q84)
+```
+
+### 3. Add Qualifiers
+
+You can add qualifiers to existing statements to provide more detail.
+
+```plaintext
+Q42|P69|Q3918|P580|1971|P582|1974  # Adds education (P69) at St John's College (Q3918) with start (P580) and end (P582) dates
+```
+
+### 4. Add References
+
+Adding references to an existing statement:
+
+```plaintext
+Q42|P69|Q3918|S854|"https://example.com/education"  # Adds a URL reference for the education claim
+```
+
+
 ## ️💚️ MENTORS 💙 
 <!-- ALL-CONTRIBUTORS-LIST:START -->
 <!-- prettier-ignore -->
