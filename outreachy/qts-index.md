@@ -109,12 +109,12 @@ LAST|P31|Q5  # Adds a claim that the item is an instance of a human
 ```
 
 ## ️💚️ MENTORS 💙 
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- ALL-CONTRIBUTORS-LIST:START -->
 <!-- prettier-ignore -->
 | [<img src="https://avatars3.githubusercontent.com/u/3171900?v=3" width="100px;"/><br /><sub><b>Juan Herrera</b></sub>](http://juandavidherrera.com/en)<br />        | [<img src="https://avatars0.githubusercontent.com/u/464978?v=3" width="100px;"/><br /><sub><b>Alejandro Ñáñez</b></sub>](http://co.linkedin.com/in/alejandronanez/)<br /> | [<img src="https://avatars0.githubusercontent.com/u/8260962?v=3" width="100px;"/><br /><sub><b>Daniel Correa</b></sub>](https://github.com/danielcb29)<br />          |
 | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 
