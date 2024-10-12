@@ -106,7 +106,7 @@ CREATE
 LAST|Len|"Sample Item"
 LAST|Den|"This is a sample item for demonstration purposes."
 LAST|P31|Q5  # Adds a claim that the item is an instance of a human
-
+```
 
 <h1 align="center"> ️💚️ MENTORS 💚 </h1>
 
