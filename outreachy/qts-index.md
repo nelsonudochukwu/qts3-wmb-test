@@ -108,7 +108,7 @@ LAST|Den|"This is a sample item for demonstration purposes."
 LAST|P31|Q5  # Adds a claim that the item is an instance of a human
 ```
 
-<h3 align="center"> ️💚️ MENTORS 💚 </h1>
+## ️💚️ MENTORS 💙 
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
