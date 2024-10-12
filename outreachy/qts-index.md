@@ -2,22 +2,33 @@
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Features](#features)
-- [Prerequisites](#prerequisites)
-- [Syntax and Command Structure](#syntax-and-command-structure)
-- [Usage](#usage)
-- [QuickStatements Command Examples](#quickstatements-command-examples)
-  - [Create a New Item](#1-create-a-new-item)
-  - [Add Statements (Claims)](#2-add-statements-claims)
-  - [Add Qualifiers](#3-add-qualifiers)
-  - [Add References](#4-add-references)
-  - [Modify Labels, Descriptions, and Aliases](#5-modify-labels-descriptions-and-aliases)
-  - [Remove Statements or Items](#6-remove-statements-or-items)
-- [Best Practices](#best-practices)
-- [Importing CSV/TSV Data](#importing-csvtsv-data)
-- [Error Handling](#error-handling)
-- [Conclusion](#conclusion)
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#syntax-and-command-structure">Syntax and Command Structure</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li>
+      <a href="#quickstatements-command-examples">QuickStatements Command Examples</a>
+      <ul>
+        <li><a href="#1-create-a-new-item">Create a New Item</a></li>
+        <li><a href="#2-add-statements-claims">Add Statements (Claims)</a></li>
+        <li><a href="#3-add-qualifiers">Add Qualifiers</a></li>
+        <li><a href="#4-add-references">Add References</a></li>
+        <li><a href="#5-modify-labels-descriptions-and-aliases">Modify Labels, Descriptions, and Aliases</a></li>
+        <li><a href="#6-remove-statements-or-items">Remove Statements or Items</a></li>
+      </ul>
+    </li>
+    <li><a href="#best-practices">Best Practices</a></li>
+    <li><a href="#importing-csvtsv-data">Importing CSV/TSV Data</a></li>
+    <li><a href="#error-handling">Error Handling</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ol>
+</details>
 
 ---
 
