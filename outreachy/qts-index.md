@@ -205,15 +205,15 @@ For more advanced use cases, refer to the [Wikidata documentation](https://www.w
 # Navigation
 
 <div>
-  <button onclick="showSection('home')">Home</button> |
-  <button onclick="showSection('about')">About</button> |
-  <button onclick="showSection('services')">Services</button> |
-  <button onclick="showSection('contact')">Contact</button>
+  <label><input type="radio" name="section" onclick="document.getElementById('home').style.display='block'; document.getElementById('about').style.display='none'; document.getElementById('services').style.display='none'; document.getElementById('contact').style.display='none';"> Home</label> |
+  <label><input type="radio" name="section" onclick="document.getElementById('home').style.display='none'; document.getElementById('about').style.display='block'; document.getElementById('services').style.display='none'; document.getElementById('contact').style.display='none';"> About</label> |
+  <label><input type="radio" name="section" onclick="document.getElementById('home').style.display='none'; document.getElementById('about').style.display='none'; document.getElementById('services').style.display='block'; document.getElementById('contact').style.display='none';"> Services</label> |
+  <label><input type="radio" name="section" onclick="document.getElementById('home').style.display='none'; document.getElementById('about').style.display='none'; document.getElementById('services').style.display='none'; document.getElementById('contact').style.display='block';"> Contact</label>
 </div>
 
 ---
 
-<div id="home" style="display:none;">
+<div id="home" style="display:block;">
   <h2>Home</h2>
   <p>Welcome to the home page.</p>
 </div>
@@ -232,17 +232,3 @@ For more advanced use cases, refer to the [Wikidata documentation](https://www.w
   <h2>Contact</h2>
   <p>Contact us through this section.</p>
 </div>
-
-<script>
-  function showSection(sectionId) {
-    // Hide all sections
-    document.querySelectorAll('div[id]').forEach(function(section) {
-      section.style.display = 'none';
-    });
-    // Show the selected section
-    document.getElementById(sectionId).style.display = 'block';
-  }
-</script>
-
-
-
