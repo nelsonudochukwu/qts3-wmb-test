@@ -204,10 +204,6 @@ For more advanced use cases, refer to the [Wikidata documentation](https://www.w
 
 # Navigation
 
-[Home](#home-section) | [About](#about-section) | [Services](#services-section) | [Contact](#contact-section)
-
----
-
 <details id="home-section">
   <summary>Home</summary>
   <p>Welcome to the home page.</p>
