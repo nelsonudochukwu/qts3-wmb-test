@@ -101,6 +101,8 @@ QuickStatements can be used via:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+---
+
 ## QuickStatements Command Examples
 
 ### 1. Create a New Item
@@ -163,7 +165,7 @@ Q100000|DELETE  # Deletes the entire item Q100000
 - Use References: Ensure that statements are properly sourced with references to enhance data quality.
 - Monitor Progress: After submission, keep track of your batch’s progress and check for errors.
 
-## Importing CSV/TSV Date
+## Importing CSV/TSV Data
 You can prepare your data in CSV or TSV format, where each line represents one operation. A sample format:
 ```plaintext
 Q42,P69,Q3918,P580,1971,P582,1974
