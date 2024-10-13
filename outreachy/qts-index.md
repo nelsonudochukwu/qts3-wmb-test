@@ -133,6 +133,8 @@ You can add qualifiers to existing statements to provide more detail.
 Q42|P69|Q3918|P580|1971|P582|1974  # Adds education (P69) at St John's College (Q3918) with start (P580) and end (P582) dates
 ```
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### 4. Add References
 
 Adding references to an existing statement:
@@ -156,7 +158,7 @@ Remove statements or delete items entirely:
 Q42|P19|DELETE  # Deletes the place of birth (P19) statement for Q42
 Q100000|DELETE  # Deletes the entire item Q100000
 ```
-
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 ---
 
 ## Best Practices
@@ -173,6 +175,8 @@ Q42,P19,Q84
 Q42,P569,1952-03-11
 ```
 After preparing the CSV, upload it via the QuickStatements web interface to run the batch.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Error Handling
 
