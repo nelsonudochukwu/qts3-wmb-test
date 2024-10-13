@@ -1,47 +1,74 @@
 <a id="readme-top"></a>
-# QuickStatements Documentation
+# QuickStatements (QS) Documentation
+
+## Translations!!!!
+<details></details>
 
 ## Table of Contents
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details open>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#overview">Overview</a></li>
-    <li><a href="#features">Features</a></li>
-    <li><a href="#prerequisites">Prerequisites</a></li>
-    <li><a href="#syntax-and-command-structure">Syntax and Command Structure</a></li>
-    <li><a href="#usage">Usage</a></li>
-    <li>
-      <a href="#quickstatements-command-examples">QuickStatements Command Examples</a>
+    <li><a href="#overview">Overview of QS</a></li>
+    <li><a href="#overview">A Brief on Wikidata</a>
       <ul>
-        <li><a href="#1-create-a-new-item">Create a New Item</a></li>
-        <li><a href="#2-add-statements-claims">Add Statements (Claims)</a></li>
-        <li><a href="#3-add-qualifiers">Add Qualifiers</a></li>
-        <li><a href="#4-add-references">Add References</a></li>
-        <li><a href="#5-modify-labels-descriptions-and-aliases">Modify Labels, Descriptions, and Aliases</a></li>
-        <li><a href="#6-remove-statements-or-items">Remove Statements or Items</a></li>
+        <li><a href="#writing manually">Structure of Wikidata</a>
+          <ul>
+            <li><a href="#writing manually">Items, Properties and Values</a></li>
+            <li><a href="#writing manually">Labels, descriptions and aliases</a></li>
+          </ul>
+        </li>
+        <li><a href="#writing manually">Wikidata Statements</a>
+          <ul>
+            <li><a href="#syntax-and-command-structure">Syntax and Command Structure</a></li>
+            <li><a href="#usage">Usage</a></li>
+            <li> <a href="#quickstatements-command-examples">QS Command Examples</a>
+             <ul>
+                <li><a href="#1-create-a-new-item">Create a New Item</a></li>
+                <li><a href="#2-add-statements-claims">Add Statements (Claims)</a></li>
+                <li><a href="#3-add-qualifiers">Add Qualifiers</a></li>
+                <li><a href="#4-add-references">Add References</a></li>
+                <li><a href="#5-modify-lda">Modify Labels, Descriptions, and Aliases</a></li>
+                <li><a href="#6-remove-statements-or-items">Remove Statements or Items</a></li>
+             </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#writing manually">Wikidata linked data</a></li>
       </ul>
     </li>
-    <li><a href="#best-practices">Best Practices</a></li>
-    <li><a href="#importing-csvtsv-data">Importing CSV/TSV Data</a></li>
-    <li><a href="#error-handling">Error Handling</a></li>
-    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#overview">QuickStatements 3.0 Docs</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#features">Features</a>
+          <ul>
+            <li><a href="#writing manually">Batch Details</a></li>
+            <li><a href="#writing manually">Search By User</a></li>
+            <li><a href="#writing manually">Temp Batch ID</a></li>
+            <li><a href="#writing manually">Add a new Batch</a></li>
+            <li><a href="#writing manually">Writing Batch Commands</a>
+              <ul>
+                <li><a href="#writing manually">Writing the commands Manually</a></li>
+                <li><a href="#importing-csv">Writing the commands in a CSV</a></li>
+                <li><a href="#importing-tsv">Writing the commands in a TSV</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#best-practices">Best Practices</a></li>
+        <li><a href="#error-handling">Error Handling</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ul>
+    </li> 
   </ol>
 </details>
-
-
-
 
 ## Overview
 
 **QuickStatements** is a powerful tool designed for performing bulk edits on Wikidata. It allows users to add, modify, or remove large amounts of data efficiently, utilizing a simple command-line-like syntax. Whether you're adding new items, statements, or updating properties on multiple entities, QuickStatements is an essential tool for Wikidata editors who need to make large-scale changes quickly and reliably.
 
 This documentation provides a comprehensive guide to using QuickStatements, covering its features, usage, and best practices.
-
-
 
 ## Features
 
@@ -193,20 +220,17 @@ For more advanced use cases, refer to the [Wikidata documentation](https://www.w
 
 
 
-## ️💚️ MENTORS 💙 
+## ️💚️ THANK YOU MENTORS 💙 
 <!-- ALL-CONTRIBUTORS-LIST:START -->
 <!-- prettier-ignore -->
 | [<img src="https://github.com/user-attachments/assets/1deb350c-3202-48b3-bef2-ead6c6f9a06d" width="100px;"/><br /><sub><b>Ederporto, EPorto (WMB)</b></sub>](https://phabricator.wikimedia.org/p/Ederporto/)<br />        | [<img src="https://github.com/user-attachments/assets/4d0112e0-00b8-421d-a043-67282f13d413" width="100px;"/><br /><sub><b>Artur Corrêa Souza</b></sub>](https://phabricator.wikimedia.org/p/ACorrea-WMB/)<br /> | [<img src="https://github.com/user-attachments/assets/b8c0a206-9e85-4b2c-a41d-13986e126565" width="100px;"/><br /><sub><b>MGalves (WMB)</b></sub>](https://phabricator.wikimedia.org/p/MGalves_WMB/)<br />          |
-| :-----------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| :---------------------: | :-----------------------: | :--------------------: |
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
+
 # Navigation
-
-[Home](#home-section) | [About](#about-section) | [Services](#services-section) | [Contact](#contact-section)
-
----
 
 <details id="home-section">
   <summary>Home</summary>
