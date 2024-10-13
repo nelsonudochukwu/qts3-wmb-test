@@ -139,6 +139,53 @@ Adding references to an existing statement:
 Q42|P69|Q3918|S854|"https://example.com/education"  # Adds a URL reference for the education claim
 ```
 
+### 5. Modify Labels, Descriptions, and Aliases
+Modify Labels, descriptions, and aliases in different languages:
+```plaintext
+Q42|Len|"Douglas Adams"  # Changes the English label to "Douglas Adams"
+Q42|Lde|"Douglas Adams"  # Changes the German label to "Douglas Adams"
+Q42|Aen|"Douglas Noel Adams"  # Adds an alias in English
+Q42|Den|"British author and screenwriter"  # Modifies the English description
+```
+
+### 6. Remove Statements or Items
+Remove statements or delete items entirely:
+```plaintext
+Q42|P19|DELETE  # Deletes the place of birth (P19) statement for Q42
+Q100000|DELETE  # Deletes the entire item Q100000
+```
+
+---
+
+## Best Practices
+- Test with Small Batches: Always test your commands with a small set of items to avoid unintended changes.
+- Review Edits: Double-check all data before running large batches.
+- Use References: Ensure that statements are properly sourced with references to enhance data quality.
+- Monitor Progress: After submission, keep track of your batch’s progress and check for errors.
+
+## Importing CSV/TSV Date
+You can prepare your data in CSV or TSV format, where each line represents one operation. A sample format:
+```plaintext
+Q42,P69,Q3918,P580,1971,P582,1974
+Q42,P19,Q84
+Q42,P569,1952-03-11
+```
+After preparing the CSV, upload it via the QuickStatements web interface to run the batch.
+
+## Error Handling
+
+When an error occurs during execution, QuickStatements will indicate which command failed. Common issues include:
+- Incorrect item or property IDs.
+- Syntax errors in date formats or missing data fields.
+- Permissions or throttling by Wikidata for large-scale edits.
+In these cases, review the failed commands and correct the issues before re-running.
+
+## Conclusion
+QuickStatements is an essential tool for bulk editing on Wikidata, enabling users to manage large sets of data efficiently. By following this guide, you can create, update, and manage items with ease, improving the quality and accuracy of Wikidata.
+
+For more advanced use cases, refer to the [Wikidata documentation](https://www.wikidata.org/wiki/Help:QuickStatements) for further details and updates.
+
+
 
 ## ️💚️ MENTORS 💙 
 <!-- ALL-CONTRIBUTORS-LIST:START -->
