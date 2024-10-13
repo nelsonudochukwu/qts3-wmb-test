@@ -202,5 +202,47 @@ For more advanced use cases, refer to the [Wikidata documentation](https://www.w
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
+# Navigation
+
+<div>
+  <button onclick="showSection('home')">Home</button> |
+  <button onclick="showSection('about')">About</button> |
+  <button onclick="showSection('services')">Services</button> |
+  <button onclick="showSection('contact')">Contact</button>
+</div>
+
+---
+
+<div id="home" style="display:none;">
+  <h2>Home</h2>
+  <p>Welcome to the home page.</p>
+</div>
+
+<div id="about" style="display:none;">
+  <h2>About</h2>
+  <p>This is the about section.</p>
+</div>
+
+<div id="services" style="display:none;">
+  <h2>Services</h2>
+  <p>Details about the services offered.</p>
+</div>
+
+<div id="contact" style="display:none;">
+  <h2>Contact</h2>
+  <p>Contact us through this section.</p>
+</div>
+
+<script>
+  function showSection(sectionId) {
+    // Hide all sections
+    document.querySelectorAll('div[id]').forEach(function(section) {
+      section.style.display = 'none';
+    });
+    // Show the selected section
+    document.getElementById(sectionId).style.display = 'block';
+  }
+</script>
+
 
 
