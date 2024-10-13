@@ -204,31 +204,26 @@ For more advanced use cases, refer to the [Wikidata documentation](https://www.w
 
 # Navigation
 
-<div>
-  <label><input type="radio" name="section" onclick="document.getElementById('home').style.display='block'; document.getElementById('about').style.display='none'; document.getElementById('services').style.display='none'; document.getElementById('contact').style.display='none';"> Home</label> |
-  <label><input type="radio" name="section" onclick="document.getElementById('home').style.display='none'; document.getElementById('about').style.display='block'; document.getElementById('services').style.display='none'; document.getElementById('contact').style.display='none';"> About</label> |
-  <label><input type="radio" name="section" onclick="document.getElementById('home').style.display='none'; document.getElementById('about').style.display='none'; document.getElementById('services').style.display='block'; document.getElementById('contact').style.display='none';"> Services</label> |
-  <label><input type="radio" name="section" onclick="document.getElementById('home').style.display='none'; document.getElementById('about').style.display='none'; document.getElementById('services').style.display='none'; document.getElementById('contact').style.display='block';"> Contact</label>
-</div>
+[Home](#home-section) | [About](#about-section) | [Services](#services-section) | [Contact](#contact-section)
 
 ---
 
-<div id="home" style="display:block;">
-  <h2>Home</h2>
+<details id="home-section">
+  <summary>Home</summary>
   <p>Welcome to the home page.</p>
-</div>
+</details>
 
-<div id="about" style="display:none;">
-  <h2>About</h2>
+<details id="about-section">
+  <summary>About</summary>
   <p>This is the about section.</p>
-</div>
+</details>
 
-<div id="services" style="display:none;">
-  <h2>Services</h2>
+<details id="services-section">
+  <summary>Services</summary>
   <p>Details about the services offered.</p>
-</div>
+</details>
 
-<div id="contact" style="display:none;">
-  <h2>Contact</h2>
+<details id="contact-section">
+  <summary>Contact</summary>
   <p>Contact us through this section.</p>
-</div>
+</details>
