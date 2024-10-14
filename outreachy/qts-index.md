@@ -1,5 +1,5 @@
 <a id="readme-top"></a>
-# QuickStatements (QS) Documentation
+# QuickStatements (QS) 3.0 Documentation
 
 <details>
  <summary>Translations!!!!</summary>
