@@ -133,11 +133,9 @@ QuickStatements can be used via:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
----
-
 ## QuickStatements Command Examples
 
-### 1. Create a New Item
+#### 1. Create a New Item
 
 This command will create a new item with a label and description.
 
@@ -148,7 +146,7 @@ LAST|Den|"This is a sample item for demonstration purposes."
 LAST|P31|Q5  # Adds a claim that the item is an instance of a human
 ```
 
-### 2. Add Statements (Claims)
+#### 2. Add Statements (Claims)
 
 Adding statements to an existing item (e.g., Douglas Adams - Q42).
 
@@ -157,7 +155,7 @@ Q42|P569|1952-03-11  # Adds the date of birth (P569) for Douglas Adams
 Q42|P19|Q84          # Adds the place of birth (P19) as Cambridge (Q84)
 ```
 
-### 3. Add Qualifiers
+#### 3. Add Qualifiers
 
 You can add qualifiers to existing statements to provide more detail.
 
@@ -167,7 +165,7 @@ Q42|P69|Q3918|P580|1971|P582|1974  # Adds education (P69) at St John's College (
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### 4. Add References
+#### 4. Add References
 
 Adding references to an existing statement:
 
@@ -175,7 +173,7 @@ Adding references to an existing statement:
 Q42|P69|Q3918|S854|"https://example.com/education"  # Adds a URL reference for the education claim
 ```
 
-### 5. Modify Labels, Descriptions, and Aliases
+#### 5. Modify Labels, Descriptions, and Aliases
 Modify Labels, descriptions, and aliases in different languages:
 ```plaintext
 Q42|Len|"Douglas Adams"  # Changes the English label to "Douglas Adams"
@@ -184,7 +182,7 @@ Q42|Aen|"Douglas Noel Adams"  # Adds an alias in English
 Q42|Den|"British author and screenwriter"  # Modifies the English description
 ```
 
-### 6. Remove Statements or Items
+#### 6. Remove Statements or Items
 Remove statements or delete items entirely:
 ```plaintext
 Q42|P19|DELETE  # Deletes the place of birth (P19) statement for Q42
