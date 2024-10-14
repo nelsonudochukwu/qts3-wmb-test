@@ -95,14 +95,6 @@ This documentation provides an introduction to the features, usage, and best pra
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Prerequisites
-
-- **Wikidata Account**: You must be logged into Wikidata to use QuickStatements.
-- **Permissions**: Ensure you have permission to perform bulk edits, especially for large-scale operations.
-- **Structured Data**: Your data must be well-structured in CSV/TSV format or similar to be easily imported and processed.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## Syntax and Command Structure
 
 Each QuickStatements command follows a simplified format with columns specifying the **Item**, **Property**, **Value**, and optional **Qualifiers**, **References**, etc.
@@ -191,6 +183,14 @@ Q100000|DELETE  # Deletes the entire item Q100000
 
 <a id="qs-v3-docs"></a>
 ## QuickStatements 3.0 Docs
+
+## Prerequisites
+
+- **Wikidata Account**: You must be logged into Wikidata to use QuickStatements.
+- **Permissions**: Ensure you have permission to perform bulk edits, especially for large-scale operations.
+- **Structured Data**: Your data must be well-structured in CSV/TSV format or similar to be easily imported and processed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Best Practices
 - Test with Small Batches: Always test your commands with a small set of items to avoid unintended changes.
