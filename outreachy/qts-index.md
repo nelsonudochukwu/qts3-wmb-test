@@ -13,7 +13,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#overview">Overview of QS</a></li>
-    <li>A Brief on Wikidata
+    <li><a href="#a-brief-on-wikidata">A Brief on Wikidata</a>
       <ul>
         <li><a href="#writing manually">Structure of Wikidata</a>
           <ul>
@@ -72,6 +72,8 @@
 **QuickStatements** is a powerful tool designed for performing bulk edits on Wikidata. It allows users to add, modify, or remove large amounts of data efficiently, utilizing a simple command-line-like syntax. Whether you're adding new items, statements, or updating properties on multiple entities, QuickStatements is an essential tool for Wikidata editors who need to make large-scale changes quickly and reliably.
 
 This documentation provides a comprehensive guide to using QuickStatements, covering its features, usage, and best practices. Click [here](#qs-3.0) to jump right in.
+
+## A brief on Wikidata
 
 ## Features
 
