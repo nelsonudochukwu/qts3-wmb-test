@@ -1,8 +1,10 @@
 <a id="readme-top"></a>
 # QuickStatements (QS) Documentation
 
-## Translations!!!!
-<details></details>
+
+<details>
+ <summary>Translations!!!!</summary>
+</details>
 
 ## Table of Contents
 
