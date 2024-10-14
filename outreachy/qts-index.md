@@ -191,7 +191,6 @@ Q42|P19|DELETE  # Deletes the place of birth (P19) statement for Q42
 Q100000|DELETE  # Deletes the entire item Q100000
 ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
----
 
 ## Best Practices
 - Test with Small Batches: Always test your commands with a small set of items to avoid unintended changes.
