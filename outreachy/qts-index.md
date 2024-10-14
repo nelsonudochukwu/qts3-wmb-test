@@ -10,13 +10,13 @@
     <li><a href="#overview">Overview of QS</a></li>
     <li><a href="#overview">A Brief on Wikidata</a>
       <ul>
-        <li><a>Structure of Wikidata</a>
+        <li><a href="#writing manually">Structure of Wikidata</a>
           <ul>
-            <li><a>Items, Properties and Values</a></li>
-            <li><a>Labels, descriptions and aliases</a></li>
+            <li><a href="#writing manually">Items, Properties and Values</a></li>
+            <li><a href="#writing manually">Labels, descriptions and aliases</a></li>
           </ul>
         </li>
-        <li><a>Wikidata Statements</a>
+        <li><a href="#writing manually">Wikidata Statements</a>
           <ul>
             <li><a href="#syntax-and-command-structure">Syntax and Command Structure</a></li>
             <li><a href="#usage">Usage</a></li>
@@ -32,7 +32,7 @@
             </li>
           </ul>
         </li>
-        <li><a>Wikidata linked data</a></li>
+        <li><a href="#writing manually">Wikidata linked data</a></li>
       </ul>
     </li>
     <li><a href="#overview">QuickStatements 3.0 Docs</a>
@@ -40,11 +40,11 @@
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#features">Features</a>
           <ul>
-            <li><a>Batch Details</a></li>
-            <li><a>Search By User</a></li>
-            <li><a>Temp Batch ID</a></li>
-            <li><a>Add a new Batch</a></li>
-            <li><a>Writing Batch Commands</a>
+            <li><a href="#writing manually">Batch Details</a></li>
+            <li><a href="#writing manually">Search By User</a></li>
+            <li><a href="#writing manually">Temp Batch ID</a></li>
+            <li><a href="#writing manually">Add a new Batch</a></li>
+            <li><a href="#writing manually">Writing Batch Commands</a>
               <ul>
                 <li><a href="#writing manually">Writing the commands Manually</a></li>
                 <li><a href="#importing-csv">Writing the commands in a CSV</a></li>
