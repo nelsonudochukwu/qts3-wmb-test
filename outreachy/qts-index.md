@@ -112,11 +112,6 @@ Each QuickStatements command follows a simplified format with columns specifying
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Usage
->[!NOTE]
->
->To use QuickStatements, you must be 4 days old on the platform and you must have made 50 edits.
-
 QuickStatements can be used via:
 
 1. **Web Interface**: Upload a CSV or TSV file or paste commands directly into the web interface.
@@ -185,6 +180,9 @@ Q100000|DELETE  # Deletes the entire item Q100000
 ## QuickStatements 3.0 Docs
 
 ## Prerequisites
+>[!NOTE]
+>
+>To use QuickStatements, you must be an autoconfirmed user and must be 4 days old on the platform and you must have made 50 edits to be considered one.
 
 - **Wikidata Account**: You must be logged into Wikidata to use QuickStatements.
 - **Permissions**: Ensure you have permission to perform bulk edits, especially for large-scale operations.
@@ -216,7 +214,6 @@ When an error occurs during execution, QuickStatements will indicate which comma
 - Syntax errors in date formats or missing data fields.
 - Permissions or throttling by Wikidata for large-scale edits.
 In these cases, review the failed commands and correct the issues before re-running.
-
 
 ## Recommendations
 - Let's maintain the blue. The green color is a stark divergence from the history of QuickStatements 
