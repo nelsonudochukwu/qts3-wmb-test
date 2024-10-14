@@ -1,8 +1,5 @@
 <a id="readme-top"></a>
-<a id="qs-3.0"></a>
-# QuickStatements (QS) Documentation
-
-This documentation was inspired from many sources, however, [Diátaxis](https://diataxis.fr/) was the most significant guide for a writing this as it provides a systematic approach to understanding the needs of documentation users. The [Google Technical Writing Course](https://developers.google.com/tech-writing/overview) was instrumental as well.
+# QuickStatements (QS) 3.0 Documentation
 
 <details>
  <summary>Translations!!!!</summary>
@@ -15,7 +12,7 @@ This documentation was inspired from many sources, however, [Diátaxis](https://
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#overview">Overview of QS</a></li>
-    <li>A Brief on Wikidata
+    <li><a href="#a-brief-on-wikidata">A Brief on Wikidata</a>
       <ul>
         <li><a href="#writing manually">Structure of Wikidata</a>
           <ul>
@@ -42,7 +39,7 @@ This documentation was inspired from many sources, however, [Diátaxis](https://
         <li><a href="#writing manually">Wikidata linked data</a></li>
       </ul>
     </li>
-    <li>QuickStatements 3.0 Docs
+    <li><a href="#qs-v3-docs">QuickStatements 3.0 Docs</a>
       <ul>
         <li><a href="#prerequisites">(Getting Started)Prerequisites, Installation, Setting Account</a></li>
         <li><a href="#features">(How To/Guides) Features</a>
@@ -71,9 +68,11 @@ This documentation was inspired from many sources, however, [Diátaxis](https://
 
 ## Overview
 
-**QuickStatements** is a powerful tool designed for performing bulk edits on Wikidata. It allows users to add, modify, or remove large amounts of data efficiently, utilizing a simple command-line-like syntax. Whether you're adding new items, statements, or updating properties on multiple entities, QuickStatements is an essential tool for Wikidata editors who need to make large-scale changes quickly and reliably.
+**QuickStatements (QS)** is a powerful tool designed for performing bulk edits on Wikidata. It allows users to add, modify, or remove large amounts of data efficiently, utilizing a simple command-line-like syntax. Whether you're adding new items, statements, or updating properties on multiple entities, QuickStatements is an essential tool for Wikidata editors who need to make large-scale changes quickly and reliably.
 
-This documentation provides a comprehensive guide to using QuickStatements, covering its features, usage, and best practices. Click [here](#qs-3.0) to jump right in.
+This documentation provides an introduction to the features, usage, and best practices of QuickStatements 3.0 which is an upgrade that enhances the functionality, performance and user experience of the QS platform. _[Click](#qs-v3-docs)_ to jump right in. However, to fully grasp the features of quickstatements 3.0, it is important to first understand the major constituent of Quickstatements⎯ _Wikidata._
+
+## A brief on Wikidata
 
 ## Features
 
@@ -96,14 +95,6 @@ This documentation provides a comprehensive guide to using QuickStatements, cove
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Prerequisites
-
-- **Wikidata Account**: You must be logged into Wikidata to use QuickStatements.
-- **Permissions**: Ensure you have permission to perform bulk edits, especially for large-scale operations.
-- **Structured Data**: Your data must be well-structured in CSV/TSV format or similar to be easily imported and processed.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## Syntax and Command Structure
 
 Each QuickStatements command follows a simplified format with columns specifying the **Item**, **Property**, **Value**, and optional **Qualifiers**, **References**, etc.
@@ -120,11 +111,6 @@ Each QuickStatements command follows a simplified format with columns specifying
 | Aliases      | Alternate names or terms by which an item is known.                                              |
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## Usage
->[!NOTE]
->
->To use QuickStatements, you must be 4 days old on the platform and you must have made 50 edits.
 
 QuickStatements can be used via:
 
@@ -190,6 +176,19 @@ Q100000|DELETE  # Deletes the entire item Q100000
 ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<a id="qs-v3-docs"></a>
+## QuickStatements 3.0 Docs
+
+## Prerequisites
+>[!NOTE]
+>
+>To run your batches on QuickStatements, you must be an autoconfirmed user and must be 4 days old on the platform and you must have made 50 edits to be considered one.
+
+- **Wikidata Account**: You must be logged into Wikidata to use QuickStatements.
+- **Structured Data**: Your data must be well-structured in CSV/TSV format or similar to be easily imported and processed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Best Practices
 - Test with Small Batches: Always test your commands with a small set of items to avoid unintended changes.
 - Review Edits: Double-check all data before running large batches.
@@ -215,7 +214,6 @@ When an error occurs during execution, QuickStatements will indicate which comma
 - Permissions or throttling by Wikidata for large-scale edits.
 In these cases, review the failed commands and correct the issues before re-running.
 
-
 ## Recommendations
 - Let's maintain the blue. The green color is a stark divergence from the history of QuickStatements 
   
@@ -224,7 +222,8 @@ QuickStatements is an essential tool for bulk editing on Wikidata, enabling user
 
 For more advanced use cases, refer to the [Wikidata documentation](https://www.wikidata.org/wiki/Help:QuickStatements) for further details and updates.
 
-
+## References
+This documentation was inspired from many sources, however, [Diátaxis](https://diataxis.fr/) was the most significant guide for a writing this as it provides a systematic approach to understanding the needs of documentation users. The [Google Technical Writing Course](https://developers.google.com/tech-writing/overview) was instrumental as well.
 
 ## ️💚️ THANK YOU MENTORS 💙 
 <!-- ALL-CONTRIBUTORS-LIST:START -->
