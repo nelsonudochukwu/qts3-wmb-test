@@ -1,6 +1,8 @@
 <a id="readme-top"></a>
+<a id="qs-3.0"></a>
 # QuickStatements (QS) Documentation
 
+This documentation was inspired from many sources, however, [Diátaxis](https://diataxis.fr/) was the most significant guide for a writing this as it provides a systematic approach to understanding the needs of documentation users. The [Google Technical Writing Course](https://developers.google.com/tech-writing/overview) was instrumental as well.
 
 <details>
  <summary>Translations!!!!</summary>
@@ -13,7 +15,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#overview">Overview of QS</a></li>
-    <li><a href="#overview">A Brief on Wikidata</a>
+    <li>A Brief on Wikidata
       <ul>
         <li><a href="#writing manually">Structure of Wikidata</a>
           <ul>
@@ -40,15 +42,15 @@
         <li><a href="#writing manually">Wikidata linked data</a></li>
       </ul>
     </li>
-    <li><a href="#overview">QuickStatements 3.0 Docs</a>
+    <li>QuickStatements 3.0 Docs
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#features">Features</a>
+        <li><a href="#prerequisites">(Getting Started)Prerequisites, Installation, Setting Account</a></li>
+        <li><a href="#features">(How To/Guides) Features</a>
           <ul>
-            <li><a href="#writing manually">Batch Details</a></li>
-            <li><a href="#writing manually">Search By User</a></li>
+            <li><a href="#writing manually">Batch Details </a></li>
+            <li><a href="#writing manually">Search By User (what batches has he created)</a></li>
             <li><a href="#writing manually">Temp Batch ID</a></li>
-            <li><a href="#writing manually">Add a new Batch</a></li>
+            <li><a href="#writing manually">Add a new Batch (Creating new batches)</a></li>
             <li><a href="#writing manually">Writing Batch Commands</a>
               <ul>
                 <li><a href="#writing manually">Writing the commands Manually</a></li>
@@ -71,7 +73,7 @@
 
 **QuickStatements** is a powerful tool designed for performing bulk edits on Wikidata. It allows users to add, modify, or remove large amounts of data efficiently, utilizing a simple command-line-like syntax. Whether you're adding new items, statements, or updating properties on multiple entities, QuickStatements is an essential tool for Wikidata editors who need to make large-scale changes quickly and reliably.
 
-This documentation provides a comprehensive guide to using QuickStatements, covering its features, usage, and best practices.
+This documentation provides a comprehensive guide to using QuickStatements, covering its features, usage, and best practices. Click [here](#qs-3.0) to jump right in.
 
 ## Features
 
