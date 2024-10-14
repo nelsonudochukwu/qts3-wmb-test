@@ -182,10 +182,9 @@ Q100000|DELETE  # Deletes the entire item Q100000
 ## Prerequisites
 >[!NOTE]
 >
->To use QuickStatements, you must be an autoconfirmed user and must be 4 days old on the platform and you must have made 50 edits to be considered one.
+>To run your batches on QuickStatements, you must be an autoconfirmed user and must be 4 days old on the platform and you must have made 50 edits to be considered one.
 
 - **Wikidata Account**: You must be logged into Wikidata to use QuickStatements.
-- **Permissions**: Ensure you have permission to perform bulk edits, especially for large-scale operations.
 - **Structured Data**: Your data must be well-structured in CSV/TSV format or similar to be easily imported and processed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
