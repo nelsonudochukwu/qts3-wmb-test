@@ -1,17 +1,18 @@
 <a id="readme-top"></a>
-# QuickStatements (QS) Documentation
+# QuickStatements (QS) 3.0 Documentation
 
-## Translations!!!!
-<details></details>
+<details>
+ <summary>Translations!!!!</summary>
+</details>
 
 ## Table of Contents
 
 <!-- TABLE OF CONTENTS -->
-<details open>
+<details>
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#overview">Overview of QS</a></li>
-    <li><a href="#overview">A Brief on Wikidata</a>
+    <li><a href="#a-brief-on-wikidata">A Brief on Wikidata</a>
       <ul>
         <li><a href="#writing manually">Structure of Wikidata</a>
           <ul>
@@ -38,15 +39,15 @@
         <li><a href="#writing manually">Wikidata linked data</a></li>
       </ul>
     </li>
-    <li><a href="#overview">QuickStatements 3.0 Docs</a>
+    <li><a href="#qs-v3-docs">QuickStatements 3.0 Docs</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#features">Features</a>
+        <li><a href="#prerequisites">(Getting Started)Prerequisites, Installation, Setting Account</a></li>
+        <li><a href="#features">(How To/Guides) Features</a>
           <ul>
-            <li><a href="#writing manually">Batch Details</a></li>
-            <li><a href="#writing manually">Search By User</a></li>
+            <li><a href="#writing manually">Batch Details </a></li>
+            <li><a href="#writing manually">Search By User (what batches has he created)</a></li>
             <li><a href="#writing manually">Temp Batch ID</a></li>
-            <li><a href="#writing manually">Add a new Batch</a></li>
+            <li><a href="#writing manually">Add a new Batch (Creating new batches)</a></li>
             <li><a href="#writing manually">Writing Batch Commands</a>
               <ul>
                 <li><a href="#writing manually">Writing the commands Manually</a></li>
@@ -58,6 +59,7 @@
         </li>
         <li><a href="#best-practices">Best Practices</a></li>
         <li><a href="#error-handling">Error Handling</a></li>
+        <li><a href="#recommendations">Recommendations</a></li>
         <li><a href="#conclusion">Conclusion</a></li>
       </ul>
     </li> 
@@ -66,9 +68,11 @@
 
 ## Overview
 
-**QuickStatements** is a powerful tool designed for performing bulk edits on Wikidata. It allows users to add, modify, or remove large amounts of data efficiently, utilizing a simple command-line-like syntax. Whether you're adding new items, statements, or updating properties on multiple entities, QuickStatements is an essential tool for Wikidata editors who need to make large-scale changes quickly and reliably.
+**QuickStatements (QS)** is a powerful tool designed for performing bulk edits on Wikidata. It allows users to add, modify, or remove large amounts of data efficiently, utilizing a simple command-line-like syntax. Whether you're adding new items, statements, or updating properties on multiple entities, QuickStatements is an essential tool for Wikidata editors who need to make large-scale changes quickly and reliably.
 
-This documentation provides a comprehensive guide to using QuickStatements, covering its features, usage, and best practices.
+This documentation provides an introduction to the features, usage, and best practices of QuickStatements 3.0 which is an upgrade that enhances the functionality, performance and user experience of the QS platform. _[Click](#qs-v3-docs)_ to jump right in. However, to fully grasp the features of quickstatements 3.0, it is important to first understand the major constituent of Quickstatements⎯ _Wikidata._
+
+## A brief on Wikidata
 
 ## Features
 
@@ -91,14 +95,6 @@ This documentation provides a comprehensive guide to using QuickStatements, cove
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Prerequisites
-
-- **Wikidata Account**: You must be logged into Wikidata to use QuickStatements.
-- **Permissions**: Ensure you have permission to perform bulk edits, especially for large-scale operations.
-- **Structured Data**: Your data must be well-structured in CSV/TSV format or similar to be easily imported and processed.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## Syntax and Command Structure
 
 Each QuickStatements command follows a simplified format with columns specifying the **Item**, **Property**, **Value**, and optional **Qualifiers**, **References**, etc.
@@ -116,11 +112,6 @@ Each QuickStatements command follows a simplified format with columns specifying
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Usage
->[!NOTE]
->
->To use QuickStatements, you must be 4 days old on the platform and you must have made 50 edits.
-
 QuickStatements can be used via:
 
 1. **Web Interface**: Upload a CSV or TSV file or paste commands directly into the web interface.
@@ -128,11 +119,9 @@ QuickStatements can be used via:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
----
-
 ## QuickStatements Command Examples
 
-### 1. Create a New Item
+#### 1. Create a New Item
 
 This command will create a new item with a label and description.
 
@@ -143,7 +132,7 @@ LAST|Den|"This is a sample item for demonstration purposes."
 LAST|P31|Q5  # Adds a claim that the item is an instance of a human
 ```
 
-### 2. Add Statements (Claims)
+#### 2. Add Statements (Claims)
 
 Adding statements to an existing item (e.g., Douglas Adams - Q42).
 
@@ -152,7 +141,7 @@ Q42|P569|1952-03-11  # Adds the date of birth (P569) for Douglas Adams
 Q42|P19|Q84          # Adds the place of birth (P19) as Cambridge (Q84)
 ```
 
-### 3. Add Qualifiers
+#### 3. Add Qualifiers
 
 You can add qualifiers to existing statements to provide more detail.
 
@@ -162,7 +151,7 @@ Q42|P69|Q3918|P580|1971|P582|1974  # Adds education (P69) at St John's College (
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### 4. Add References
+#### 4. Add References
 
 Adding references to an existing statement:
 
@@ -170,7 +159,7 @@ Adding references to an existing statement:
 Q42|P69|Q3918|S854|"https://example.com/education"  # Adds a URL reference for the education claim
 ```
 
-### 5. Modify Labels, Descriptions, and Aliases
+#### 5. Modify Labels, Descriptions, and Aliases
 Modify Labels, descriptions, and aliases in different languages:
 ```plaintext
 Q42|Len|"Douglas Adams"  # Changes the English label to "Douglas Adams"
@@ -179,14 +168,26 @@ Q42|Aen|"Douglas Noel Adams"  # Adds an alias in English
 Q42|Den|"British author and screenwriter"  # Modifies the English description
 ```
 
-### 6. Remove Statements or Items
+#### 6. Remove Statements or Items
 Remove statements or delete items entirely:
 ```plaintext
 Q42|P19|DELETE  # Deletes the place of birth (P19) statement for Q42
 Q100000|DELETE  # Deletes the entire item Q100000
 ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
----
+
+<a id="qs-v3-docs"></a>
+## QuickStatements 3.0 Docs
+
+## Prerequisites
+>[!NOTE]
+>
+>To run your batches on QuickStatements, you must be an autoconfirmed user and must be 4 days old on the platform and you must have made 50 edits to be considered one.
+
+- **Wikidata Account**: You must be logged into Wikidata to use QuickStatements.
+- **Structured Data**: Your data must be well-structured in CSV/TSV format or similar to be easily imported and processed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Best Practices
 - Test with Small Batches: Always test your commands with a small set of items to avoid unintended changes.
@@ -213,12 +214,16 @@ When an error occurs during execution, QuickStatements will indicate which comma
 - Permissions or throttling by Wikidata for large-scale edits.
 In these cases, review the failed commands and correct the issues before re-running.
 
+## Recommendations
+- Let's maintain the blue. The green color is a stark divergence from the history of QuickStatements 
+  
 ## Conclusion
 QuickStatements is an essential tool for bulk editing on Wikidata, enabling users to manage large sets of data efficiently. By following this guide, you can create, update, and manage items with ease, improving the quality and accuracy of Wikidata.
 
 For more advanced use cases, refer to the [Wikidata documentation](https://www.wikidata.org/wiki/Help:QuickStatements) for further details and updates.
 
-
+## References
+This documentation was inspired from many sources, however, [Diátaxis](https://diataxis.fr/) was the most significant guide for a writing this as it provides a systematic approach to understanding the needs of documentation users. The [Google Technical Writing Course](https://developers.google.com/tech-writing/overview) was instrumental as well.
 
 ## ️💚️ THANK YOU MENTORS 💙 
 <!-- ALL-CONTRIBUTORS-LIST:START -->
@@ -251,3 +256,5 @@ For more advanced use cases, refer to the [Wikidata documentation](https://www.w
   <summary>Contact</summary>
   <p>Contact us through this section.</p>
 </details>
+
+## My thought Process
