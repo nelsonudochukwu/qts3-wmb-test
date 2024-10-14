@@ -60,6 +60,7 @@
         </li>
         <li><a href="#best-practices">Best Practices</a></li>
         <li><a href="#error-handling">Error Handling</a></li>
+        <li><a href="#recommendations">Recommendations</a></li>
         <li><a href="#conclusion">Conclusion</a></li>
       </ul>
     </li> 
