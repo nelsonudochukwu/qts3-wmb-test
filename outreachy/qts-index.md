@@ -2,6 +2,7 @@
 # QuickStatements (QS) Documentation
 
 <details>Translations!!!!</details>
+
 ## Table of Contents
 
 <!-- TABLE OF CONTENTS -->
