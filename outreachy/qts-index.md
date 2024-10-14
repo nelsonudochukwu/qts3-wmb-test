@@ -257,3 +257,5 @@ For more advanced use cases, refer to the [Wikidata documentation](https://www.w
   <summary>Contact</summary>
   <p>Contact us through this section.</p>
 </details>
+
+## My thought Process
