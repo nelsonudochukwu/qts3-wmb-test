@@ -1,47 +1,71 @@
 <a id="readme-top"></a>
-# QuickStatements Documentation
+# QuickStatements (QS) Documentation
 
 ## Table of Contents
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details open>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#overview">Overview</a></li>
-    <li><a href="#features">Features</a></li>
-    <li><a href="#prerequisites">Prerequisites</a></li>
-    <li><a href="#syntax-and-command-structure">Syntax and Command Structure</a></li>
-    <li><a href="#usage">Usage</a></li>
-    <li>
-      <a href="#quickstatements-command-examples">QuickStatements Command Examples</a>
+    <li><a href="#overview">Overview of QS</a></li>
+    <li><a href="#overview">A Brief on Wikidata</a>
       <ul>
-        <li><a href="#1-create-a-new-item">Create a New Item</a></li>
-        <li><a href="#2-add-statements-claims">Add Statements (Claims)</a></li>
-        <li><a href="#3-add-qualifiers">Add Qualifiers</a></li>
-        <li><a href="#4-add-references">Add References</a></li>
-        <li><a href="#5-modify-labels-descriptions-and-aliases">Modify Labels, Descriptions, and Aliases</a></li>
-        <li><a href="#6-remove-statements-or-items">Remove Statements or Items</a></li>
+        <li><a>Structure of Wikidata</a>
+          <ul>
+            <li><a>Items, Properties and Values</a></li>
+            <li><a>Labels, descriptions and aliases</a></li>
+          </ul>
+        </li>
+        <li><a>Wikidata Statements</a>
+          <ul>
+            <li><a href="#syntax-and-command-structure">Syntax and Command Structure</a></li>
+            <li><a href="#usage">Usage</a></li>
+            <li> <a href="#quickstatements-command-examples">QS Command Examples</a>
+             <ul>
+                <li><a href="#1-create-a-new-item">Create a New Item</a></li>
+                <li><a href="#2-add-statements-claims">Add Statements (Claims)</a></li>
+                <li><a href="#3-add-qualifiers">Add Qualifiers</a></li>
+                <li><a href="#4-add-references">Add References</a></li>
+                <li><a href="#5-modify-lda">Modify Labels, Descriptions, and Aliases</a></li>
+                <li><a href="#6-remove-statements-or-items">Remove Statements or Items</a></li>
+             </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a>Wikidata linked data</a></li>
       </ul>
     </li>
-    <li><a href="#best-practices">Best Practices</a></li>
-    <li><a href="#importing-csvtsv-data">Importing CSV/TSV Data</a></li>
-    <li><a href="#error-handling">Error Handling</a></li>
-    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#overview">QuickStatements 3.0 Docs</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#features">Features</a>
+          <ul>
+            <li><a>Batch Details</a></li>
+            <li><a>Search By User</a></li>
+            <li><a>Temp Batch ID</a></li>
+            <li><a>Add a new Batch</a></li>
+            <li><a>Writing Batch Commands</a>
+              <ul>
+                <li><a href="#writing manually">Writing the commands Manually</a></li>
+                <li><a href="#importing-csv">Writing the commands in a CSV</a></li>
+                <li><a href="#importing-tsv">Writing the commands in a TSV</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#best-practices">Best Practices</a></li>
+        <li><a href="#error-handling">Error Handling</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ul>
+    </li> 
   </ol>
 </details>
-
-
-
 
 ## Overview
 
 **QuickStatements** is a powerful tool designed for performing bulk edits on Wikidata. It allows users to add, modify, or remove large amounts of data efficiently, utilizing a simple command-line-like syntax. Whether you're adding new items, statements, or updating properties on multiple entities, QuickStatements is an essential tool for Wikidata editors who need to make large-scale changes quickly and reliably.
 
 This documentation provides a comprehensive guide to using QuickStatements, covering its features, usage, and best practices.
-
-
 
 ## Features
 
