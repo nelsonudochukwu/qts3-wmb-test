@@ -40,7 +40,7 @@
         <li><a href="#writing manually">Wikidata linked data</a></li>
       </ul>
     </li>
-    <li>QuickStatements 3.0 Docs
+    <li><a href="quickstatements-3.0-docs">QuickStatements 3.0 Docs</a>
       <ul>
         <li><a href="#prerequisites">(Getting Started)Prerequisites, Installation, Setting Account</a></li>
         <li><a href="#features">(How To/Guides) Features</a>
@@ -189,6 +189,8 @@ Q42|P19|DELETE  # Deletes the place of birth (P19) statement for Q42
 Q100000|DELETE  # Deletes the entire item Q100000
 ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## QuickStatements 3.0 Docs
 
 ## Best Practices
 - Test with Small Batches: Always test your commands with a small set of items to avoid unintended changes.
