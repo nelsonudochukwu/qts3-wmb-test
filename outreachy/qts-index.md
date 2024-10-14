@@ -1,5 +1,4 @@
 <a id="readme-top"></a>
-<a id="qs-3.0"></a>
 # QuickStatements (QS) Documentation
 
 <details>
@@ -40,7 +39,7 @@
         <li><a href="#writing manually">Wikidata linked data</a></li>
       </ul>
     </li>
-    <li><a href="#quickstatements-3.0-docs">QuickStatements 3.0 Docs</a>
+    <li><a href="#q3.0-docs">QuickStatements 3.0 Docs</a>
       <ul>
         <li><a href="#prerequisites">(Getting Started)Prerequisites, Installation, Setting Account</a></li>
         <li><a href="#features">(How To/Guides) Features</a>
@@ -190,6 +189,7 @@ Q100000|DELETE  # Deletes the entire item Q100000
 ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<a id="q3.0-docs"></a>
 ## QuickStatements 3.0 Docs
 
 ## Best Practices
