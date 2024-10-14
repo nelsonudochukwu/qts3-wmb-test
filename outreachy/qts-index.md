@@ -11,7 +11,7 @@ This documentation was inspired from many sources, however, [Diátaxis](https://
 ## Table of Contents
 
 <!-- TABLE OF CONTENTS -->
-<details open>
+<details>
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#overview">Overview of QS</a></li>
