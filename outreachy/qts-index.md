@@ -191,25 +191,28 @@ In order to create and run batches, you must ensure the following:
 A batch refers to a set of commands or operations that are executed together to perform bulk edits. Each batch can include multiple statements or claims that you want to add, modify, or remove from items on Wikidata.
 
 #### Creating a new Batch in QS
-To create a new batch in QuickStatements, click on New batch
+To create a new batch in QuickStatements, click on New batch.
 ![Screenshot 2024-10-15 at 19 03 34](https://github.com/user-attachments/assets/67129eef-b4b9-4e37-bf97-5c85e351bea8)
 
-Then, you'll see this window:
+Then, you'll see this window with several fields to be filled.
 ![Screenshot 2024-10-15 at 19 04 43](https://github.com/user-attachments/assets/0c48dbe9-9ad2-4966-acad-aee0437bd880)
+
 #### Details of a Batch in QS
 A new batch consists of the:
-- Command format: Your command format can be in V1 format or CSV format. The QS V1 syntax is command-based, with one tab-separated line per command.
+- Command format: Your command format can be in V1 format or CSV format. The QS V1 syntax is command-based, with one tab-separated line per command. The CSV format on the other consists of a first line which is a header that defines the contents of each column. The subsequent lines supply information to be applied to Wikibase according to the contents of each column's header.
 
-```Example of V1 syntax
+```
+Example of V1 syntax
+
 CREATE
 LAST	Len	Doctor Worm
 LAST	Den	1998 song performed by They Might Be Giants
 LAST	P2650	Q128309
 ```
 
-The CSV format on the other consists of a first line which is a header that defines the contents of each column. The subsequent lines supply information to be applied to Wikibase according to the contents of each column's header.
+```
+Example of CSV syntax
 
-```Example of CSV syntax
 qid,Len,Den,P2650
 ,Doctor Worm,1998 song performed by They Might Be Giants,Q128309
 ```
