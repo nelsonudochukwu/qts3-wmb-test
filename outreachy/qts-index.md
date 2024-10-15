@@ -211,8 +211,6 @@ A new batch consists of the:
   
   <ins>Example of CSV syntax</ins>
   ```
- 
-  
   qid,Len,Den,P2650
   ,Doctor Worm,1998 song performed by They Might Be Giants,Q128309
   ```
