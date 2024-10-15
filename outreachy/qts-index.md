@@ -181,7 +181,7 @@ Q100000|DELETE  # Deletes the entire item Q100000
 
 This documentation provides an introduction to the features of QuickStatements 3.0 which is an upgrade that enhances the functionality, performance and user experience of the QS platform to improve system stability.
 
-## Prerequisites
+### Prerequisites
 >[!NOTE]
 >
 >To run your batches on QuickStatements, you must be an autoconfirmed user and must be 4 days old on the platform and you must have made 50 edits to be considered one.
@@ -191,13 +191,13 @@ This documentation provides an introduction to the features of QuickStatements 3
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Best Practices
+### Best Practices
 - Test with Small Batches: Always test your commands with a small set of items to avoid unintended changes.
 - Review Edits: Double-check all data before running large batches.
 - Use References: Ensure that statements are properly sourced with references to enhance data quality.
 - Monitor Progress: After submission, keep track of your batch’s progress and check for errors.
 
-## Importing CSV/TSV Data
+### Importing CSV/TSV Data
 You can prepare your data in CSV or TSV format, where each line represents one operation. A sample format:
 ```plaintext
 Q42,P69,Q3918,P580,1971,P582,1974
@@ -208,7 +208,7 @@ After preparing the CSV, upload it via the QuickStatements web interface to run 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Error Handling
+### Error Handling
 
 When an error occurs during execution, QuickStatements will indicate which command failed. Common issues include:
 - Incorrect item or property IDs.
@@ -216,15 +216,15 @@ When an error occurs during execution, QuickStatements will indicate which comma
 - Permissions or throttling by Wikidata for large-scale edits.
 In these cases, review the failed commands and correct the issues before re-running.
 
-## Recommendations
+### Recommendations
 - Let's maintain the blue. The green color is a stark divergence from the history of QuickStatements 
   
-## Conclusion
+### Conclusion
 QuickStatements is an essential tool for bulk editing on Wikidata, enabling users to manage large sets of data efficiently. By following this guide, you can create, update, and manage items with ease, improving the quality and accuracy of Wikidata.
 
 For more advanced use cases, refer to the [Wikidata documentation](https://www.wikidata.org/wiki/Help:QuickStatements) for further details and updates.
 
-## References
+### References
 This documentation was inspired from many sources, however, [Diátaxis](https://diataxis.fr/) was the most significant guide for a writing this as it provides a systematic approach to understanding the needs of documentation users. The [Google Technical Writing Course](https://developers.google.com/tech-writing/overview) was instrumental as well.
 
 ## ️💚️ THANK YOU MENTORS 💙 
