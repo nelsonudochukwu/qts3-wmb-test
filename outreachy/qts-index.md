@@ -70,7 +70,7 @@
 
 **QuickStatements (QS)** is a powerful tool designed for performing bulk edits on Wikidata. It allows users to add, modify, or remove large amounts of data efficiently, utilizing a simple command-line-like syntax. Whether you're adding new items, statements, or updating properties on multiple entities, QuickStatements is an essential tool for Wikidata editors who need to make large-scale changes quickly and reliably.
 
-This documentation provides an introduction to the features, usage, and best practices of QuickStatements 3.0 which is an upgrade that enhances the functionality, performance and user experience of the QS platform. _[Click](#qs-v3-docs)_ to jump right in. However, to fully grasp the features of quickstatements 3.0, it is important to first understand the major constituent of Quickstatements⎯ _Wikidata._
+This documentation provides an introduction to the features, usage, and best practices of QuickStatements 3.0. _[Click](#qs-v3-docs)_ to jump right in. However, to fully grasp the features of quickstatements 3.0, it is important to first understand the major constituent of Quickstatements⎯ _Wikidata._
 
 ## A brief on Wikidata
 
@@ -178,6 +178,8 @@ Q100000|DELETE  # Deletes the entire item Q100000
 
 <a id="qs-v3-docs"></a>
 ## QuickStatements 3.0 Docs
+
+This documentation provides an introduction to the features of QuickStatements 3.0 which is an upgrade that enhances the functionality, performance and user experience of the QS platform to improve system stability.
 
 ## Prerequisites
 >[!NOTE]
