@@ -42,7 +42,7 @@
     <li><a href="#qs-v3-docs">QuickStatements 3.0 Docs</a>
       <ul>
         <li><a href="#prerequisites">Getting Started: Prerequisites</a></li>
-        <li><a href="#features">How To/Guides: What is a Batch?</a>
+        <li><a href="#what-is-a-batch">How To/Guides: What is a Batch?</a>
           <ul>
             <li><a href="#writing manually">Creating a Batch-edit</a></li>
             <li><a href="#writing manually">Viewing Details of Batch-edits</a></li>
@@ -186,6 +186,37 @@ In order to create and run batches, you must ensure the following:
 - **Structured Data**: Your data must be well-structured in CSV/TSV format or similar to be easily imported and processed.
 - **Autoconfirmed user**: To be an autoconfirmed user, you must be 4 days old on the platform and you must have made 50 edits to be considered one.
 
+<a id="what-is-a-batch"></a>
+### What is a Batch in QS?
+A batch refers to a set of commands or operations that are executed together to perform bulk edits. Each batch can include multiple statements or claims that you want to add, modify, or remove from items on Wikidata.
+
+#### Creating a new Batch in QS
+To create a new batch in QuickStatements, click on New batch
+![Screenshot 2024-10-15 at 19 03 34](https://github.com/user-attachments/assets/67129eef-b4b9-4e37-bf97-5c85e351bea8)
+
+Then, you'll see this window:
+![Screenshot 2024-10-15 at 19 04 43](https://github.com/user-attachments/assets/0c48dbe9-9ad2-4966-acad-aee0437bd880)
+#### Details of a Batch in QS
+A new batch consists of the:
+- Command format: Your command format can be in V1 format or CSV format. The QS V1 syntax is command-based, with one tab-separated line per command.
+
+```Example of V1 syntax
+CREATE
+LAST	Len	Doctor Worm
+LAST	Den	1998 song performed by They Might Be Giants
+LAST	P2650	Q128309
+```
+
+The CSV format on the other consists of a first line which is a header that defines the contents of each column. The subsequent lines supply information to be applied to Wikibase according to the contents of each column's header.
+
+```Example of CSV syntax
+qid,Len,Den,P2650
+,Doctor Worm,1998 song performed by They Might Be Giants,Q128309
+```
+
+#### See all Batches per User in QS
+
+#### Writing Batch Commands in QS
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
