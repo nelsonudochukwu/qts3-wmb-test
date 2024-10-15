@@ -360,7 +360,7 @@ details summary[role="button"]:not(.outline)::after {
     --pico-text-selection-color: rgba(0, 180, 120, 0.1875);
     --pico-muted-color: #7b8495;
     --pico-muted-border-color: #202632;
-    --pico-primary: #00b478;
+    --pico-primary: #00357a;
     --pico-primary-background: #00357a;
     --pico-primary-border: var(--pico-primary-background);
     --pico-primary-underline: rgba(0, 180, 120, 0.5);
