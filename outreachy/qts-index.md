@@ -182,7 +182,7 @@ Q100000|DELETE  # Deletes the entire item Q100000
 This documentation provides an introduction to the features of QuickStatements 3.0 which is an upgrade that enhances the functionality, performance and user experience of the QS platform to improve system stability.
 
 ### Prerequisites
-In order to create and run batches, you'll need to ensure the following:
+In order to create and run batches, you must ensure the following:
 - **Wikidata Account**: You must be logged into Wikidata to use QuickStatements.
 - **Structured Data**: Your data must be well-structured in CSV/TSV format or similar to be easily imported and processed.
 - **Autoconfirmed user**: To be an autoconfirmed user, you must be 4 days old on the platform and you must have made 50 edits to be considered one.
