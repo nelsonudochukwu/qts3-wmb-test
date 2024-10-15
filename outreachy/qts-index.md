@@ -44,11 +44,10 @@
         <li><a href="#prerequisites">(Getting Started)Prerequisites, Installation, Setting Account</a></li>
         <li><a href="#features">(How To/Guides) Features</a>
           <ul>
-            <li><a href="#writing manually">Batch Details </a></li>
-            <li><a href="#writing manually">Search By User (what batches has he created)</a></li>
-            <li><a href="#writing manually">Temp Batch ID</a></li>
-            <li><a href="#writing manually">Add a new Batch (Creating new batches)</a></li>
-            <li><a href="#writing manually">Writing Batch Commands</a>
+            <li><a href="#writing manually">Creating a Batch-edit</a></li>
+            <li><a href="#writing manually">Viewing Details of Batch-edits</a></li>
+            <li><a href="#writing manually">See all Batch-edits created by a User</a></li>
+            <li><a href="#writing manually">Writing a simple Batch-edit command</a>
               <ul>
                 <li><a href="#writing manually">Writing the commands Manually</a></li>
                 <li><a href="#importing-csv">Writing the commands in a CSV</a></li>
