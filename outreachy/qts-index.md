@@ -163,7 +163,14 @@ A new batch consists of:
 - Commands: These are the instructions you enter to perform specific operations on Wikidata items. These commands allow you to add, modify, or remove data from items in Wikidata. The commands are written in a specific format, and each line typically represents an action to be taken on a Wikidata item.
 
 #### c. See all Batches per User in QS
-In QuickStatements, multiple users can execute multiple batches and each batch is tied to a user. To see all recent batches made by a user, you need to get the 
+In QuickStatements, multiple users can execute multiple batches and each batch is tied to a user. To see all recent batches made by a user in QuickStatements, insert the username of the user in the username field and click 'See batches by user'. It lists the batches you’ve run, including:
+- Batch IDs
+- Descriptions (if you added custom names)
+- Status (e.g., in progress, completed, or failed)
+- Dates
+- Number of edits in the batch
+
+> NOTE: Each batch has a unique URL associated with it. You can bookmark or share this URL to access or monitor a batch later.
 
 #### d. Writing Batch Commands in QS
 
