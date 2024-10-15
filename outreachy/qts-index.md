@@ -41,8 +41,8 @@
     </li>
     <li><a href="#qs-v3-docs">QuickStatements 3.0 Docs</a>
       <ul>
-        <li><a href="#prerequisites">(Getting Started)Prerequisites, Installation, Setting Account</a></li>
-        <li><a href="#features">(How To/Guides) Features</a>
+        <li><a href="#prerequisites">Getting Started: Prerequisites</a></li>
+        <li><a href="#features">How To/Guides: What is a Batch?</a>
           <ul>
             <li><a href="#writing manually">Creating a Batch-edit</a></li>
             <li><a href="#writing manually">Viewing Details of Batch-edits</a></li>
