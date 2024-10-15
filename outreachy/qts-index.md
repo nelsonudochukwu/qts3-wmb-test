@@ -133,13 +133,13 @@ In order to create and run batches, you must ensure the following:
 ### What is a Batch in QS?
 A batch refers to a set of commands or operations that are executed together to perform bulk edits. Each batch can include multiple statements or claims that you want to add, modify, or remove from items on Wikidata.
 
-#### Creating a new Batch in QS
+#### a. Creating a new Batch in QS
 To create a new batch in QuickStatements, click on New batch.
 ![Screenshot 2024-10-15 at 19 03 34](https://github.com/user-attachments/assets/67129eef-b4b9-4e37-bf97-5c85e351bea8)
 
 Then, you'll see a window with several details to be filled.
 
-#### Details of a Batch in QS
+#### b. Details of a Batch in QS
 ![Screenshot 2024-10-15 at 19 04 43](https://github.com/user-attachments/assets/0c48dbe9-9ad2-4966-acad-aee0437bd880)
 A new batch consists of:
 - Command format: Your command format can be in V1 format or CSV format. The QS V1 syntax is command-based, with one tab-separated line per command. The CSV format on the other hand consists of a first line⎯the header⎯that defines the contents of each column. The subsequent lines supply information to be applied to Wikibase according to the contents of each column's header.
@@ -161,10 +161,10 @@ A new batch consists of:
   
 - Commands: These are the instructions you enter to perform specific operations on Wikidata items. These commands allow you to add, modify, or remove data from items in Wikidata. The commands are written in a specific format, and each line typically represents an action to be taken on a Wikidata item.
 
-#### See all Batches per User in QS
+#### c. See all Batches per User in QS
 In QuickStatements, multiple users can execute multiple batches and each batch is tied to a user. To see all recent batches made by a user, you need to get the 
 
-#### Writing Batch Commands in QS
+#### d. Writing Batch Commands in QS
 
 #### 1. Create a New Item
 
