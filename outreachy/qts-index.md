@@ -137,12 +137,12 @@ A batch refers to a set of commands or operations that are executed together to 
 To create a new batch in QuickStatements, click on New batch.
 ![Screenshot 2024-10-15 at 19 03 34](https://github.com/user-attachments/assets/67129eef-b4b9-4e37-bf97-5c85e351bea8)
 
-Then, you'll see this window with several fields to be filled.
-![Screenshot 2024-10-15 at 19 04 43](https://github.com/user-attachments/assets/0c48dbe9-9ad2-4966-acad-aee0437bd880)
+Then, you'll see a window with several details to be filled.
 
 #### Details of a Batch in QS
+![Screenshot 2024-10-15 at 19 04 43](https://github.com/user-attachments/assets/0c48dbe9-9ad2-4966-acad-aee0437bd880)
 A new batch consists of:
-- Command format: Your command format can be in V1 format or CSV format. The QS V1 syntax is command-based, with one tab-separated line per command. The CSV format on the other consists of a first line which is a header that defines the contents of each column. The subsequent lines supply information to be applied to Wikibase according to the contents of each column's header.
+- Command format: Your command format can be in V1 format or CSV format. The QS V1 syntax is command-based, with one tab-separated line per command. The CSV format on the other hand consists of a first line⎯the header⎯that defines the contents of each column. The subsequent lines supply information to be applied to Wikibase according to the contents of each column's header.
   
   <ins>Example of V1 syntax</ins>
   ```
@@ -157,8 +157,9 @@ A new batch consists of:
   qid,Len,Den,P2650
   ,Doctor Worm,1998 song performed by They Might Be Giants,Q128309
   ```
-- Custom batch name:
-- Commands:
+- Custom batch name: This is a label or identifier that you can assign to a specific batch of edits for easier management and reference. By default, batches are given generic names, typically just a batch ID. However, you have the option to provide a custom name when you create or upload a batch. This custom name makes it easier to recognize or remember what a particular batch was intended to do, especially when dealing with multiple batches over time.
+  
+- Commands: These are the instructions you enter to perform specific operations on Wikidata items. These commands allow you to add, modify, or remove data from items in Wikidata. The commands are written in a specific format, and each line typically represents an action to be taken on a Wikidata item.
 
 #### See all Batches per User in QS
 In QuickStatements, multiple users can execute multiple batches and each batch is tied to a user. To see all recent batches made by a user, you need to get the 
