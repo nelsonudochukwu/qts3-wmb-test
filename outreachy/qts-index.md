@@ -200,7 +200,7 @@ Then, you'll see this window with several fields to be filled.
 #### Details of a Batch in QS
 A new batch consists of the:
 - Command format: Your command format can be in V1 format or CSV format. The QS V1 syntax is command-based, with one tab-separated line per command. The CSV format on the other consists of a first line which is a header that defines the contents of each column. The subsequent lines supply information to be applied to Wikibase according to the contents of each column's header.
-- 
+  
   <ins>Example of V1 syntax</ins>
   ```
   CREATE
