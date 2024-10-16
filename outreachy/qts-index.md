@@ -47,12 +47,7 @@
             <li><a href="#create-new-batch">Creating a Batch-edit</a></li>
             <li><a href="#details-of-a-batch">Viewing Details of Batch-edits</a></li>
             <li><a href="#batches-per-user">See all Batch-edits created by a User</a></li>
-            <li><a href="#writing-batch-commands">Writing a simple Batch-edit command</a>
-              <ul>
-                <li><a href="#writing manually">Writing the commands Manually</a></li>
-                <li><a href="#importing-csv">Writing the commands in a CSV</a></li>
-                <li><a href="#importing-tsv">Writing the commands in a TSV</a></li>
-              </ul>
+            <li><a href="#writing-batch-commands">Writing Batch commands</a>
             </li>
           </ul>
         </li>
