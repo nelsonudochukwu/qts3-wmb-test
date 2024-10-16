@@ -140,6 +140,8 @@ To create a new batch in QuickStatements, click on New batch.
 
 Then, you'll see a window with several details to be filled.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <a id="details-of-a-batch"></a>
 #### B. Details of a Batch in QS
 ![Screenshot 2024-10-15 at 19 04 43](https://github.com/user-attachments/assets/0c48dbe9-9ad2-4966-acad-aee0437bd880)
@@ -163,6 +165,8 @@ A new batch consists of:
 - **Custom batch name:** This is a label or identifier that you can assign to a specific batch of edits for easier management and reference. By default, batches are given generic names, typically just a batch ID. However, you have the option to provide a custom name when you create or upload a batch. This custom name makes it easier to recognize or remember what a particular batch was intended to do, especially when dealing with multiple batches over time.
   
 - **Commands:** These are the instructions you enter to perform specific operations on Wikidata items. These commands allow you to add, modify, or remove data from items in Wikidata. The commands are written in a specific format, and each line typically represents an action to be taken on a Wikidata item.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <a id="batches-per-user"></a>
 #### C. See all Batches per User in QS
