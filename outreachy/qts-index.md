@@ -134,14 +134,14 @@ In order to create and run batches, you must ensure the following:
 A batch refers to a set of commands or operations that are executed together to perform bulk edits. Each batch can include multiple statements or claims that you want to add, modify, or remove from items on Wikidata.
 
 <a id="create-new-batch"></a>
-#### a. Creating a new Batch in QS
+#### A. Creating a new Batch in QS
 To create a new batch in QuickStatements, click on New batch.
 ![Screenshot 2024-10-15 at 19 03 34](https://github.com/user-attachments/assets/67129eef-b4b9-4e37-bf97-5c85e351bea8)
 
 Then, you'll see a window with several details to be filled.
 
 <a id="details-of-a-batch"></a>
-#### b. Details of a Batch in QS
+#### B. Details of a Batch in QS
 ![Screenshot 2024-10-15 at 19 04 43](https://github.com/user-attachments/assets/0c48dbe9-9ad2-4966-acad-aee0437bd880)
 
 A new batch consists of:
@@ -165,7 +165,7 @@ A new batch consists of:
 - **Commands:** These are the instructions you enter to perform specific operations on Wikidata items. These commands allow you to add, modify, or remove data from items in Wikidata. The commands are written in a specific format, and each line typically represents an action to be taken on a Wikidata item.
 
 <a id="batches-per-user"></a>
-#### c. See all Batches per User in QS
+#### C. See all Batches per User in QS
 In QuickStatements, multiple users can execute multiple batches and each batch is tied to a user. To see all recent batches made by a user in QuickStatements, insert the username of the user in the username field and click 'See batches by user'. It lists the batches you’ve run, including:
 - Batch IDs
 - Descriptions (if you added custom names)
@@ -177,7 +177,7 @@ In QuickStatements, multiple users can execute multiple batches and each batch i
 > Each batch has a unique URL associated with it. You can bookmark or share this URL to access or monitor a batch later.
 
 <a id="writing-batch-commands"></a>
-#### d. Writing Batch Commands in QS
+#### D. Writing Batch Commands in QS
 
 #### 1. Create a New Item
 
