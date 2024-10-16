@@ -173,7 +173,8 @@ In QuickStatements, multiple users can execute multiple batches and each batch i
 - Dates
 - Number of edits in the batch
 
-> NOTE: Each batch has a unique URL associated with it. You can bookmark or share this URL to access or monitor a batch later.
+> [!NOTE]
+> Each batch has a unique URL associated with it. You can bookmark or share this URL to access or monitor a batch later.
 
 <a id="writing-batch-commands"></a>
 #### d. Writing Batch Commands in QS
