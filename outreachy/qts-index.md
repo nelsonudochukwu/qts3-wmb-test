@@ -92,6 +92,7 @@ This documentation provides an introduction to the features, usage, and best pra
 8. **Batch Execution**
    - Process hundreds or thousands of operations in a single batch.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Syntax and Command Structure
 
 Each QuickStatements command follows a simplified format with columns specifying the **Item**, **Property**, **Value**, and optional **Qualifiers**, **References**, etc.
@@ -107,11 +108,13 @@ Each QuickStatements command follows a simplified format with columns specifying
 | Descriptions | Brief summaries that describe the items.                                                         |
 | Aliases      | Alternate names or terms by which an item is known.                                              |
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 QuickStatements can be used via:
 
 1. **Web Interface**: Upload a CSV or TSV file or paste commands directly into the web interface.
 2. **Batch Processing**: Execute large batches of commands through structured inputs.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <a id="qs-v3-docs"></a>
 ## QuickStatements 3.0 Docs
 
@@ -134,10 +137,12 @@ To create a new batch in QuickStatements, click on New batch.
 
 Then, you'll see a window with several details to be filled.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <a id="details-of-a-batch"></a>
 #### B. Details of a Batch in QS
 ![Screenshot 2024-10-15 at 19 04 43](https://github.com/user-attachments/assets/0c48dbe9-9ad2-4966-acad-aee0437bd880)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 A new batch consists of:
 - **Command format:** Your command format can be in V1 format or CSV format. The QS V1 syntax is command-based, with one tab-separated line per command. The CSV format on the other hand consists of a first line⎯the header⎯that defines the contents of each column. The subsequent lines supply information to be applied to Wikibase according to the contents of each column's header.
   
@@ -158,6 +163,7 @@ A new batch consists of:
   
 - **Commands:** These are the instructions you enter to perform specific operations on Wikidata items. These commands allow you to add, modify, or remove data from items in Wikidata. The commands are written in a specific format, and each line typically represents an action to be taken on a Wikidata item.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <a id="batches-per-user"></a>
 #### C. See all Batches per User in QS
 In QuickStatements, multiple users can execute multiple batches and each batch is tied to a user. To see all recent batches made by a user in QuickStatements, insert the username of the user in the username field and click 'See batches by user'. It lists the batches you’ve run, including:
@@ -201,6 +207,7 @@ You can add qualifiers to existing statements to provide more detail.
 Q42|P69|Q3918|P580|1971|P582|1974  # Adds education (P69) at St John's College (Q3918) with start (P580) and end (P582) dates
 ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 #### 4. Add References
 
 Adding references to an existing statement:
@@ -225,6 +232,7 @@ Q42|P19|DELETE  # Deletes the place of birth (P19) statement for Q42
 Q100000|DELETE  # Deletes the entire item Q100000
 ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 #### 7. Importing CSV/TSV Data
 You can prepare your data in CSV or TSV format, where each line represents one operation. A sample format:
 ```plaintext
@@ -234,6 +242,7 @@ Q42,P569,1952-03-11
 ```
 After preparing the CSV, upload it via the QuickStatements web interface to run the batch.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### Best Practices
 - Test with Small Batches: Always test your commands with a small set of items to avoid unintended changes.
 - Review Edits: Double-check all data before running large batches.
