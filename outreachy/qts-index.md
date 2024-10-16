@@ -235,13 +235,8 @@ Q100000|DELETE  # Deletes the entire item Q100000
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Best Practices
-- Test with Small Batches: Always test your commands with a small set of items to avoid unintended changes.
-- Review Edits: Double-check all data before running large batches.
-- Use References: Ensure that statements are properly sourced with references to enhance data quality.
-- Monitor Progress: After submission, keep track of your batch’s progress and check for errors.
 
-### Importing CSV/TSV Data
+#### 7. Importing CSV/TSV Data
 You can prepare your data in CSV or TSV format, where each line represents one operation. A sample format:
 ```plaintext
 Q42,P69,Q3918,P580,1971,P582,1974
@@ -251,6 +246,12 @@ Q42,P569,1952-03-11
 After preparing the CSV, upload it via the QuickStatements web interface to run the batch.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Best Practices
+- Test with Small Batches: Always test your commands with a small set of items to avoid unintended changes.
+- Review Edits: Double-check all data before running large batches.
+- Use References: Ensure that statements are properly sourced with references to enhance data quality.
+- Monitor Progress: After submission, keep track of your batch’s progress and check for errors.
 
 ### Error Handling
 
