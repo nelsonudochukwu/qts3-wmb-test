@@ -284,28 +284,3 @@ This documentation was inspired from many sources, however, [Diátaxis](https://
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-
-
-# Navigation
-
-<details id="home-section">
-  <summary>Home</summary>
-  <p>Welcome to the home page.</p>
-</details>
-
-<details id="about-section">
-  <summary>About</summary>
-  <p>This is the about section.</p>
-</details>
-
-<details id="services-section">
-  <summary>Services</summary>
-  <p>Details about the services offered.</p>
-</details>
-
-<details id="contact-section">
-  <summary>Contact</summary>
-  <p>Contact us through this section.</p>
-</details>
-
-## My thought Process
