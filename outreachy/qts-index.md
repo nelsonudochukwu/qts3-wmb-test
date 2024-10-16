@@ -240,10 +240,9 @@ After preparing the CSV, upload it via the QuickStatements web interface to run 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Best Practices
-- Test with Small Batches: Always test your commands with a small set of items to avoid unintended changes.
-- Review Edits: Double-check all data before running large batches.
-- Use References: Ensure that statements are properly sourced with references to enhance data quality.
-- Monitor Progress: After submission, keep track of your batch’s progress and check for errors.
+- **Test with Small Batches:** Always test your commands with a small set of items before large-scale edits to avoid unintended changes.
+- **Use References:** Ensure that statements are properly sourced with references to enhance data quality.
+- **Monitor Progress:** After submission, keep track of your batch’s progress and check for errors.
 
 ### Error Handling
 
