@@ -116,15 +116,21 @@ QuickStatements can be used via:
 
 This documentation provides an introduction to the features of QuickStatements 3.0 which is an upgrade that enhances the functionality, performance and user experience of the QS platform to improve system stability.
 
+#
+
 ### Prerequisites
 In order to create and run batches, you must ensure the following:
 - **Wikidata Account**: You must be logged into Wikidata to use QuickStatements.
 - **Structured Data**: Your data must be well-structured in CSV/TSV format or similar to be easily imported and processed.
 - **Autoconfirmed user**: To be an autoconfirmed user, you must be 4 days old on the platform and you must have made 50 edits to be considered one.
+
+#
   
 <a id="what-is-a-batch"></a>
 ### What is a Batch in QS?
 A batch refers to a set of commands or operations that are executed together to perform bulk edits. Each batch can include multiple statements or claims that you want to add, modify, or remove from items on Wikidata.
+
+#
 
 <a id="create-new-batch"></a>
 #### A. Creating a new Batch in QS
@@ -133,6 +139,8 @@ To create a new batch in QuickStatements, click on New batch.
 
 Then, you'll see a window with several details to be filled.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+#
 
 <a id="details-of-a-batch"></a>
 #### B. Details of a Batch in QS
@@ -160,6 +168,8 @@ A new batch consists of:
 - **Commands:** These are the instructions you enter to perform specific operations on Wikidata items. These commands allow you to add, modify, or remove data from items in Wikidata. The commands are written in a specific format, and each line typically represents an action to be taken on a Wikidata item.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+#
+
 <a id="batches-per-user"></a>
 #### C. See all Batches per User in QS
 In QuickStatements, multiple users can execute multiple batches and each batch is tied to a user. To see all recent batches made by a user in QuickStatements, insert the username of the user in the username field and click 'See batches by user'. It lists the batches you’ve run, including:
@@ -171,6 +181,8 @@ In QuickStatements, multiple users can execute multiple batches and each batch i
 
 > [!NOTE]
 > Each batch has a unique URL associated with it. You can bookmark or share this URL to access or monitor a batch later.
+
+#
 
 <a id="writing-batch-commands"></a>
 #### D. Writing Batch Commands in QS
@@ -239,10 +251,14 @@ Q42,P569,1952-03-11
 After preparing the CSV, upload it via the QuickStatements web interface to run the batch.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+#
+
 ### Best Practices
 - **Test with Small Batches:** Always test your commands with a small set of items before large-scale edits to avoid unintended changes.
 - **Use References:** Ensure that statements are properly sourced with references to enhance data quality.
 - **Monitor Progress:** After submission, keep track of your batch’s progress and check for errors.
+
+#
 
 ### Error Handling
 
@@ -251,6 +267,8 @@ When an error occurs during execution, QuickStatements will indicate which comma
 - Syntax errors in date formats or missing data fields.
 - Permissions or throttling by Wikidata for large-scale edits.
 In these cases, review the failed commands and correct the issues before re-running.
+
+#
   
 ### Conclusion
 QuickStatements is an essential tool for bulk editing on Wikidata, enabling users to manage large sets of data efficiently. By following this guide, you can create, update, and manage items with ease, improving the quality and accuracy of Wikidata.
@@ -261,6 +279,8 @@ For more advanced use cases, refer to the [Wikidata documentation](https://www.w
 
 ### References
 This documentation was inspired from many sources, however, [Diátaxis](https://diataxis.fr/) was the most significant guide for a writing this as it provides a systematic approach to understanding the needs of documentation users. The [Google Technical Writing Course](https://developers.google.com/tech-writing/overview) was instrumental as well.
+
+#
 
 ## ️💚️ THANK YOU MENTORS 💙 
 <!-- ALL-CONTRIBUTORS-LIST:START -->
