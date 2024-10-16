@@ -42,17 +42,13 @@
     <li><a href="#qs-v3-docs">QuickStatements 3.0 Docs</a>
       <ul>
         <li><a href="#prerequisites">Getting Started: Prerequisites</a></li>
-        <li><a href="#what-is-a-batch">How To/Guides: What is a Batch?</a>
+        <li><a href="#what-is-a-batch">How To/Guides</a>
           <ul>
+            <li><a href="#what-is-a-batch">What is a Batch?</a></li>
             <li><a href="#create-new-batch">Creating a Batch-edit</a></li>
             <li><a href="#details-of-a-batch">Viewing Details of Batch-edits</a></li>
             <li><a href="#batches-per-user">See all Batch-edits created by a User</a></li>
-            <li><a href="#writing-batch-commands">Writing a simple Batch-edit command</a>
-              <ul>
-                <li><a href="#writing manually">Writing the commands Manually</a></li>
-                <li><a href="#importing-csv">Writing the commands in a CSV</a></li>
-                <li><a href="#importing-tsv">Writing the commands in a TSV</a></li>
-              </ul>
+            <li><a href="#writing-batch-commands">Writing Batch commands</a>
             </li>
           </ul>
         </li>
@@ -67,7 +63,7 @@
 
 ## Overview
 
-**QuickStatements (QS)** is a powerful tool designed for performing bulk edits on Wikidata. It allows users to add, modify, or remove large amounts of data efficiently, utilizing a simple command-line-like syntax. Whether you're adding new items, statements, or updating properties on multiple entities, QuickStatements is an essential tool for Wikidata editors who need to make large-scale changes quickly and reliably.
+**QuickStatements (QS)** is a powerful tool designed by [Magnus Manske](https://en.wikipedia.org/wiki/User:Magnus_Manske) for performing bulk edits on Wikidata. It allows users to add, modify, or remove large amounts of data efficiently, utilizing a simple command-line-like syntax. Whether you're adding new items, statements, or updating properties on multiple entities, QuickStatements is an essential tool for Wikidata editors who need to make large-scale changes quickly and reliably.
 
 This documentation provides an introduction to the features, usage, and best practices of QuickStatements 3.0. _[Click](#qs-v3-docs)_ to jump right in. However, to fully grasp the features of quickstatements 3.0, it is important to first understand the major constituent of Quickstatements⎯ _Wikidata._
 
@@ -91,7 +87,6 @@ This documentation provides an introduction to the features, usage, and best pra
    - Delete items, claims, or qualifiers from Wikidata.
 8. **Batch Execution**
    - Process hundreds or thousands of operations in a single batch.
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Syntax and Command Structure
@@ -108,14 +103,12 @@ Each QuickStatements command follows a simplified format with columns specifying
 | Labels       | Names or titles of items in different languages.                                                 |
 | Descriptions | Brief summaries that describe the items.                                                         |
 | Aliases      | Alternate names or terms by which an item is known.                                              |
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 QuickStatements can be used via:
 
 1. **Web Interface**: Upload a CSV or TSV file or paste commands directly into the web interface.
 2. **Batch Processing**: Execute large batches of commands through structured inputs.
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <a id="qs-v3-docs"></a>
@@ -123,26 +116,36 @@ QuickStatements can be used via:
 
 This documentation provides an introduction to the features of QuickStatements 3.0 which is an upgrade that enhances the functionality, performance and user experience of the QS platform to improve system stability.
 
+#
+
 ### Prerequisites
 In order to create and run batches, you must ensure the following:
 - **Wikidata Account**: You must be logged into Wikidata to use QuickStatements.
 - **Structured Data**: Your data must be well-structured in CSV/TSV format or similar to be easily imported and processed.
 - **Autoconfirmed user**: To be an autoconfirmed user, you must be 4 days old on the platform and you must have made 50 edits to be considered one.
 
+#
+  
 <a id="what-is-a-batch"></a>
 ### What is a Batch in QS?
 A batch refers to a set of commands or operations that are executed together to perform bulk edits. Each batch can include multiple statements or claims that you want to add, modify, or remove from items on Wikidata.
 
+#
+
 <a id="create-new-batch"></a>
-#### a. Creating a new Batch in QS
+#### A. Creating a new Batch in QS
 To create a new batch in QuickStatements, click on New batch.
 ![Screenshot 2024-10-15 at 19 03 34](https://github.com/user-attachments/assets/67129eef-b4b9-4e37-bf97-5c85e351bea8)
 
 Then, you'll see a window with several details to be filled.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+#
 
 <a id="details-of-a-batch"></a>
-#### b. Details of a Batch in QS
+#### B. Details of a Batch in QS
 ![Screenshot 2024-10-15 at 19 04 43](https://github.com/user-attachments/assets/0c48dbe9-9ad2-4966-acad-aee0437bd880)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 A new batch consists of:
 - **Command format:** Your command format can be in V1 format or CSV format. The QS V1 syntax is command-based, with one tab-separated line per command. The CSV format on the other hand consists of a first line⎯the header⎯that defines the contents of each column. The subsequent lines supply information to be applied to Wikibase according to the contents of each column's header.
@@ -163,9 +166,12 @@ A new batch consists of:
 - **Custom batch name:** This is a label or identifier that you can assign to a specific batch of edits for easier management and reference. By default, batches are given generic names, typically just a batch ID. However, you have the option to provide a custom name when you create or upload a batch. This custom name makes it easier to recognize or remember what a particular batch was intended to do, especially when dealing with multiple batches over time.
   
 - **Commands:** These are the instructions you enter to perform specific operations on Wikidata items. These commands allow you to add, modify, or remove data from items in Wikidata. The commands are written in a specific format, and each line typically represents an action to be taken on a Wikidata item.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+#
 
 <a id="batches-per-user"></a>
-#### c. See all Batches per User in QS
+#### C. See all Batches per User in QS
 In QuickStatements, multiple users can execute multiple batches and each batch is tied to a user. To see all recent batches made by a user in QuickStatements, insert the username of the user in the username field and click 'See batches by user'. It lists the batches you’ve run, including:
 - Batch IDs
 - Descriptions (if you added custom names)
@@ -176,8 +182,10 @@ In QuickStatements, multiple users can execute multiple batches and each batch i
 > [!NOTE]
 > Each batch has a unique URL associated with it. You can bookmark or share this URL to access or monitor a batch later.
 
+#
+
 <a id="writing-batch-commands"></a>
-#### d. Writing Batch Commands in QS
+#### D. Writing Batch Commands in QS
 
 #### 1. Create a New Item
 
@@ -206,7 +214,6 @@ You can add qualifiers to existing statements to provide more detail.
 ```plaintext
 Q42|P69|Q3918|P580|1971|P582|1974  # Adds education (P69) at St John's College (Q3918) with start (P580) and end (P582) dates
 ```
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 #### 4. Add References
@@ -232,16 +239,9 @@ Remove statements or delete items entirely:
 Q42|P19|DELETE  # Deletes the place of birth (P19) statement for Q42
 Q100000|DELETE  # Deletes the entire item Q100000
 ```
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Best Practices
-- Test with Small Batches: Always test your commands with a small set of items to avoid unintended changes.
-- Review Edits: Double-check all data before running large batches.
-- Use References: Ensure that statements are properly sourced with references to enhance data quality.
-- Monitor Progress: After submission, keep track of your batch’s progress and check for errors.
-
-### Importing CSV/TSV Data
+#### 7. Importing CSV/TSV Data
 You can prepare your data in CSV or TSV format, where each line represents one operation. A sample format:
 ```plaintext
 Q42,P69,Q3918,P580,1971,P582,1974
@@ -249,8 +249,16 @@ Q42,P19,Q84
 Q42,P569,1952-03-11
 ```
 After preparing the CSV, upload it via the QuickStatements web interface to run the batch.
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+#
+
+### Best Practices
+- **Test with Small Batches:** Always test your commands with a small set of items before large-scale edits to avoid unintended changes.
+- **Use References:** Ensure that statements are properly sourced with references to enhance data quality.
+- **Monitor Progress:** After submission, keep track of your batch’s progress and check for errors.
+
+#
 
 ### Error Handling
 
@@ -260,47 +268,24 @@ When an error occurs during execution, QuickStatements will indicate which comma
 - Permissions or throttling by Wikidata for large-scale edits.
 In these cases, review the failed commands and correct the issues before re-running.
 
-### Recommendations
-- Let's maintain the blue. The green color is a stark divergence from the history of QuickStatements 
+#
   
 ### Conclusion
 QuickStatements is an essential tool for bulk editing on Wikidata, enabling users to manage large sets of data efficiently. By following this guide, you can create, update, and manage items with ease, improving the quality and accuracy of Wikidata.
 
 For more advanced use cases, refer to the [Wikidata documentation](https://www.wikidata.org/wiki/Help:QuickStatements) for further details and updates.
 
+#
+
 ### References
 This documentation was inspired from many sources, however, [Diátaxis](https://diataxis.fr/) was the most significant guide for a writing this as it provides a systematic approach to understanding the needs of documentation users. The [Google Technical Writing Course](https://developers.google.com/tech-writing/overview) was instrumental as well.
+
+#
 
 ## ️💚️ THANK YOU MENTORS 💙 
 <!-- ALL-CONTRIBUTORS-LIST:START -->
 <!-- prettier-ignore -->
 | [<img src="https://github.com/user-attachments/assets/1deb350c-3202-48b3-bef2-ead6c6f9a06d" width="100px;"/><br /><sub><b>Ederporto, EPorto (WMB)</b></sub>](https://phabricator.wikimedia.org/p/Ederporto/)<br />        | [<img src="https://github.com/user-attachments/assets/4d0112e0-00b8-421d-a043-67282f13d413" width="100px;"/><br /><sub><b>Artur Corrêa Souza</b></sub>](https://phabricator.wikimedia.org/p/ACorrea-WMB/)<br /> | [<img src="https://github.com/user-attachments/assets/b8c0a206-9e85-4b2c-a41d-13986e126565" width="100px;"/><br /><sub><b>MGalves (WMB)</b></sub>](https://phabricator.wikimedia.org/p/MGalves_WMB/)<br />          |
 | :---------------------: | :-----------------------: | :--------------------: |
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-
-
-# Navigation
-
-<details id="home-section">
-  <summary>Home</summary>
-  <p>Welcome to the home page.</p>
-</details>
-
-<details id="about-section">
-  <summary>About</summary>
-  <p>This is the about section.</p>
-</details>
-
-<details id="services-section">
-  <summary>Services</summary>
-  <p>Details about the services offered.</p>
-</details>
-
-<details id="contact-section">
-  <summary>Contact</summary>
-  <p>Contact us through this section.</p>
-</details>
-
-## My thought Process
