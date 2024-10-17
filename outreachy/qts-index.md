@@ -5,6 +5,8 @@
  <summary>Translations!!!!</summary>
  <ul>
   <li><a href="translations/qts-index-fr.md">French</li>
+  <li><a href="translations/qts-index-pt.md">Portugese</li>
+   <li><a href="translations/qts-index-es.md">Spain</li>
  </ul>
 </details>
 
