@@ -4,7 +4,7 @@
 <details>
  <summary>Traductions !!!!</summary>
   <ul>
-  <li><a href="qts-index.md">Anglaise</li>
+  <li><a href="https://github.com/nelsonudochukwu/qts3-wmb-test/blob/998d8b2b69793f967bb39d024a9ad48b510e3b9f/outreachy/qts-index.md">Anglaise</li>
  </ul>
 </details>
 
