@@ -190,8 +190,6 @@ A new batch consists of:
 - **Commands:** These are the instructions you enter to perform specific operations on Wikidata items. These commands allow you to add, modify, or remove data from items in Wikidata. The commands are written in a specific format, and each line typically represents an action to be taken on a Wikidata item.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-#
-
 ## Viewing Batch Detials and History
 You can track the progress and status of a specific batch by entering the **Batch ID** in the appropriate field and clicking the **See batch details** button. This displays information like the number of edits made, the success or failure of operations, and any errors that occurred.
 
@@ -211,6 +209,7 @@ To view the history of batch edits by a specific user:
 > [!NOTE]
 > Each batch has a unique URL associated with it. You can bookmark or share this URL to access or monitor a batch later.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 #
 
 <a id="writing-batch-commands"></a>
@@ -304,9 +303,8 @@ When an error occurs during execution, QuickStatements will indicate which comma
 - Permissions or throttling by Wikidata for large-scale edits.
 In these cases, review the failed commands and correct the issues before re-running.
 
-#
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+#
   
 ### Conclusion
 QuickStatements is an essential tool for bulk editing on Wikidata, enabling users to manage large sets of data efficiently. By following this guide, you can create, update, and manage items with ease, improving the quality and accuracy of Wikidata.
