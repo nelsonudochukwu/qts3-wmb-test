@@ -194,8 +194,8 @@ To create a new batch in QuickStatements, follow these steps:
 
 A new batch consists of:
 - **Command format:** Your command format can be in V1 format or CSV format.
- - **V1 format:** Command-based format where each line represents a tab-separated command.
- - **CSV format:** Consists of a first line⎯the header⎯that defines the contents of each column. The subsequent lines supply information to be applied to Wikibase according to the contents of each column's header.
+  - **V1 format:** Command-based format where each line represents a tab-separated command.
+  - **CSV format:** Consists of a first line⎯the header⎯that defines the contents of each column. The subsequent lines supply information to be applied to Wikibase according to the contents of each column's header.
   
   Example of V1 syntax:
   ```
