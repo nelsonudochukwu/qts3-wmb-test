@@ -307,31 +307,34 @@ Téléchargez le fichier via l'interface web pour traiter le lot.
 
 <p align="right">(<a href="#readme-top">retour en haut</a>)</p>
 
-Bonnes Pratiques
-Tester avec des Petits Lots : Testez toujours vos commandes avec un petit ensemble d'éléments avant de faire des modifications à grande échelle pour éviter des changements non désirés.
-Utiliser des Références : Assurez-vous que les déclarations sont correctement sourcées avec des références pour améliorer la qualité des données.
-Suivre la Progression : Après soumission, suivez la progression de votre lot et vérifiez les erreurs.
-Gestion des Erreurs
+## Bonnes Pratiques
+- **Tester avec des Petits Lots:** Testez toujours vos commandes avec un petit ensemble d'éléments avant de faire des modifications à grande échelle pour éviter des changements non désirés.
+- **Utiliser des Références:** Assurez-vous que les déclarations sont correctement sourcées avec des références pour améliorer la qualité des données.
+- **Suivre la Progression:** Après soumission, suivez la progression de votre lot et vérifiez les erreurs.
+
+## Gestion des Erreurs
 Lorsqu'une erreur survient lors de l'exécution, QuickStatements indiquera quelle commande a échoué. Les problèmes courants incluent :
 
-Identifiants d'éléments ou de propriétés incorrects.
-Erreurs de syntaxe dans les formats de date ou champs de données manquants.
-Permissions ou limitations imposées par Wikidata pour les modifications en masse. Dans ces cas, révisez les commandes échouées et corrigez les problèmes avant de les exécuter à nouveau.
+- Identifiants d'éléments ou de propriétés incorrects.
+- Erreurs de syntaxe dans les formats de date ou champs de données manquants.
+- Permissions ou limitations imposées par Wikidata pour les modifications en masse. Dans ces cas, révisez les commandes échouées et corrigez les problèmes avant de les exécuter à nouveau.
+
 <p align="right">(<a href="#readme-top">retour en haut</a>)</p>
-Conclusion
+
+## Conclusion
 QuickStatements est un outil essentiel pour les modifications en masse sur Wikidata, permettant aux utilisateurs de gérer efficacement de grands ensembles de données. En suivant ce guide, vous pouvez créer, mettre à jour et gérer des éléments avec facilité, améliorant ainsi la qualité et l'exactitude des données sur Wikidata.
 
-Pour des cas d'utilisation plus avancés, consultez la documentation Wikidata pour plus de détails et de mises à jour.
+Pour des cas d'utilisation plus avancés, consultez la [documentation Wikidata](https://www.wikidata.org/wiki/Help:QuickStatements) pour plus de détails et de mises à jour.
 
-Références
-Cette documentation s'inspire de nombreuses sources, cependant, Diátaxis a été le guide le plus important pour l'écriture de ce document car il propose une approche systématique pour comprendre les besoins des utilisateurs de documentation. Le cours de rédaction technique de Google a également été très utile.
+## Références
+Cette documentation s'inspire de nombreuses sources, cependant, [Diátaxis](https://diataxis.fr/)_ a été le guide le plus important pour l'écriture de ce document car il propose une approche systématique pour comprendre les besoins des utilisateurs de documentation. Le [cours de rédaction technique de Google](https://developers.google.com/tech-writing/overview) a également été très utile.
 
 ️💚️ MERCI MENTORS 💙
-<!-- ALL-CONTRIBUTORS-LIST:START --> <!-- prettier-ignore -->
-<img src="https://github.com/user-attachments/assets/1deb350c-3202-48b3-bef2-ead6c6f9a06d" width="100px;"/><br /><sub><b>Ederporto, EPorto (WMB)</b></sub><br />	<img src="https://github.com/user-attachments/assets/4d0112e0-00b8-421d-a043-67282f13d413" width="100px;"/><br /><sub><b>Artur Corrêa Souza</b></sub><br />	<img src="https://github.com/user-attachments/assets/b8c0a206-9e85-4b2c-a41d-13986e126565" width="100px;"/><br /><sub><b>MGalves (WMB)</b></sub><br />
-<p align="right">(<a href="#readme-top">retour en haut</a>)</p> <!-- ALL-CONTRIBUTORS-LIST:END --> ```
-
-
-
+<!-- ALL-CONTRIBUTORS-LIST:START -->
+<!-- prettier-ignore -->
+| [<img src="https://github.com/user-attachments/assets/1deb350c-3202-48b3-bef2-ead6c6f9a06d" width="100px;"/><br /><sub><b>Ederporto, EPorto (WMB)</b></sub>](https://phabricator.wikimedia.org/p/Ederporto/)<br />        | [<img src="https://github.com/user-attachments/assets/4d0112e0-00b8-421d-a043-67282f13d413" width="100px;"/><br /><sub><b>Artur Corrêa Souza</b></sub>](https://phabricator.wikimedia.org/p/ACorrea-WMB/)<br /> | [<img src="https://github.com/user-attachments/assets/b8c0a206-9e85-4b2c-a41d-13986e126565" width="100px;"/><br /><sub><b>MGalves (WMB)</b></sub>](https://phabricator.wikimedia.org/p/MGalves_WMB/)<br />          |
+| :---------------------: | :-----------------------: | :--------------------: |
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 
