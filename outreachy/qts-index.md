@@ -11,7 +11,7 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#overview">Overview of QS</a></li>
+    <li><a href="#overview">Overview of QuickStatements</a></li>
     <li><a href="#a-brief-on-wikidata">A Brief on Wikidata</a>
       <ul>
         <li><a href="#writing manually">Structure of Wikidata</a>
@@ -108,7 +108,7 @@ Each QuickStatements command follows a simplified format with columns specifying
 <a id="qs-v3-docs"></a>
 ## QuickStatements 3.0 Docs
 
-This documentation provides an introduction to the features of QuickStatements 3.0 which is an upgrade that enhances the functionality, performance and user experience of the QS platform to improve system stability.
+This documentation provides an introduction to the features of QuickStatements 3.0 which is an upgrade that enhances the functionality, performance and user experience of the QuickStatements platform to improve system stability.
 
 #
 
@@ -121,13 +121,13 @@ In order to create and run batches, you must ensure the following:
 #
   
 <a id="what-is-a-batch"></a>
-### What is a Batch in QS?
+### What is a Batch in QuickStatements?
 A batch refers to a set of commands or operations that are executed together to perform bulk edits. Each batch can include multiple statements or claims that you want to add, modify, or remove from items on Wikidata.
 
 #
 
 <a id="create-new-batch"></a>
-#### A. Creating a new Batch in QS
+#### A. Creating a new Batch in QuickStatements
 To create a new batch in QuickStatements, click on New batch.
 ![Screenshot 2024-10-15 at 19 03 34](https://github.com/user-attachments/assets/67129eef-b4b9-4e37-bf97-5c85e351bea8)
 
@@ -137,12 +137,12 @@ Then, you'll see a window with several details to be filled.
 #
 
 <a id="details-of-a-batch"></a>
-#### B. Details of a Batch in QS
+#### B. Details of a Batch in QuickStatements
 ![Screenshot 2024-10-15 at 19 04 43](https://github.com/user-attachments/assets/0c48dbe9-9ad2-4966-acad-aee0437bd880)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 A new batch consists of:
-- **Command format:** Your command format can be in V1 format or CSV format. The QS V1 syntax is command-based, with one tab-separated line per command. The CSV format on the other hand consists of a first line⎯the header⎯that defines the contents of each column. The subsequent lines supply information to be applied to Wikibase according to the contents of each column's header.
+- **Command format:** Your command format can be in V1 format or CSV format. The QuickStatements V1 syntax is command-based, with one tab-separated line per command. The CSV format on the other hand consists of a first line⎯the header⎯that defines the contents of each column. The subsequent lines supply information to be applied to Wikibase according to the contents of each column's header.
   
   <ins>Example of V1 syntax</ins>
   ```
@@ -165,7 +165,7 @@ A new batch consists of:
 #
 
 <a id="batches-per-user"></a>
-#### C. See all Batches per User in QS
+#### C. See all Batches per User in QuickStatements
 In QuickStatements, multiple users can execute multiple batches and each batch is tied to a user. To see all recent batches made by a user in QuickStatements, insert the username of the user in the username field and click 'See batches by user'. It lists the batches you’ve run, including:
 - Batch IDs
 - Descriptions (if you added custom names)
@@ -179,7 +179,7 @@ In QuickStatements, multiple users can execute multiple batches and each batch i
 #
 
 <a id="writing-batch-commands"></a>
-#### D. Writing Batch Commands in QS
+#### D. Writing Batch Commands in QuickStatements
 
 #### 1. Create a New Item
 
