@@ -2,11 +2,15 @@
 # QuickStatements (QS) 3.0 Documentation
 
 <details>
- <summary>Translations!!!!</summary>
+ <summary>Translations:</summary>
+ <ul>
+  <li><a href="translations/qts-index-fr.md">French</li>
+  <li><a href="translations/qts-index-pt.md">Portugese</li>
+   <li><a href="translations/qts-index-es.md">Spanish</li>
+ </ul>
 </details>
 
 ## Table of Contents
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -14,19 +18,10 @@
     <li><a href="#overview">Overview of QuickStatements</a></li>
     <li><a href="#a-brief-on-wikidata">A Brief on Wikidata</a>
       <ul>
-        <li><a href="#writing manually">Structure of Wikidata</a>
-          <ul>
-            <li><a href="#writing manually">Items, Properties and Values</a></li>
-            <li><a href="#writing manually">Labels, descriptions and aliases</a></li>
-          </ul>
-        </li>
-        <li><a href="#writing manually">Wikidata Statements</a>
-          <ul>
-            <li><a href="#syntax-and-command-structure">Syntax and Command Structure</a></li>
-            <li><a href="#usage">Usage</a></li>
-          </ul>
-        </li>
-        <li><a href="#writing manually">Wikidata linked data</a></li>
+        <li><a href="#structure-of-wikidata">Structure of Wikidata</a></li>
+        <li><a href="#lda">Labels, descriptions and aliases</a></li>
+        <li><a href="#wiki-statements">Wikidata Statements</a></li>
+        <li><a href="#syntax-and-command-structure">Syntax and Command Structure</a></li>
       </ul>
     </li>
     <li><a href="#qs-v3-docs">QuickStatements 3.0 Docs</a>
@@ -64,30 +59,70 @@
 
 **QuickStatements (QS)** is a powerful tool designed by [Magnus Manske](https://en.wikipedia.org/wiki/User:Magnus_Manske) for performing bulk edits on Wikidata. It allows users to add, modify, or remove large amounts of data efficiently, utilizing a simple command-line-like syntax. Whether you're adding new items, statements, or updating properties on multiple entities, QuickStatements is an essential tool for Wikidata editors who need to make large-scale changes quickly and reliably.
 
-This documentation provides an introduction to the features, usage, and best practices of QuickStatements 3.0. _[Click](#qs-v3-docs)_ to jump right in. However, to fully grasp the features of quickstatements 3.0, it is important to first understand the major constituent of Quickstatements⎯ _Wikidata._
+This documentation provides an introduction to the features, usage, and best practices of QuickStatements 3.0. _[Click](#qs-v3-docs)_ to jump right in. However, to fully grasp the features of quickstatements 3.0, it is important to first understand the major constituent of Quickstatements⎯```Wikidata.```
 
-## A brief on Wikidata
+#
 
-## Features
+<a id="a-brief-on-wikidata"></a>
+<details>
+ <summary> A brief on Wikidata</summary>
+Wikidata is a free, collaborative, multilingual, secondary database, managed by the Wikimedia Foundation. It serves as a central storage for structured data that is used in various Wikimedia projects, like Wikipedia, and also provides data to external users and organizations. The primary goal of Wikidata is to allow humans and machines to understand and query information easily.
 
-1. **Create New Items**
-   - Quickly create new items with specific labels, descriptions, and properties.
-2. **Add Statements (Claims)**
-   - Add new properties to an existing Wikidata item.
-3. **Edit Statements**
-   - Modify or delete existing statements on Wikidata items.
-4. **Add Qualifiers**
-   - Add qualifiers to existing statements for providing further context.
-5. **Add References**
-   - Attach references to statements to ensure they are properly sourced.
-6. **Modify Labels, Descriptions, and Aliases**
-   - Edit or add multilingual labels, descriptions, and aliases to items.
-7. **Remove Data**
-   - Delete items, claims, or qualifiers from Wikidata.
-8. **Batch Execution**
-   - Process hundreds or thousands of operations in a single batch.
+Some key features include:
+
+- **Multilingual support:** Data is stored in such a way that it can be accessed in any language.
+- **Open data:** Wikidata's data is freely available under the Creative Commons Public Domain Dedication (CC0).
+- **Collaborative editing:** Anyone with an account can edit Wikidata, making it a community-driven resource.
+- **Linking data:** Wikidata integrates with other Wikimedia projects, serving as the source of consistent, up-to-date data.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<a id="structure-of-wikidata"></a>
+## Structure of Wikidata
+The structure of Wikidata is based on a simple yet powerful model of **items**, **properties**, and **values**. These three components form the backbone of how data is stored, linked, and retrieved.
+
+- **Items (Q numbers):** Each item is a unique concept represented by a **QID** (e.g., Douglas Adams is represented by Q42). These items store data and link to other items.
+
+- **Properties (P numbers):** Properties describe specific attributes of an item and are identified by **PIDs** (e.g., date of birth is represented by **P569**). Properties can describe relationships between items or between an item and a data value.
+
+- **Values:** These are the actual data points (e.g., the date **1952-03-11** as the value for **P569** on item **Q42** for Douglas Adams’ birth date).
+
+Together, items, properties, and values create **statements**, which are the building blocks of Wikidata.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<a id="lda"></a>
+## Labels, Descriptions, and Aliases
+Each item in Wikidata can have multiple **labels**, **descriptions**, and **aliases** in different languages:
+
+- **Labels:** A label is the main name of an item (e.g., “Douglas Adams” for **Q42**). An item can have a different label in every language.
+
+- **Descriptions:** Descriptions provide context about the item to differentiate it from similar items (e.g., “British author and screenwriter” for **Q42**).
+
+- **Aliases:** Aliases are alternative names for an item that are used for search purposes. For example, **Q42** (Douglas Adams) might have an alias like "Douglas Noel Adams."
+
+These three components help ensure that items are easy to find, distinguish, and access in a variety of languages and contexts.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<a id="wiki-statements"></a>
+## Wikidata Statements
+**Statements** are the core knowledge units in Wikidata, used to describe items through a combination of a property and a value. A statement connects an item to its associated data:
+
+- **Property:** Defines what aspect of the item you are describing (e.g., date of birth, occupation, nationality).
+- **Value:** Provides the specific information (e.g., a date, a string, or a reference to another item).
+A statement can also have **qualifiers** and **references** to provide more context or cite the source of the data.
+
+For example:
+
+- **Item:** Douglas Adams (Q42)
+- **Property:** Date of birth (P569)
+- **Value:** March 11, 1952
+- **Qualifier:** Source (S854) – Links to a webpage or database providing proof of the statement.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<a id="syntax-and-command-structure"></a>
 ## Syntax and Command Structure
 
 Each QuickStatements command follows a simplified format with columns specifying the **Item**, **Property**, **Value**, and optional **Qualifiers**, **References**, etc.
@@ -103,7 +138,11 @@ Each QuickStatements command follows a simplified format with columns specifying
 | Descriptions | Brief summaries that describe the items.                                                         |
 | Aliases      | Alternate names or terms by which an item is known.                                              |
 
+</details>
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+#
 
 <a id="qs-v3-docs"></a>
 ## QuickStatements 3.0 Docs
@@ -118,30 +157,41 @@ In order to create and run batches, you must ensure the following:
 - **Structured Data**: Your data must be well-structured in CSV/TSV format or similar to be easily imported and processed.
 - **Autoconfirmed user**: To be an autoconfirmed user, you must be 4 days old on the platform and you must have made 50 edits to be considered one.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <a id="qs-3.0-homepage"></a>
 ## QuickStatements 3.0 Homepage Overview
-
 The homepage of **QuickStatements 3.0** is designed to facilitate easy access to core features for managing and running batch edits. Below is a breakdown of the visible elements:
 
-#### Header Section:
-- **New batch:** A link that takes you to a form where you can create a new batch of edits to be uploaded to Wikidata.
-Last batches: This link provides access to the history of recently submitted batches. Users can track the status and details of their past batch operations.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/476030c9-efb0-4967-b01c-b6c3586f49dc" alt="QuickStatements 3.0 Homepage" />
+  <p align="center">QuickStatements 3.0 Homepage</p>
+</p>
 
-- **Git:** A link to the QuickStatements GitHub repository, where users can view the codebase, report issues, or contribute to the development of the platform.
+#### Header Section:
+1. **New batch:** A link that takes you to a form where you can create a new batch of edits to be uploaded to Wikidata.
+
+2. **Last batches:** This link provides access to the history of recently submitted batches. Users can track the status and details of their past batch operations.
+
+3. **Git:** Links to the [QuickStatements GitHub repository](https://github.com/WikiMovimentoBrasil/quickstatements3), where users can view the codebase, report issues, or contribute to the development of the platform.
   
-- **Login:** Allows users to log into their Wikidata accounts. Once logged in, users can access features like submitting and tracking their batch submissions.
-  
+4. **Login:** Allows users to log into their Wikidata accounts. Once logged in, users can access features like submitting and tracking their batch submissions.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 #### Main Interface:
-- **“Welcome to QuickStatements 3.0”:** A header welcoming users to the main interface.
+5. **“Welcome to QuickStatements 3.0”:** A header welcoming users to the main interface.
 
 #### Primary Action Buttons:
 
-- **New batch:** Clicking this button initiates the creation of a new batch. Users can input data and commands to process and upload multiple edits to Wikidata in bulk.
+6. **New batch:** Clicking this button initiates the creation of a new batch. Users can input data and commands to process and upload multiple edits to Wikidata in bulk.
   
 #### Batch Lookup Section:
-- **Batch ID:** Users can input a specific batch ID to retrieve detailed information about that particular batch. Clicking the **“See batch details”** button shows the status, progress, and results of the batch.
+7. **Batch ID:** Users can input a specific batch ID to retrieve detailed information about that particular batch. Clicking the ```See batch details``` button shows the status, progress, and results of the batch.
 
-- **Username:** Users can enter a specific Wikidata username to retrieve a list of all batches associated with that user. Clicking **“See batches by user”** will display all submitted batches from that user.
+8. **Username:** Users can enter a specific Wikidata username to retrieve a list of all batches associated with that user. Clicking ```See batches by user``` will display all submitted batches from that user.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 #
   
@@ -154,9 +204,12 @@ A **batch** refers to a set of commands or operations that are executed together
 <a id="create-new-batch"></a>
 #### A. Creating a new Batch in QuickStatements
 To create a new batch in QuickStatements, follow these steps:
-1. Click on the **New Batch** button located on the homepage
-   
-![Screenshot 2024-10-15 at 19 03 34](https://github.com/user-attachments/assets/67129eef-b4b9-4e37-bf97-5c85e351bea8)
+1. Click on the ```New Batch``` button located on the homepage
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d153bc61-0d95-4d32-b48e-876e1009f908" alt="QuickStatements 3.0 Homepage" />
+  <p align="center">Click New Batch</p>
+</p>
 
 2. A form will appear where you can input your commands or upload your data file. The available formats include both the QuickStatements V1 format and CSV/TSV format.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -165,13 +218,18 @@ To create a new batch in QuickStatements, follow these steps:
 
 <a id="details-of-a-batch"></a>
 #### B. Details of a Batch in QuickStatements
-![Screenshot 2024-10-15 at 19 04 43](https://github.com/user-attachments/assets/0c48dbe9-9ad2-4966-acad-aee0437bd880)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e92159c7-270f-4006-bbaa-565aac6c22f0" alt="QuickStatements 3.0 Homepage" />
+  <p align="center">Details of a New Batch</p>
+</p>
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 A new batch consists of:
-- **Command format:** Your command format can be in V1 format or CSV format.
---**V1 format:** Command-based format where each line represents a tab-separated command.
---**CSV format:** Consists of a first line⎯the header⎯that defines the contents of each column. The subsequent lines supply information to be applied to Wikibase according to the contents of each column's header.
+1. **Command format:** Your command format can be in V1 format or CSV format.
+     - **V1 format:** Command-based format where each line represents a tab-separated command.
+     - **CSV format:** Consists of a first line⎯the header⎯that defines the contents of each column. The subsequent lines supply information to be applied to Wikibase according to the contents of each column's header.
   
   Example of V1 syntax:
   ```
@@ -186,9 +244,9 @@ A new batch consists of:
   qid,Len,Den,P2650
   ,Doctor Worm,1998 song performed by They Might Be Giants,Q128309
   ```
-- **Custom batch name:** This is a label or identifier that you can assign to a specific batch of edits for easier management and reference. By default, batches are given generic names, typically just a batch ID. However, you have the option to provide a custom name when you create or upload a batch. This custom name makes it easier to recognize or remember what a particular batch was intended to do, especially when dealing with multiple batches over time.
+2. **Custom batch name:** This is a label or identifier that you can assign to a specific batch of edits for easier management and reference. By default, batches are given generic names, typically just a batch ID. However, you have the option to provide a custom name when you create or upload a batch. This custom name makes it easier to recognize or remember what a particular batch was intended to do, especially when dealing with multiple batches over time.
   
-- **Commands:** These are the instructions you enter to perform specific operations on Wikidata items. These commands allow you to add, modify, or remove data from items in Wikidata. The commands are written in a specific format, and each line typically represents an action to be taken on a Wikidata item.
+3. **Commands:** These are the instructions you enter to perform specific operations on Wikidata items. These commands allow you to add, modify, or remove data from items in Wikidata. The commands are written in a specific format, and each line typically represents an action to be taken on a Wikidata item.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Viewing Batch Details and History
@@ -199,13 +257,13 @@ You can track the progress and status of a specific batch by entering the **Batc
 <a id="batches-per-user"></a>
 #### C. See all Batches per User in QuickStatements
 To view the history of batch edits by a specific user:
-1. Enter the **username** of the user in the username field (username can be found at wiki-login.)
-2. Click **See batches by user** to list all the batches that the user has submitted. The list will include:
-- **Batch IDs**
-- **Descriptions (if you added custom names)**
-- **Status (e.g., in progress, completed, or failed)**
-- **Dates**
-- **Number of edits in the batch**
+1. Enter the ```username``` of the user in the username field (username can be found at wiki-login.)
+2. Click ```See batches by user```to list all the batches that the user has submitted. The list will include:
+   - **Batch IDs**
+   - **Descriptions (if you added custom names)**
+   - **Status (e.g., in progress, completed, or failed)**
+   - **Dates**
+   - **Number of edits in the batch**
 
 > [!NOTE]
 > Each batch has a unique URL associated with it. You can bookmark or share this URL to access or monitor a batch later.
