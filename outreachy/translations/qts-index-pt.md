@@ -7,7 +7,6 @@
   <li><a href="https://github.com/nelsonudochukwu/qts3-wmb-test/blob/main/outreachy/qts-index.md">
 inglês</li>
   <li><a href="/outreachy/translations/qts-index-fr.md">Français</li>
-  <li><a href="/outreachy/translations/qts-index-pt.md">Portugais</li>
    <li><a href="/outreachy/translations/qts-index-es.md">Espagnol</li>
  </ul>
 </details>
