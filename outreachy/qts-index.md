@@ -270,6 +270,8 @@ When an error occurs during execution, QuickStatements will indicate which comma
 In these cases, review the failed commands and correct the issues before re-running.
 
 #
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
   
 ### Conclusion
 QuickStatements is an essential tool for bulk editing on Wikidata, enabling users to manage large sets of data efficiently. By following this guide, you can create, update, and manage items with ease, improving the quality and accuracy of Wikidata.
