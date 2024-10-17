@@ -118,7 +118,7 @@ In order to create and run batches, you must ensure the following:
 - **Structured Data**: Your data must be well-structured in CSV/TSV format or similar to be easily imported and processed.
 - **Autoconfirmed user**: To be an autoconfirmed user, you must be 4 days old on the platform and you must have made 50 edits to be considered one.
 
-<a id="#qs-3.0-homepage"></a>
+<a id="qs-3.0-homepage"></a>
 ## QuickStatements 3.0 Homepage Overview
 
 The homepage of **QuickStatements 3.0** is designed to facilitate easy access to core features for managing and running batch edits. Below is a breakdown of the visible elements:
