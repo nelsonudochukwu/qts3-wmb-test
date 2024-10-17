@@ -140,9 +140,9 @@ Each QuickStatements command follows a simplified format with columns specifying
 
 </details>
 
-#
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+#
 
 <a id="qs-v3-docs"></a>
 ## QuickStatements 3.0 Docs
