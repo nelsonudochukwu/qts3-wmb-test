@@ -3,6 +3,9 @@
 
 <details>
  <summary>Traductions !!!!</summary>
+  <ul>
+  <li><a href="qts-index.md">Anglaise</li>
+ </ul>
 </details>
 
 ## Table des Matières
