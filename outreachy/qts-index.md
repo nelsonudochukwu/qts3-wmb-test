@@ -43,13 +43,13 @@
         <li><a href="#batches-per-user">See all Batch-edits Created by a User</a></li>
         <li><a href="#writing-batch-commands">Writing Batch commands</a>
           <ul>
-            <li><a href="#writing-batch-commands">Create a New Item</a>
-            <li><a href="#writing-batch-commands">Add Statements</a>
-            <li><a href="#writing-batch-commands">Add Qualifiers</a> 
-            <li><a href="#writing-batch-commands">Add References</a>
-            <li><a href="#writing-batch-commands">Modify Labels, Descriptions, and Aliases</a>
-            <li><a href="#writing-batch-commands">Remove Statements or Items</a>
-            <li><a href="#writing-batch-commands">Importinf CSV/TSV Data</a>                                                                  </ul>
+            <li><a href="#create-new-item">Create a New Item</a>
+            <li><a href="#add-statements">Add Statements</a>
+            <li><a href="#add-qualifiers">Add Qualifiers</a> 
+            <li><a href="#add-references">Add References</a>
+            <li><a href="#modify-lda">Modify Labels, Descriptions, and Aliases</a>
+            <li><a href="#remove-items">Remove Statements or Items</a>
+            <li><a href="#import-data">Importing CSV/TSV Data</a>                                                                  </ul>
         </li>
         <li><a href="#best-practices">Best Practices</a></li>
         <li><a href="#error-handling">Error Handling</a></li>
@@ -181,6 +181,7 @@ In QuickStatements, multiple users can execute multiple batches and each batch i
 <a id="writing-batch-commands"></a>
 #### D. Writing Batch Commands in QuickStatements
 
+<a id="create-new-item"></a>
 #### 1. Create a New Item
 
 This command will create a new item with a label and description.
@@ -192,6 +193,7 @@ LAST|Den|"This is a sample item for demonstration purposes."
 LAST|P31|Q5  # Adds a claim that the item is an instance of a human
 ```
 
+<a id="add-statements"></a>
 #### 2. Add Statements (Claims)
 
 Adding statements to an existing item (e.g., Douglas Adams - Q42).
@@ -201,6 +203,7 @@ Q42|P569|1952-03-11  # Adds the date of birth (P569) for Douglas Adams
 Q42|P19|Q84          # Adds the place of birth (P19) as Cambridge (Q84)
 ```
 
+<a id="add-qualifiers"></a>
 #### 3. Add Qualifiers
 
 You can add qualifiers to existing statements to provide more detail.
@@ -210,6 +213,7 @@ Q42|P69|Q3918|P580|1971|P582|1974  # Adds education (P69) at St John's College (
 ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<a id="add-references"></a>
 #### 4. Add References
 
 Adding references to an existing statement:
@@ -218,6 +222,7 @@ Adding references to an existing statement:
 Q42|P69|Q3918|S854|"https://example.com/education"  # Adds a URL reference for the education claim
 ```
 
+<a id="modify-lda"></a>
 #### 5. Modify Labels, Descriptions, and Aliases
 Modify Labels, descriptions, and aliases in different languages:
 ```plaintext
@@ -227,6 +232,7 @@ Q42|Aen|"Douglas Noel Adams"  # Adds an alias in English
 Q42|Den|"British author and screenwriter"  # Modifies the English description
 ```
 
+<a id="remove-items"></a>
 #### 6. Remove Statements or Items
 Remove statements or delete items entirely:
 ```plaintext
@@ -235,6 +241,7 @@ Q100000|DELETE  # Deletes the entire item Q100000
 ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<a id="import-data"></a>
 #### 7. Importing CSV/TSV Data
 You can prepare your data in CSV or TSV format, where each line represents one operation. A sample format:
 ```plaintext
