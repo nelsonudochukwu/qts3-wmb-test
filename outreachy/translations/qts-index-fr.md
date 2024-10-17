@@ -60,7 +60,9 @@
 
 Cette documentation propose une introduction aux fonctionnalités, à l'utilisation et aux meilleures pratiques de QuickStatements 3.0. _[Cliquez](#qs-v3-docs)_ pour commencer. Cependant, pour bien comprendre les fonctionnalités de QuickStatements 3.0, il est important de comprendre d'abord le principal constituant de QuickStatements - _Wikidata_.
 
-## Un Bref Aperçu de Wikidata
+#
+<details>
+ <summary>Un Bref Aperçu de Wikidata</summary>
 Wikidata est une base de données collaborative, multilingue et gratuite, gérée par la Fondation Wikimedia. Elle sert de stockage central pour des données structurées utilisées dans divers projets Wikimedia, comme Wikipédia, et fournit également des données aux utilisateurs et organisations externes. L'objectif principal de Wikidata est de permettre aux humains et aux machines de comprendre et d'interroger facilement les informations.
 
 Quelques fonctionnalités clés :
@@ -130,6 +132,10 @@ Chaque commande QuickStatements suit un format simplifié avec des colonnes spé
 | Libellés     | Noms ou titres d'éléments dans différentes langues.                                                 |
 | Descriptions | Résumés brefs qui décrivent les éléments.                                                         |
 | Alias        | Noms alternatifs ou termes par lesquels un élément est connu.                                              |
+
+</details>
+
+#
 
 <p align="right">(<a href="#readme-top">retour en haut</a>)</p>
 
