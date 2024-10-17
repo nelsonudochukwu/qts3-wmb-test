@@ -76,8 +76,6 @@ Some key features include:
 - **Collaborative editing:** Anyone with an account can edit Wikidata, making it a community-driven resource.
 - **Linking data:** Wikidata integrates with other Wikimedia projects, serving as the source of consistent, up-to-date data.
 
-#
-
 ## Structure of Wikidata
 The structure of Wikidata is based on a simple yet powerful model of **items**, **properties**, and **values**. These three components form the backbone of how data is stored, linked, and retrieved.
 
@@ -196,8 +194,8 @@ To create a new batch in QuickStatements, follow these steps:
 
 A new batch consists of:
 - **Command format:** Your command format can be in V1 format or CSV format.
--- **V1 format:** Command-based format where each line represents a tab-separated command.
--- **CSV format:** Consists of a first line⎯the header⎯that defines the contents of each column. The subsequent lines supply information to be applied to Wikibase according to the contents of each column's header.
+ - **V1 format:** Command-based format where each line represents a tab-separated command.
+ - **CSV format:** Consists of a first line⎯the header⎯that defines the contents of each column. The subsequent lines supply information to be applied to Wikibase according to the contents of each column's header.
   
   Example of V1 syntax:
   ```
