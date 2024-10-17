@@ -279,7 +279,6 @@ LAST|P31|Q5  # Ajoute une revendication selon laquelle l'élément est une insta
 
 #### 2. Ajouter des Déclarations (Revendiquer)
 Ajouter des déclarations à un élément existant (par exemple, Douglas Adams - Q42).
-
 ```
 Q42|P569|1952-03-11  # Ajoute la date de naissance (P569) pour Douglas Adams
 Q42|P19|Q84          # Ajoute le lieu de naissance (P19) comme Cambridge (Q84)
@@ -289,7 +288,6 @@ Q42|P19|Q84          # Ajoute le lieu de naissance (P19) comme Cambridge (Q84)
 
 #### 3. Ajouter des Qualificatifs
 Vous pouvez ajouter des qualificatifs à des déclarations existantes pour fournir plus de détails.
-
 ```
 Q42|P69|Q3918|P580|1971|P582|1974  # Ajoute l'éducation (P69) au St John's College (Q3918) avec des dates de début (P580) et de fin (P582)
 ```
@@ -365,12 +363,6 @@ Pour des cas d'utilisation plus avancés, consultez la [documentation Wikidata](
 ### Références
 Cette documentation a été inspirée de nombreuses sources, cependant, [Diátaxis](https://developers.google.com/tech-writing/overview) a été le guide le plus significatif pour la rédaction de cette documentation, car il fournit une approche systématique pour comprendre les besoins des utilisateurs de documentation. Le [Cours de Rédaction Technique Google](https://developers.google.com/tech-writing/overview) a également été déterminant.
 
-️## 💚️ MERCI MENTORS 💙
-<!-- ALL-CONTRIBUTORS-LIST:START -->
-<!-- prettier-ignore -->
-| [<img src="https://github.com/user-attachments/assets/1deb350c-3202-48b3-bef2-ead6c6f9a06d" width="100px;"/><br /><sub><b>Ederporto, EPorto (WMB)</b></sub>](https://phabricator.wikimedia.org/p/Ederporto/)<br />        | [<img src="https://github.com/user-attachments/assets/4d0112e0-00b8-421d-a043-67282f13d413" width="100px;"/><br /><sub><b>Artur Corrêa Souza</b></sub>](https://phabricator.wikimedia.org/p/ACorrea-WMB/)<br /> | [<img src="https://github.com/user-attachments/assets/b8c0a206-9e85-4b2c-a41d-13986e126565" width="100px;"/><br /><sub><b>MGalves (WMB)</b></sub>](https://phabricator.wikimedia.org/p/MGalves_WMB/)<br />          |
-| :---------------------: | :-----------------------: | :--------------------: |
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-<!-- ALL-CONTRIBUTORS-LIST:END -->
+
 
 
