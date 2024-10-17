@@ -42,15 +42,24 @@
     <li><a href="#qs-v3-docs">QuickStatements 3.0 Docs</a>
       <ul>
         <li><a href="#prerequisites">Getting Started: Prerequisites</a></li>
-        <li><a href="#what-is-a-batch">How To/Guides</a>
+        <li><a href="#prerequisites">QuickStatements 3.0 Homepage Overview</a></li>
+        <li><a href="#what-is-a-batch">How To/Guides: What is a batch?</a>
           <ul>
-            <li><a href="#what-is-a-batch">What is a Batch?</a></li>
-            <li><a href="#create-new-batch">Creating a Batch-edit</a></li>
-            <li><a href="#details-of-a-batch">Viewing Details of Batch-edits</a></li>
-            <li><a href="#batches-per-user">See all Batch-edits created by a User</a></li>
-            <li><a href="#writing-batch-commands">Writing Batch commands</a>
-            </li>
+            <li><a href="#create-new-batch">Creating a New Batch</a></li>
+            <li><a href="#details-of-a-batch">Details of a Batch</a></li>
           </ul>
+        </li>
+        <li><a href="#writing-batch-commands">Viewing Batch Details and Batch History</a></li>
+        <li><a href="#batches-per-user">See all Batch-edits Created by a User</a></li>
+        <li><a href="#writing-batch-commands">Writing Batch commands</a>
+          <ul>
+            <li><a href="#writing-batch-commands">Create a New Item</a>
+            <li><a href="#writing-batch-commands">Add Statements</a>
+            <li><a href="#writing-batch-commands">Add Qualifiers</a> 
+            <li><a href="#writing-batch-commands">Add References</a>
+            <li><a href="#writing-batch-commands">Modify Labels, Descriptions, and Aliases</a>
+            <li><a href="#writing-batch-commands">Remove Statements or Items</a>
+            <li><a href="#writing-batch-commands">Importinf CSV/TSV Data</a>                                                                  </ul>
         </li>
         <li><a href="#best-practices">Best Practices</a></li>
         <li><a href="#error-handling">Error Handling</a></li>
