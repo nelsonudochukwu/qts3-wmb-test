@@ -14,7 +14,7 @@
 <details>
   <summary>Table des Matières</summary>
   <ol>
-    <li><a href="#overview">Aperçu de QuickStatements</a></li>
+    <li><a href="#Aperçu">Aperçu de QuickStatements</a></li>
     <li><a href="#a-brief-on-wikidata">Un Bref Aperçu de Wikidata</a>
       <ul>
         <li><a href="#structure-of-wikidata">Structure de Wikidata</a></li>
