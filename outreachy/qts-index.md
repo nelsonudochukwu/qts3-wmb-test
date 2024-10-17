@@ -66,8 +66,6 @@
 
 This documentation provides an introduction to the features, usage, and best practices of QuickStatements 3.0. _[Click](#qs-v3-docs)_ to jump right in. However, to fully grasp the features of quickstatements 3.0, it is important to first understand the major constituent of Quickstatements⎯ _Wikidata._
 
-#
-
 ## A brief on Wikidata
 Wikidata is a free, collaborative, multilingual, secondary database, managed by the Wikimedia Foundation. It serves as a central storage for structured data that is used in various Wikimedia projects, like Wikipedia, and also provides data to external users and organizations. The primary goal of Wikidata is to allow humans and machines to understand and query information easily.
 
@@ -91,8 +89,6 @@ The structure of Wikidata is based on a simple yet powerful model of **items**, 
 
 Together, items, properties, and values create **statements**, which are the building blocks of Wikidata.
 
-#
-
 ## Labels, Descriptions, and Aliases
 Each item in Wikidata can have multiple **labels**, **descriptions**, and **aliases** in different languages:
 
@@ -103,8 +99,6 @@ Each item in Wikidata can have multiple **labels**, **descriptions**, and **alia
 -**Aliases:** Aliases are alternative names for an item that are used for search purposes. For example, **Q42** (Douglas Adams) might have an alias like "Douglas Noel Adams."
 
 These three components help ensure that items are easy to find, distinguish, and access in a variety of languages and contexts.
-
-#
 
 ## Wikidata Statements
 **Statements** are the core knowledge units in Wikidata, used to describe items through a combination of a property and a value. A statement connects an item to its associated data:
