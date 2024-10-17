@@ -331,8 +331,8 @@ Q42,P69,Q3918,P580,1971,P582,1974
 Q42,P19,Q84
 Q42,P569,1952-03-11
 ```
-Téléchargez le fichier via l'interface web pour traiter le lot.
 
+Téléchargez le fichier via l'interface web pour traiter le lot.
 <p align="right">(<a href="#readme-top">retour en haut</a>)</p>
 
 ️#
