@@ -327,7 +327,7 @@ QuickStatements est un outil essentiel pour les modifications en masse sur Wikid
 Pour des cas d'utilisation plus avancés, consultez la [documentation Wikidata](https://www.wikidata.org/wiki/Help:QuickStatements) pour plus de détails et de mises à jour.
 
 ## Références
-Cette documentation s'inspire de nombreuses sources, cependant, [Diátaxis](https://diataxis.fr/)_ a été le guide le plus important pour l'écriture de ce document car il propose une approche systématique pour comprendre les besoins des utilisateurs de documentation. Le [cours de rédaction technique de Google](https://developers.google.com/tech-writing/overview) a également été très utile.
+Cette documentation s'inspire de nombreuses sources, cependant, [Diátaxis](https://diataxis.fr/) a été le guide le plus important pour l'écriture de ce document car il propose une approche systématique pour comprendre les besoins des utilisateurs de documentation. Le [cours de rédaction technique de Google](https://developers.google.com/tech-writing/overview) a également été très utile.
 
 ️💚️ MERCI MENTORS 💙
 <!-- ALL-CONTRIBUTORS-LIST:START -->
