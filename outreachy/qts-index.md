@@ -14,19 +14,10 @@
     <li><a href="#overview">Overview of QuickStatements</a></li>
     <li><a href="#a-brief-on-wikidata">A Brief on Wikidata</a>
       <ul>
-        <li><a href="#writing manually">Structure of Wikidata</a>
-          <ul>
-            <li><a href="#writing manually">Items, Properties and Values</a></li>
-            <li><a href="#writing manually">Labels, descriptions and aliases</a></li>
-          </ul>
-        </li>
-        <li><a href="#writing manually">Wikidata Statements</a>
-          <ul>
-            <li><a href="#syntax-and-command-structure">Syntax and Command Structure</a></li>
-            <li><a href="#usage">Usage</a></li>
-          </ul>
-        </li>
-        <li><a href="#writing manually">Wikidata linked data</a></li>
+        <li><a href="#structure-of-wikidata">Structure of Wikidata</a></li>
+        <li><a href="#lda">Labels, descriptions and aliases</a></li>
+        <li><a href="#wiki-statements">Wikidata Statements</a></li>
+        <li><a href="#syntax-and-command-structure">Syntax and Command Structure</a></li>
       </ul>
     </li>
     <li><a href="#qs-v3-docs">QuickStatements 3.0 Docs</a>
