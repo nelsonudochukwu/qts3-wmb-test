@@ -110,6 +110,8 @@ For example:
 - **Value:** March 11, 1952
 - **Qualifier:** Source (S854) – Links to a webpage or database providing proof of the statement.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <a id="syntax-and-command-structure"></a>
 ## Syntax and Command Structure
 
