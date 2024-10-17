@@ -24,16 +24,6 @@
           <ul>
             <li><a href="#syntax-and-command-structure">Syntax and Command Structure</a></li>
             <li><a href="#usage">Usage</a></li>
-            <li> <a href="#quickstatements-command-examples">QS Command Examples</a>
-             <ul>
-                <li><a href="#1-create-a-new-item">Create a New Item</a></li>
-                <li><a href="#2-add-statements-claims">Add Statements (Claims)</a></li>
-                <li><a href="#3-add-qualifiers">Add Qualifiers</a></li>
-                <li><a href="#4-add-references">Add References</a></li>
-                <li><a href="#5-modify-lda">Modify Labels, Descriptions, and Aliases</a></li>
-                <li><a href="#6-remove-statements-or-items">Remove Statements or Items</a></li>
-             </ul>
-            </li>
           </ul>
         </li>
         <li><a href="#writing manually">Wikidata linked data</a></li>
