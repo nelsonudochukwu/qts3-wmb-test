@@ -118,20 +118,46 @@ In order to create and run batches, you must ensure the following:
 - **Structured Data**: Your data must be well-structured in CSV/TSV format or similar to be easily imported and processed.
 - **Autoconfirmed user**: To be an autoconfirmed user, you must be 4 days old on the platform and you must have made 50 edits to be considered one.
 
+## QuickStatements 3.0 Homepage Overview
+
+The homepage of **QuickStatements 3.0** is designed to facilitate easy access to core features for managing and running batch edits. Below is a breakdown of the visible elements:
+
+#### Header Section:
+- **New batch:** A link that takes you to a form where you can create a new batch of edits to be uploaded to Wikidata.
+Last batches: This link provides access to the history of recently submitted batches. Users can track the status and details of their past batch operations.
+
+- **Git:** A link to the QuickStatements GitHub repository, where users can view the codebase, report issues, or contribute to the development of the platform.
+  
+- **Login:** Allows users to log into their Wikidata accounts. Once logged in, users can access features like submitting and tracking their batch submissions.
+  
+#### Main Interface:
+- **“Welcome to QuickStatements 3.0”:** A header welcoming users to the main interface.
+
+#### Primary Action Buttons:
+
+- **New batch:** Clicking this button initiates the creation of a new batch. Users can input data and commands to process and upload multiple edits to Wikidata in bulk.
+  
+#### Batch Lookup Section:
+- **Batch ID:** Users can input a specific batch ID to retrieve detailed information about that particular batch. Clicking the **“See batch details”** button shows the status, progress, and results of the batch.
+
+- **Username:** Users can enter a specific Wikidata username to retrieve a list of all batches associated with that user. Clicking **“See batches by user”** will display all submitted batches from that user.
+
 #
   
 <a id="what-is-a-batch"></a>
 ### What is a Batch in QuickStatements?
-A batch refers to a set of commands or operations that are executed together to perform bulk edits. Each batch can include multiple statements or claims that you want to add, modify, or remove from items on Wikidata.
+A **batch** refers to a set of commands or operations that are executed together to perform bulk edits. Each batch can include multiple statements or claims that you want to add, modify, or remove from items on Wikidata.
 
 #
 
 <a id="create-new-batch"></a>
 #### A. Creating a new Batch in QuickStatements
-To create a new batch in QuickStatements, click on New batch.
+To create a new batch in QuickStatements, follow these steps:
+1. Click on the **New Batch** button located on the homepage
+   
 ![Screenshot 2024-10-15 at 19 03 34](https://github.com/user-attachments/assets/67129eef-b4b9-4e37-bf97-5c85e351bea8)
 
-Then, you'll see a window with several details to be filled.
+2. A form will appear where you can input your commands or upload your data file. The available formats include both the QuickStatements V1 format and CSV/TSV format.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 #
@@ -142,9 +168,11 @@ Then, you'll see a window with several details to be filled.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 A new batch consists of:
-- **Command format:** Your command format can be in V1 format or CSV format. The QuickStatements V1 syntax is command-based, with one tab-separated line per command. The CSV format on the other hand consists of a first line⎯the header⎯that defines the contents of each column. The subsequent lines supply information to be applied to Wikibase according to the contents of each column's header.
+- **Command format:** Your command format can be in V1 format or CSV format.
+--**V1 format:** Command-based format where each line represents a tab-separated command.
+--**CSV format:** Consists of a first line⎯the header⎯that defines the contents of each column. The subsequent lines supply information to be applied to Wikibase according to the contents of each column's header.
   
-  <ins>Example of V1 syntax</ins>
+  Example of V1 syntax:
   ```
   CREATE
   LAST	Len	Doctor Worm
@@ -152,7 +180,7 @@ A new batch consists of:
   LAST	P2650	Q128309
   ```
   
-  <ins>Example of CSV syntax</ins>
+  Example of CSV syntax:
   ```
   qid,Len,Den,P2650
   ,Doctor Worm,1998 song performed by They Might Be Giants,Q128309
@@ -164,14 +192,21 @@ A new batch consists of:
 
 #
 
+## Viewing Batch Detials and History
+You can track the progress and status of a specific batch by entering the **Batch ID** in the appropriate field and clicking the **See batch details** button. This displays information like the number of edits made, the success or failure of operations, and any errors that occurred.
+
+#
+
 <a id="batches-per-user"></a>
 #### C. See all Batches per User in QuickStatements
-In QuickStatements, multiple users can execute multiple batches and each batch is tied to a user. To see all recent batches made by a user in QuickStatements, insert the username of the user in the username field and click 'See batches by user'. It lists the batches you’ve run, including:
-- Batch IDs
-- Descriptions (if you added custom names)
-- Status (e.g., in progress, completed, or failed)
-- Dates
-- Number of edits in the batch
+To view the history of batch edits by a specific user:
+1. Enter the **username** of the user in the username field (username can be found at wiki-login.)
+2. Click **See batches by user** to list all the batches that the user has submitted. The list will include:
+- **Batch IDs**
+- **Descriptions (if you added custom names)**
+- **Status (e.g., in progress, completed, or failed)**
+- **Dates**
+- **Number of edits in the batch**
 
 > [!NOTE]
 > Each batch has a unique URL associated with it. You can bookmark or share this URL to access or monitor a batch later.
