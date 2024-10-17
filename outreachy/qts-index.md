@@ -71,48 +71,48 @@ Wikidata is a free, collaborative, multilingual, secondary database, managed by 
 
 Some key features include:
 
--**Multilingual support:** Data is stored in such a way that it can be accessed in any language.
--**Open data:** Wikidata's data is freely available under the Creative Commons Public Domain Dedication (CC0).
--**Collaborative editing:** Anyone with an account can edit Wikidata, making it a community-driven resource.
--**Linking data:** Wikidata integrates with other Wikimedia projects, serving as the source of consistent, up-to-date data.
+- **Multilingual support:** Data is stored in such a way that it can be accessed in any language.
+- **Open data:** Wikidata's data is freely available under the Creative Commons Public Domain Dedication (CC0).
+- **Collaborative editing:** Anyone with an account can edit Wikidata, making it a community-driven resource.
+- **Linking data:** Wikidata integrates with other Wikimedia projects, serving as the source of consistent, up-to-date data.
 
 #
 
 ## Structure of Wikidata
 The structure of Wikidata is based on a simple yet powerful model of **items**, **properties**, and **values**. These three components form the backbone of how data is stored, linked, and retrieved.
 
--**Items (Q numbers):** Each item is a unique concept represented by a **QID** (e.g., Douglas Adams is represented by Q42). These items store data and link to other items.
+- **Items (Q numbers):** Each item is a unique concept represented by a **QID** (e.g., Douglas Adams is represented by Q42). These items store data and link to other items.
 
--**Properties (P numbers):** Properties describe specific attributes of an item and are identified by **PIDs** (e.g., date of birth is represented by **P569**). Properties can describe relationships between items or between an item and a data value.
+- **Properties (P numbers):** Properties describe specific attributes of an item and are identified by **PIDs** (e.g., date of birth is represented by **P569**). Properties can describe relationships between items or between an item and a data value.
 
--**Values:** These are the actual data points (e.g., the date **1952-03-11** as the value for **P569** on item **Q42** for Douglas Adams’ birth date).
+- **Values:** These are the actual data points (e.g., the date **1952-03-11** as the value for **P569** on item **Q42** for Douglas Adams’ birth date).
 
 Together, items, properties, and values create **statements**, which are the building blocks of Wikidata.
 
 ## Labels, Descriptions, and Aliases
 Each item in Wikidata can have multiple **labels**, **descriptions**, and **aliases** in different languages:
 
--**Labels:** A label is the main name of an item (e.g., “Douglas Adams” for **Q42**). An item can have a different label in every language.
+- **Labels:** A label is the main name of an item (e.g., “Douglas Adams” for **Q42**). An item can have a different label in every language.
 
--**Descriptions:** Descriptions provide context about the item to differentiate it from similar items (e.g., “British author and screenwriter” for **Q42**).
+- **Descriptions:** Descriptions provide context about the item to differentiate it from similar items (e.g., “British author and screenwriter” for **Q42**).
 
--**Aliases:** Aliases are alternative names for an item that are used for search purposes. For example, **Q42** (Douglas Adams) might have an alias like "Douglas Noel Adams."
+- **Aliases:** Aliases are alternative names for an item that are used for search purposes. For example, **Q42** (Douglas Adams) might have an alias like "Douglas Noel Adams."
 
 These three components help ensure that items are easy to find, distinguish, and access in a variety of languages and contexts.
 
 ## Wikidata Statements
 **Statements** are the core knowledge units in Wikidata, used to describe items through a combination of a property and a value. A statement connects an item to its associated data:
 
--**Property:** Defines what aspect of the item you are describing (e.g., date of birth, occupation, nationality).
--**Value:** Provides the specific information (e.g., a date, a string, or a reference to another item).
+- **Property:** Defines what aspect of the item you are describing (e.g., date of birth, occupation, nationality).
+- **Value:** Provides the specific information (e.g., a date, a string, or a reference to another item).
 A statement can also have **qualifiers** and **references** to provide more context or cite the source of the data.
 
 For example:
 
--**Item:** Douglas Adams (Q42)
--**Property:** Date of birth (P569)
--**Value:** March 11, 1952
--**Qualifier:** Source (S854) – Links to a webpage or database providing proof of the statement.
+- **Item:** Douglas Adams (Q42)
+- **Property:** Date of birth (P569)
+- **Value:** March 11, 1952
+- **Qualifier:** Source (S854) – Links to a webpage or database providing proof of the statement.
 
 ## Syntax and Command Structure
 
@@ -196,8 +196,8 @@ To create a new batch in QuickStatements, follow these steps:
 
 A new batch consists of:
 - **Command format:** Your command format can be in V1 format or CSV format.
---**V1 format:** Command-based format where each line represents a tab-separated command.
---**CSV format:** Consists of a first line⎯the header⎯that defines the contents of each column. The subsequent lines supply information to be applied to Wikibase according to the contents of each column's header.
+-- **V1 format:** Command-based format where each line represents a tab-separated command.
+-- **CSV format:** Consists of a first line⎯the header⎯that defines the contents of each column. The subsequent lines supply information to be applied to Wikibase according to the contents of each column's header.
   
   Example of V1 syntax:
   ```
