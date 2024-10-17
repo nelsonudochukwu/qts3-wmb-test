@@ -61,6 +61,8 @@
 Cette documentation propose une introduction aux fonctionnalités, à l'utilisation et aux meilleures pratiques de QuickStatements 3.0. _[Cliquez](#qs-v3-docs)_ pour commencer. Cependant, pour bien comprendre les fonctionnalités de QuickStatements 3.0, il est important de comprendre d'abord le principal constituant de QuickStatements - _Wikidata_.
 
 #
+
+<a id="a-brief-on-wikidata"></a>
 <details>
  <summary>Un Bref Aperçu de Wikidata</summary>
 Wikidata est une base de données collaborative, multilingue et gratuite, gérée par la Fondation Wikimedia. Elle sert de stockage central pour des données structurées utilisées dans divers projets Wikimedia, comme Wikipédia, et fournit également des données aux utilisateurs et organisations externes. L'objectif principal de Wikidata est de permettre aux humains et aux machines de comprendre et d'interroger facilement les informations.
