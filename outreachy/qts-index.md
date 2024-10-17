@@ -4,7 +4,7 @@
 <details>
  <summary>Translations!!!!</summary>
  <ul>
-  <li>[French](outreachy/translations/qts-index-fr.md)</li>
+  <li><a href="outreachy/translations/qts-index-fr.md">French</li>
  </ul>
 </details>
 
