@@ -4,9 +4,11 @@
 <details>
  <summary>Traductions!!!!</summary>
  <ul>
-  <li><a href="translations/qts-index-fr.md">Français</li>
-  <li><a href="translations/qts-index-pt.md">Portugais</li>
-   <li><a href="translations/qts-index-es.md">Espagnol</li>
+  <li><a href="https://github.com/nelsonudochukwu/qts3-wmb-test/blob/main/outreachy/qts-index.md">
+inglês</li>
+  <li><a href="/translations/qts-index-fr.md">Français</li>
+  <li><a href="/translations/qts-index-pt.md">Portugais</li>
+   <li><a href="/translations/qts-index-es.md">Espagnol</li>
  </ul>
 </details>
 
@@ -339,7 +341,7 @@ Téléchargez le fichier via l'interface web pour traiter le lot.
 - **Utilisez des Références:** Assurez-vous que les déclarations sont correctement sourcées avec des références pour améliorer la qualité des données.
 - **Surveiller la Progression:** Après soumission, suivez la progression de votre lot et vérifiez les erreurs.
 
-️#
+#
 
 ### Gestion des Erreurs
 Lorsqu'une erreur survient pendant l'exécution, QuickStatements indiquera quelle commande a échoué. Les problèmes courants incluent:
