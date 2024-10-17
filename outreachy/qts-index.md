@@ -284,7 +284,7 @@ Q42,P69,Q3918,P580,1971,P582,1974
 Q42,P19,Q84
 Q42,P569,1952-03-11
 ```
-After preparing the CSV, upload it via the QuickStatements web interface to run the batch.
+Upload the file through the web interface to process the batch.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 #
