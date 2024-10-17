@@ -238,7 +238,7 @@ Doctor Worm,
 <p align="right">(<a href="#readme-top">retour en haut</a>)</p>
 
 ## Voir les Détails et l'Historique d'un Lot
-Vous pouvez suivre la progression et le statut d'un lot spécifique en entrant l\'**ID de Lot** dans le champ approprié et en cliquant sur le bouton **Voir les détails du lot**. Cela affiche des informations telles que le nombre de modifications effectuées, la réussite ou l'échec des opérations, ainsi que les erreurs survenues.
+Vous pouvez suivre la progression et le statut d'un lot spécifique en entrant l'**ID de Lot** dans le champ approprié et en cliquant sur le bouton **Voir les détails du lot**. Cela affiche des informations telles que le nombre de modifications effectuées, la réussite ou l'échec des opérations, ainsi que les erreurs survenues.
 
 #
 
@@ -267,7 +267,6 @@ Pour voir l'historique des modifications en lot par un utilisateur spécifique:
 #### 1. Créer un Nouvel Élément
 
 Cette commande créera un nouvel élément avec une étiquette et une description.
-
 ```
 CREATE
 LAST|Len|"Élément Exemple"
@@ -333,7 +332,7 @@ Q42,P569,1952-03-11
 Téléchargez le fichier via l'interface web pour traiter le lot.
 <p align="right">(<a href="#readme-top">retour en haut</a>)</p>
 
-️#
+#
 
 ### Bonnes Pratiques
 - **Tester avec des petits lots:** Testez toujours vos commandes avec un petit ensemble d'éléments avant des modifications à grande échelle pour éviter des changements non désirés.
@@ -351,20 +350,19 @@ Lorsqu'une erreur survient pendant l'exécution, QuickStatements indiquera quell
   
 <p align="right">(<a href="#readme-top">retour en haut</a>)</p>
 
-️#
+#          
 
 ### Conclusion
 QuickStatements est un outil essentiel pour l'édition en masse sur Wikidata, permettant aux utilisateurs de gérer de grands ensembles de données efficacement. En suivant ce guide, vous pouvez créer, mettre à jour et gérer des éléments avec facilité, améliorant ainsi la qualité et la précision de Wikidata.
 
 Pour des cas d'utilisation plus avancés, consultez la [documentation Wikidata](https://www.wikidata.org/wiki/Help:QuickStatements) pour plus de détails et mises à jour.
 
-️#
+# 
 
 ### Références
 Cette documentation a été inspirée de nombreuses sources, cependant, [Diátaxis](https://developers.google.com/tech-writing/overview) a été le guide le plus significatif pour la rédaction de cette documentation, car il fournit une approche systématique pour comprendre les besoins des utilisateurs de documentation. Le [Cours de Rédaction Technique Google](https://developers.google.com/tech-writing/overview) a également été déterminant.
 
-
-️## 💚️ MERCI MENTORS 💙
+## 💚️ MERCI MENTORS 💙
 <!-- ALL-CONTRIBUTORS-LIST:START -->
 <!-- prettier-ignore -->
 | [<img src="https://github.com/user-attachments/assets/1deb350c-3202-48b3-bef2-ead6c6f9a06d" width="100px;"/><br /><sub><b>Ederporto, EPorto (WMB)</b></sub>](https://phabricator.wikimedia.org/p/Ederporto/)<br />        | [<img src="https://github.com/user-attachments/assets/4d0112e0-00b8-421d-a043-67282f13d413" width="100px;"/><br /><sub><b>Artur Corrêa Souza</b></sub>](https://phabricator.wikimedia.org/p/ACorrea-WMB/)<br /> | [<img src="https://github.com/user-attachments/assets/b8c0a206-9e85-4b2c-a41d-13986e126565" width="100px;"/><br /><sub><b>MGalves (WMB)</b></sub>](https://phabricator.wikimedia.org/p/MGalves_WMB/)<br />          |
