@@ -5,6 +5,9 @@
  <summary>Traductions !!!!</summary>
   <ul>
   <li><a href="https://github.com/nelsonudochukwu/qts3-wmb-test/blob/main/outreachy/qts-index.md">Anglaise</li>
+   <li><a href="https://github.com/nelsonudochukwu/qts3-wmb-test/blob/main/outreachy/translations/qts-index-pt.md">
+Portugais</li>
+    <li><a href="https://github.com/nelsonudochukwu/qts3-wmb-test/blob/main/outreachy/translations/qts-index-es.md">Espagnol</li>
  </ul>
 </details>
 
