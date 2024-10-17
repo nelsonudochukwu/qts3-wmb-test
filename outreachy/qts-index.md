@@ -190,7 +190,7 @@ A new batch consists of:
 - **Commands:** These are the instructions you enter to perform specific operations on Wikidata items. These commands allow you to add, modify, or remove data from items in Wikidata. The commands are written in a specific format, and each line typically represents an action to be taken on a Wikidata item.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Viewing Batch Detials and History
+## Viewing Batch Details and History
 You can track the progress and status of a specific batch by entering the **Batch ID** in the appropriate field and clicking the **See batch details** button. This displays information like the number of edits made, the success or failure of operations, and any errors that occurred.
 
 #
