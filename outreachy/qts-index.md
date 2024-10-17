@@ -3,6 +3,9 @@
 
 <details>
  <summary>Translations!!!!</summary>
+ <ul>
+  <li>[French]()</li>
+ </ul>
 </details>
 
 ## Table of Contents
