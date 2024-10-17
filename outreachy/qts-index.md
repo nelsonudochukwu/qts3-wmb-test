@@ -89,6 +89,8 @@ The structure of Wikidata is based on a simple yet powerful model of **items**, 
 
 Together, items, properties, and values create **statements**, which are the building blocks of Wikidata.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <a id="lda"></a>
 ## Labels, Descriptions, and Aliases
 Each item in Wikidata can have multiple **labels**, **descriptions**, and **aliases** in different languages:
@@ -155,6 +157,8 @@ In order to create and run batches, you must ensure the following:
 - **Structured Data**: Your data must be well-structured in CSV/TSV format or similar to be easily imported and processed.
 - **Autoconfirmed user**: To be an autoconfirmed user, you must be 4 days old on the platform and you must have made 50 edits to be considered one.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <a id="qs-3.0-homepage"></a>
 ## QuickStatements 3.0 Homepage Overview
 
@@ -167,7 +171,9 @@ Last batches: This link provides access to the history of recently submitted bat
 - **Git:** A link to the QuickStatements GitHub repository, where users can view the codebase, report issues, or contribute to the development of the platform.
   
 - **Login:** Allows users to log into their Wikidata accounts. Once logged in, users can access features like submitting and tracking their batch submissions.
-  
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 #### Main Interface:
 - **“Welcome to QuickStatements 3.0”:** A header welcoming users to the main interface.
 
@@ -179,6 +185,8 @@ Last batches: This link provides access to the history of recently submitted bat
 - **Batch ID:** Users can input a specific batch ID to retrieve detailed information about that particular batch. Clicking the **“See batch details”** button shows the status, progress, and results of the batch.
 
 - **Username:** Users can enter a specific Wikidata username to retrieve a list of all batches associated with that user. Clicking **“See batches by user”** will display all submitted batches from that user.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 #
   
