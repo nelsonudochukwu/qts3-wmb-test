@@ -67,6 +67,8 @@ Some key features include:
 - **Collaborative editing:** Anyone with an account can edit Wikidata, making it a community-driven resource.
 - **Linking data:** Wikidata integrates with other Wikimedia projects, serving as the source of consistent, up-to-date data.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <a id="structure-of-wikidata"></a>
 ## Structure of Wikidata
 The structure of Wikidata is based on a simple yet powerful model of **items**, **properties**, and **values**. These three components form the backbone of how data is stored, linked, and retrieved.
@@ -90,6 +92,8 @@ Each item in Wikidata can have multiple **labels**, **descriptions**, and **alia
 - **Aliases:** Aliases are alternative names for an item that are used for search purposes. For example, **Q42** (Douglas Adams) might have an alias like "Douglas Noel Adams."
 
 These three components help ensure that items are easy to find, distinguish, and access in a variety of languages and contexts.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <a id="wiki-statements"></a>
 ## Wikidata Statements
