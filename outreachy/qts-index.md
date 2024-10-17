@@ -67,6 +67,7 @@ Some key features include:
 - **Collaborative editing:** Anyone with an account can edit Wikidata, making it a community-driven resource.
 - **Linking data:** Wikidata integrates with other Wikimedia projects, serving as the source of consistent, up-to-date data.
 
+<a id="structure-of-wikidata"></a>
 ## Structure of Wikidata
 The structure of Wikidata is based on a simple yet powerful model of **items**, **properties**, and **values**. These three components form the backbone of how data is stored, linked, and retrieved.
 
@@ -78,6 +79,7 @@ The structure of Wikidata is based on a simple yet powerful model of **items**, 
 
 Together, items, properties, and values create **statements**, which are the building blocks of Wikidata.
 
+<a id="lda"></a>
 ## Labels, Descriptions, and Aliases
 Each item in Wikidata can have multiple **labels**, **descriptions**, and **aliases** in different languages:
 
@@ -89,6 +91,7 @@ Each item in Wikidata can have multiple **labels**, **descriptions**, and **alia
 
 These three components help ensure that items are easy to find, distinguish, and access in a variety of languages and contexts.
 
+<a id="wiki-statements"></a>
 ## Wikidata Statements
 **Statements** are the core knowledge units in Wikidata, used to describe items through a combination of a property and a value. A statement connects an item to its associated data:
 
@@ -103,6 +106,7 @@ For example:
 - **Value:** March 11, 1952
 - **Qualifier:** Source (S854) – Links to a webpage or database providing proof of the statement.
 
+<a id="syntax-and-command-structure"></a>
 ## Syntax and Command Structure
 
 Each QuickStatements command follows a simplified format with columns specifying the **Item**, **Property**, **Value**, and optional **Qualifiers**, **References**, etc.
