@@ -136,6 +136,9 @@ Each QuickStatements command follows a simplified format with columns specifying
 | Aliases      | Alternate names or terms by which an item is known.                                              |
 
 </details>
+
+#
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <a id="qs-v3-docs"></a>
