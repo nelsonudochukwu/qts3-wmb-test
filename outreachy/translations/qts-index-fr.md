@@ -198,4 +198,140 @@ Un nouveau lot se compose de :
   - **Format V1 :** Format basé sur des commandes où chaque ligne représente une commande séparée par des tabulations.
   - **Format CSV :** Composé d'une première ligne - l'en-tête - qui définit le contenu de chaque colonne. Les lignes suivantes fournissent des informations à appliquer à Wikibase selon le contenu de chaque colonne d'en-tête.
   
-  Exemple de syntaxe V1 :
+Exemple de syntaxe V1:
+```
+CREATE LAST Len Doctor Worm LAST Den 1998 song performed by They Might Be Giants LAST P2650 Q128309
+```
+Exemple de syntaxe CSV :
+```
+qid,Len,Den,P2650,
+Doctor Worm,1998 song performed by They Might Be Giants,Q128309
+```
+
+- **Nom de lot personnalisé :** C'est un label ou un identifiant que vous pouvez attribuer à un lot spécifique de modifications pour une gestion et une référence plus facile. Par défaut, les lots sont nommés de manière générique, généralement juste un identifiant de lot. Cependant, vous avez la possibilité de fournir un nom personnalisé lors de la création ou du téléchargement d'un lot. Ce nom personnalisé facilite la reconnaissance ou le rappel de l'objectif d'un lot particulier, en particulier lorsqu'il s'agit de plusieurs lots au fil du temps.
+
+- **Commandes** : Ce sont les instructions que vous saisissez pour effectuer des opérations spécifiques sur les éléments Wikidata. Ces commandes vous permettent d'ajouter, de modifier ou de supprimer des données des éléments de Wikidata. Les commandes sont écrites dans un format spécifique, et chaque ligne représente généralement une action à effectuer sur un élément Wikidata.
+<p align="right">(<a href="#readme-top">retour en haut</a>)</p>
+
+## Voir les Détails et l'Historique d'un Lot
+Vous pouvez suivre la progression et l'état d'un lot spécifique en saisissant l'**ID de lot** dans le champ approprié et en cliquant sur le bouton **Voir les détails du lot**. Cela affiche des informations telles que le nombre de modifications effectuées, le succès ou l'échec des opérations, et les erreurs éventuelles.
+
+#
+
+<a id="batches-per-user"></a>
+#### C. Voir tous les lots par utilisateur dans QuickStatements
+Pour voir l'historique des modifications en lot par un utilisateur spécifique :
+1. Saisissez le **nom d'utilisateur** de l'utilisateur dans le champ de nom d'utilisateur (le nom d'utilisateur peut être trouvé lors de la connexion à Wikidata.)
+2. Cliquez sur **Voir les lots par utilisateur** pour afficher la liste de tous les lots soumis par cet utilisateur. La liste inclura :
+- **Identifiants de lot**
+- **Descriptions (si vous avez ajouté des noms personnalisés)**
+- **État (par exemple, en cours, terminé ou échoué)**
+- **Dates**
+- **Nombre de modifications dans le lot**
+
+> [!REMARQUE]
+> Chaque lot a une URL unique qui lui est associée. Vous pouvez ajouter cette URL aux favoris ou la partager pour accéder ou surveiller un lot ultérieurement.
+
+<p align="right">(<a href="#readme-top">retour en haut</a>)</p>
+
+#
+
+<a id="writing-batch-commands"></a>
+#### D. Écrire des commandes de lot dans QuickStatements
+
+<a id="create-new-item"></a>
+#### 1. Créer un nouvel élément
+
+Cette commande créera un nouvel élément avec un libellé et une description.
+
+```plaintext
+CREATE
+LAST|Len|"Élément d'exemple"
+LAST|Den|"Ceci est un élément d'exemple à des fins de démonstration."
+LAST|P31|Q5  # Ajoute une déclaration indiquant que l'élément est une instance d'un humain
+```
+
+<a id="add-statements"></a>
+#### 2. Ajouter des déclarations (affirmations)
+Ajout de déclarations à un élément existant (par exemple, Douglas Adams - Q42).
+
+```
+Q42|P569|1952-03-11  # Ajoute la date de naissance (P569) pour Douglas Adams
+Q42|P19|Q84          # Ajoute le lieu de naissance (P19) comme Cambridge (Q84)
+```
+
+<a id="add-qualifiers"></a>
+#### 3. Ajouter des qualificateurs
+Vous pouvez ajouter des qualificateurs aux déclarations existantes pour donner plus de détails.
+```
+Q42|P69|Q3918|P580|1971|P582|1974  # Ajoute l'éducation (P69) au St John's College (Q3918) avec des dates de début (P580) et de fin (P582)
+```
+<p align="right">(<a href="#readme-top">retour en haut</a>)</p>
+<a id="add-references"></a>
+
+#### 4. Ajouter des références
+Ajouter des références à une déclaration existante:
+```
+Q42|P69|Q3918|S854|"https://example.com/education"  # Ajoute une référence URL pour la déclaration d'éducation
+```
+
+<a id="modify-lda"></a>
+#### 5. Modifier les Libellés, Descriptions et Alias
+Modifier les libellés, descriptions et alias dans différentes langues:
+```
+Q42|Len|"Douglas Adams"  # Modifie le libellé anglais en "Douglas Adams"
+Q42|Lde|"Douglas Adams"  # Modifie le libellé allemand en "Douglas Adams"
+Q42|Aen|"Douglas Noël Adams"  # Ajoute un alias en anglais
+Q42|Den|"Auteur et scénariste britannique"  # Modifie la description anglaise
+```
+
+<a id="remove-items"></a>
+#### 6. Supprimer des Déclarations ou des Éléments
+Supprimer des déclarations ou supprimer des éléments entièrement:
+```
+Q42|P19|DELETE  # Supprime la déclaration de lieu de naissance (P19) pour Q42
+Q100000|DELETE  # Supprime entièrement l'élément Q100000
+```
+
+<p align="right">(<a href="#readme-top">retour en haut</a>)</p>
+
+<a id="import-data"></a>
+#### 7. Importer des Données CSV/TSV
+Vous pouvez préparer vos données au format CSV ou TSV, où chaque ligne représente une opération. Exemple de format:
+```
+Q42,P69,Q3918,P580,1971,P582,1974
+Q42,P19,Q84
+Q42,P569,1952-03-11
+```
+Téléchargez le fichier via l'interface web pour traiter le lot.
+
+<p align="right">(<a href="#readme-top">retour en haut</a>)</p>
+
+Bonnes Pratiques
+Tester avec des Petits Lots : Testez toujours vos commandes avec un petit ensemble d'éléments avant de faire des modifications à grande échelle pour éviter des changements non désirés.
+Utiliser des Références : Assurez-vous que les déclarations sont correctement sourcées avec des références pour améliorer la qualité des données.
+Suivre la Progression : Après soumission, suivez la progression de votre lot et vérifiez les erreurs.
+Gestion des Erreurs
+Lorsqu'une erreur survient lors de l'exécution, QuickStatements indiquera quelle commande a échoué. Les problèmes courants incluent :
+
+Identifiants d'éléments ou de propriétés incorrects.
+Erreurs de syntaxe dans les formats de date ou champs de données manquants.
+Permissions ou limitations imposées par Wikidata pour les modifications en masse. Dans ces cas, révisez les commandes échouées et corrigez les problèmes avant de les exécuter à nouveau.
+<p align="right">(<a href="#readme-top">retour en haut</a>)</p>
+Conclusion
+QuickStatements est un outil essentiel pour les modifications en masse sur Wikidata, permettant aux utilisateurs de gérer efficacement de grands ensembles de données. En suivant ce guide, vous pouvez créer, mettre à jour et gérer des éléments avec facilité, améliorant ainsi la qualité et l'exactitude des données sur Wikidata.
+
+Pour des cas d'utilisation plus avancés, consultez la documentation Wikidata pour plus de détails et de mises à jour.
+
+Références
+Cette documentation s'inspire de nombreuses sources, cependant, Diátaxis a été le guide le plus important pour l'écriture de ce document car il propose une approche systématique pour comprendre les besoins des utilisateurs de documentation. Le cours de rédaction technique de Google a également été très utile.
+
+️💚️ MERCI MENTORS 💙
+<!-- ALL-CONTRIBUTORS-LIST:START --> <!-- prettier-ignore -->
+<img src="https://github.com/user-attachments/assets/1deb350c-3202-48b3-bef2-ead6c6f9a06d" width="100px;"/><br /><sub><b>Ederporto, EPorto (WMB)</b></sub><br />	<img src="https://github.com/user-attachments/assets/4d0112e0-00b8-421d-a043-67282f13d413" width="100px;"/><br /><sub><b>Artur Corrêa Souza</b></sub><br />	<img src="https://github.com/user-attachments/assets/b8c0a206-9e85-4b2c-a41d-13986e126565" width="100px;"/><br /><sub><b>MGalves (WMB)</b></sub><br />
+<p align="right">(<a href="#readme-top">retour en haut</a>)</p> <!-- ALL-CONTRIBUTORS-LIST:END --> ```
+
+
+
+
+
