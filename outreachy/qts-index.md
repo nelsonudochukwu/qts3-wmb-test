@@ -210,6 +210,7 @@ To view the history of batch edits by a specific user:
 > Each batch has a unique URL associated with it. You can bookmark or share this URL to access or monitor a batch later.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 #
 
 <a id="writing-batch-commands"></a>
@@ -304,6 +305,7 @@ When an error occurs during execution, QuickStatements will indicate which comma
 In these cases, review the failed commands and correct the issues before re-running.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 #
   
 ### Conclusion
