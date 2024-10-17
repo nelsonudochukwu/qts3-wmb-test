@@ -238,7 +238,7 @@ Doctor Worm,
 <p align="right">(<a href="#readme-top">retour en haut</a>)</p>
 
 ## Voir les Détails et l'Historique d'un Lot
-Vous pouvez suivre la progression et le statut d'un lot spécifique en entrant l'**ID de Lot** dans le champ approprié et en cliquant sur le bouton **Voir les détails du lot**. Cela affiche des informations telles que le nombre de modifications effectuées, la réussite ou l'échec des opérations, ainsi que les erreurs survenues.
+Vous pouvez suivre la progression et le statut d'un lot spécifique en entrant l\'**ID de Lot** dans le champ approprié et en cliquant sur le bouton **Voir les détails du lot**. Cela affiche des informations telles que le nombre de modifications effectuées, la réussite ou l'échec des opérations, ainsi que les erreurs survenues.
 
 #
 
@@ -364,5 +364,11 @@ Pour des cas d'utilisation plus avancés, consultez la [documentation Wikidata](
 Cette documentation a été inspirée de nombreuses sources, cependant, [Diátaxis](https://developers.google.com/tech-writing/overview) a été le guide le plus significatif pour la rédaction de cette documentation, car il fournit une approche systématique pour comprendre les besoins des utilisateurs de documentation. Le [Cours de Rédaction Technique Google](https://developers.google.com/tech-writing/overview) a également été déterminant.
 
 
-
+️## 💚️ MERCI MENTORS 💙
+<!-- ALL-CONTRIBUTORS-LIST:START -->
+<!-- prettier-ignore -->
+| [<img src="https://github.com/user-attachments/assets/1deb350c-3202-48b3-bef2-ead6c6f9a06d" width="100px;"/><br /><sub><b>Ederporto, EPorto (WMB)</b></sub>](https://phabricator.wikimedia.org/p/Ederporto/)<br />        | [<img src="https://github.com/user-attachments/assets/4d0112e0-00b8-421d-a043-67282f13d413" width="100px;"/><br /><sub><b>Artur Corrêa Souza</b></sub>](https://phabricator.wikimedia.org/p/ACorrea-WMB/)<br /> | [<img src="https://github.com/user-attachments/assets/b8c0a206-9e85-4b2c-a41d-13986e126565" width="100px;"/><br /><sub><b>MGalves (WMB)</b></sub>](https://phabricator.wikimedia.org/p/MGalves_WMB/)<br />          |
+| :---------------------: | :-----------------------: | :--------------------: |
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
