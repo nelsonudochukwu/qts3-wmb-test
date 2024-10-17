@@ -136,10 +136,9 @@ Chaque commande QuickStatements suit un format simplifié avec des colonnes spé
 | Alias        | Noms alternatifs ou termes par lesquels un élément est connu.                                              |
 
 </details>
+<p align="right">(<a href="#readme-top">retour en haut</a>)</p>
 
 #
-
-<p align="right">(<a href="#readme-top">retour en haut</a>)</p>
 
 <a id="qs-v3-docs"></a>
 ## Documentation QuickStatements 3.0
@@ -154,6 +153,8 @@ Pour créer et exécuter des lots, vous devez vous assurer des éléments suivan
 - **Données structurées** : Vos données doivent être bien structurées au format CSV/TSV ou similaire pour être facilement importées et traitées.
 - **Utilisateur autoconfirmé** : Pour être un utilisateur autoconfirmé, vous devez être inscrit depuis 4 jours sur la plateforme et avoir effectué 50 modifications.
 
+<p align="right">(<a href="#readme-top">retour en haut</a>)</p>
+
 <a id="qs-3.0-homepage"></a>
 ## Aperçu de la page d'accueil de QuickStatements 3.0
 
@@ -166,7 +167,9 @@ La page d'accueil de **QuickStatements 3.0** est conçue pour faciliter l'accès
 - **Git :** Un lien vers le dépôt GitHub de QuickStatements, où les utilisateurs peuvent consulter le code, signaler des problèmes ou contribuer au développement de la plateforme.
   
 - **Connexion :** Permet aux utilisateurs de se connecter à leur compte Wikidata. Une fois connectés, les utilisateurs peuvent accéder à des fonctionnalités comme la soumission et le suivi de leurs lots soumis.
-  
+
+<p align="right">(<a href="#readme-top">retour en haut</a>)</p>
+
 #### Interface principale :
 - **"Bienvenue dans QuickStatements 3.0" :** Un en-tête accueillant les utilisateurs sur l'interface principale.
 
@@ -178,6 +181,8 @@ La page d'accueil de **QuickStatements 3.0** est conçue pour faciliter l'accès
 - **ID de Lot :** Les utilisateurs peuvent saisir un identifiant de lot spécifique pour récupérer des informations détaillées sur ce lot particulier. Cliquer sur le bouton **"Voir les détails du lot"** montre l'état, la progression et les résultats du lot.
 
 - **Nom d'utilisateur :** Les utilisateurs peuvent entrer un nom d'utilisateur Wikidata spécifique pour récupérer une liste de tous les lots associés à cet utilisateur. Cliquer sur **"Voir les lots par utilisateur"** affichera tous les lots soumis par cet utilisateur.
+
+<p align="right">(<a href="#readme-top">retour en haut</a>)</p>
 
 #
   
