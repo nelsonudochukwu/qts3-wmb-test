@@ -32,14 +32,14 @@
     <li><a href="#qs-v3-docs">QuickStatements 3.0 Docs</a>
       <ul>
         <li><a href="#prerequisites">Getting Started: Prerequisites</a></li>
-        <li><a href="#prerequisites">QuickStatements 3.0 Homepage Overview</a></li>
+        <li><a href="#qs-3.0-homepage">QuickStatements 3.0 Homepage Overview</a></li>
         <li><a href="#what-is-a-batch">How To/Guides: What is a batch?</a>
           <ul>
             <li><a href="#create-new-batch">Creating a New Batch</a></li>
             <li><a href="#details-of-a-batch">Details of a Batch</a></li>
           </ul>
         </li>
-        <li><a href="#writing-batch-commands">Viewing Batch Details and Batch History</a></li>
+        <li><a href="#batch-details">Viewing Batch Details and Batch History</a></li>
         <li><a href="#batches-per-user">See all Batch-edits Created by a User</a></li>
         <li><a href="#writing-batch-commands">Writing Batch commands</a>
           <ul>
@@ -118,6 +118,7 @@ In order to create and run batches, you must ensure the following:
 - **Structured Data**: Your data must be well-structured in CSV/TSV format or similar to be easily imported and processed.
 - **Autoconfirmed user**: To be an autoconfirmed user, you must be 4 days old on the platform and you must have made 50 edits to be considered one.
 
+<a id="#qs-3.0-homepage"></a>
 ## QuickStatements 3.0 Homepage Overview
 
 The homepage of **QuickStatements 3.0** is designed to facilitate easy access to core features for managing and running batch edits. Below is a breakdown of the visible elements:
