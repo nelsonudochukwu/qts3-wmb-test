@@ -11,8 +11,6 @@
 </details>
 
 ## Table of Contents
-
-#
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
