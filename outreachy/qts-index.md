@@ -102,12 +102,7 @@ Each QuickStatements command follows a simplified format with columns specifying
 | Labels       | Names or titles of items in different languages.                                                 |
 | Descriptions | Brief summaries that describe the items.                                                         |
 | Aliases      | Alternate names or terms by which an item is known.                                              |
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-QuickStatements can be used via:
-
-1. **Web Interface**: Upload a CSV or TSV file or paste commands directly into the web interface.
-2. **Batch Processing**: Execute large batches of commands through structured inputs.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <a id="qs-v3-docs"></a>
