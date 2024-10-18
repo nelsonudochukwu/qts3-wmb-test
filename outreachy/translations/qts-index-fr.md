@@ -165,6 +165,7 @@ La page d'accueil de **QuickStatements 3.0** est conçue pour faciliter l'accès
 
 #### Section d'en-tête :
 - **Nouveau lot :** Un lien qui vous dirige vers un formulaire où vous pouvez créer un nouveau lot de modifications à télécharger sur Wikidata.
+  
 - **Derniers lots :** Ce lien donne accès à l'historique des lots récemment soumis. Les utilisateurs peuvent suivre l'état et les détails de leurs opérations de lots passées.
 
 - **Git :** Un lien vers le dépôt GitHub de QuickStatements, où les utilisateurs peuvent consulter le code, signaler des problèmes ou contribuer au développement de la plateforme.
