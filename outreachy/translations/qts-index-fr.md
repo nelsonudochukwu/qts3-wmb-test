@@ -201,7 +201,10 @@ Un **lot** désigne un ensemble de commandes ou d'opérations exécutées ensemb
 Pour créer un nouveau lot dans QuickStatements, suivez ces étapes :
 1. Cliquez sur le bouton **Nouveau lot** situé sur la page d'accueil
 
-![Screenshot 2024-10-15 at 19 03 34](https://github.com/user-attachments/assets/67129eef-b4b9-4e37-bf97-5c85e351bea8)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/97e40a11-34a4-489c-8a22-5f5b5aeef792" alt="Détails d'un Nouveau Lot" />
+  <p align="center">Détails d'un Nouveau Lot</p>
+</p>
 
 2. Un formulaire apparaîtra où vous pourrez saisir vos commandes ou télécharger votre fichier de données. Les formats disponibles incluent le format QuickStatements V1 ainsi que les formats CSV/TSV.
 <p align="right">(<a href="#readme-top">retour en haut</a>)</p>
