@@ -166,27 +166,27 @@ The homepage of **QuickStatements 3.0** is designed to facilitate easy access to
 ![qs-en](https://github.com/user-attachments/assets/476030c9-efb0-4967-b01c-b6c3586f49dc)
 
 #### Header Section:
-- **New batch:** A link that takes you to a form where you can create a new batch of edits to be uploaded to Wikidata.
+1. **New batch:** A link that takes you to a form where you can create a new batch of edits to be uploaded to Wikidata.
 
-- **Last batches:** This link provides access to the history of recently submitted batches. Users can track the status and details of their past batch operations.
+2. **Last batches:** This link provides access to the history of recently submitted batches. Users can track the status and details of their past batch operations.
 
-- **Git:** A link to the QuickStatements GitHub repository, where users can view the codebase, report issues, or contribute to the development of the platform.
+3. **Git:** A link to the QuickStatements GitHub repository, where users can view the codebase, report issues, or contribute to the development of the platform.
   
-- **Login:** Allows users to log into their Wikidata accounts. Once logged in, users can access features like submitting and tracking their batch submissions.
+4. **Login:** Allows users to log into their Wikidata accounts. Once logged in, users can access features like submitting and tracking their batch submissions.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 #### Main Interface:
-- **“Welcome to QuickStatements 3.0”:** A header welcoming users to the main interface.
+5. **“Welcome to QuickStatements 3.0”:** A header welcoming users to the main interface.
 
 #### Primary Action Buttons:
 
-- **New batch:** Clicking this button initiates the creation of a new batch. Users can input data and commands to process and upload multiple edits to Wikidata in bulk.
+6. **New batch:** Clicking this button initiates the creation of a new batch. Users can input data and commands to process and upload multiple edits to Wikidata in bulk.
   
 #### Batch Lookup Section:
-- **Batch ID:** Users can input a specific batch ID to retrieve detailed information about that particular batch. Clicking the **“See batch details”** button shows the status, progress, and results of the batch.
+7. **Batch ID:** Users can input a specific batch ID to retrieve detailed information about that particular batch. Clicking the **“See batch details”** button shows the status, progress, and results of the batch.
 
-- **Username:** Users can enter a specific Wikidata username to retrieve a list of all batches associated with that user. Clicking **“See batches by user”** will display all submitted batches from that user.
+8. **Username:** Users can enter a specific Wikidata username to retrieve a list of all batches associated with that user. Clicking **“See batches by user”** will display all submitted batches from that user.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
