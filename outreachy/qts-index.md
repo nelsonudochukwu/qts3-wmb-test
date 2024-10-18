@@ -161,8 +161,9 @@ In order to create and run batches, you must ensure the following:
 
 <a id="qs-3.0-homepage"></a>
 ## QuickStatements 3.0 Homepage Overview
-
 The homepage of **QuickStatements 3.0** is designed to facilitate easy access to core features for managing and running batch edits. Below is a breakdown of the visible elements:
+
+![qs-en](https://github.com/user-attachments/assets/476030c9-efb0-4967-b01c-b6c3586f49dc)
 
 #### Header Section:
 - **New batch:** A link that takes you to a form where you can create a new batch of edits to be uploaded to Wikidata.
