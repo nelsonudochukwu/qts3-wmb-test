@@ -163,8 +163,12 @@ In order to create and run batches, you must ensure the following:
 ## QuickStatements 3.0 Homepage Overview
 The homepage of **QuickStatements 3.0** is designed to facilitate easy access to core features for managing and running batch edits. Below is a breakdown of the visible elements:
 
+
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/476030c9-efb0-4967-b01c-b6c3586f49dc" />
+ <figure>
+   <img src="https://github.com/user-attachments/assets/476030c9-efb0-4967-b01c-b6c3586f49dc" />
+  <figcaption>QuickStatements 3.0 Homepage</figcaption>
+</figure>
 </p>
 
 #### Header Section:
