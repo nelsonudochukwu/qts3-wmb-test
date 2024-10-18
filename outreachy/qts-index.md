@@ -166,7 +166,6 @@ The homepage of **QuickStatements 3.0** is designed to facilitate easy access to
 <p align="center">
   <img src="https://github.com/user-attachments/assets/476030c9-efb0-4967-b01c-b6c3586f49dc" />
 </p>
-![qs-en](https://github.com/user-attachments/assets/476030c9-efb0-4967-b01c-b6c3586f49dc)
 
 #### Header Section:
 1. **New batch:** A link that takes you to a form where you can create a new batch of edits to be uploaded to Wikidata.
