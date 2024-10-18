@@ -205,8 +205,11 @@ A **batch** refers to a set of commands or operations that are executed together
 #### A. Creating a new Batch in QuickStatements
 To create a new batch in QuickStatements, follow these steps:
 1. Click on the **New Batch** button located on the homepage
-   
-![Screenshot 2024-10-15 at 19 03 34](https://github.com/user-attachments/assets/67129eef-b4b9-4e37-bf97-5c85e351bea8)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d153bc61-0d95-4d32-b48e-876e1009f908" alt="QuickStatements 3.0 Homepage" />
+  <p align="center">Click New Batch</p>
+</p>
 
 2. A form will appear where you can input your commands or upload your data file. The available formats include both the QuickStatements V1 format and CSV/TSV format.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
