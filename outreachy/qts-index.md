@@ -166,7 +166,8 @@ The homepage of **QuickStatements 3.0** is designed to facilitate easy access to
 
 #### Header Section:
 - **New batch:** A link that takes you to a form where you can create a new batch of edits to be uploaded to Wikidata.
-Last batches: This link provides access to the history of recently submitted batches. Users can track the status and details of their past batch operations.
+
+- **Last batches:** This link provides access to the history of recently submitted batches. Users can track the status and details of their past batch operations.
 
 - **Git:** A link to the QuickStatements GitHub repository, where users can view the codebase, report issues, or contribute to the development of the platform.
   
