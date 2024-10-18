@@ -218,11 +218,16 @@ To create a new batch in QuickStatements, follow these steps:
 
 <a id="details-of-a-batch"></a>
 #### B. Details of a Batch in QuickStatements
-![Screenshot 2024-10-15 at 19 04 43](https://github.com/user-attachments/assets/0c48dbe9-9ad2-4966-acad-aee0437bd880)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e92159c7-270f-4006-bbaa-565aac6c22f0" alt="QuickStatements 3.0 Homepage" />
+  <p align="center">Details of a New Batch</p>
+</p>
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 A new batch consists of:
-- **Command format:** Your command format can be in V1 format or CSV format.
+1. **Command format:** Your command format can be in V1 format or CSV format.
   - **V1 format:** Command-based format where each line represents a tab-separated command.
   - **CSV format:** Consists of a first line⎯the header⎯that defines the contents of each column. The subsequent lines supply information to be applied to Wikibase according to the contents of each column's header.
   
@@ -239,9 +244,9 @@ A new batch consists of:
   qid,Len,Den,P2650
   ,Doctor Worm,1998 song performed by They Might Be Giants,Q128309
   ```
-- **Custom batch name:** This is a label or identifier that you can assign to a specific batch of edits for easier management and reference. By default, batches are given generic names, typically just a batch ID. However, you have the option to provide a custom name when you create or upload a batch. This custom name makes it easier to recognize or remember what a particular batch was intended to do, especially when dealing with multiple batches over time.
+2. **Custom batch name:** This is a label or identifier that you can assign to a specific batch of edits for easier management and reference. By default, batches are given generic names, typically just a batch ID. However, you have the option to provide a custom name when you create or upload a batch. This custom name makes it easier to recognize or remember what a particular batch was intended to do, especially when dealing with multiple batches over time.
   
-- **Commands:** These are the instructions you enter to perform specific operations on Wikidata items. These commands allow you to add, modify, or remove data from items in Wikidata. The commands are written in a specific format, and each line typically represents an action to be taken on a Wikidata item.
+3. **Commands:** These are the instructions you enter to perform specific operations on Wikidata items. These commands allow you to add, modify, or remove data from items in Wikidata. The commands are written in a specific format, and each line typically represents an action to be taken on a Wikidata item.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Viewing Batch Details and History
