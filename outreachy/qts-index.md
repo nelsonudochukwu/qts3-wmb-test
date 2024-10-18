@@ -165,7 +165,7 @@ The homepage of **QuickStatements 3.0** is designed to facilitate easy access to
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/476030c9-efb0-4967-b01c-b6c3586f49dc" alt="QuickStatements 3.0 Homepage" />
-  <figcaption>QuickStatements 3.0 Homepage</figcaption>
+  QuickStatements 3.0 Homepage
 </p>
 
 #### Header Section:
