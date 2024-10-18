@@ -167,7 +167,7 @@ La page d'accueil de **QuickStatements 3.0** est conçue pour faciliter l'accès
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/476030c9-efb0-4967-b01c-b6c3586f49dc" alt="QuickStatements 3.0 Homepage" />
-  <p align="center">QuickStatements 3.0 Homepage</p>
+  <p align="center">Página inicial do QuickStatements 3.0</p>
 </p>
 
 #### Section d'en-tête:
@@ -216,11 +216,15 @@ Pour créer un nouveau lot dans QuickStatements, suivez ces étapes:
 
 <a id="details-of-a-batch"></a>
 #### B. Détails d'un Lot dans QuickStatements
-![Capture d'écran 2024-10-15 à 19 04 43](https://github.com/user-attachments/assets/0c48dbe9-9ad2-4966-acad-aee0437bd880)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e92159c7-270f-4006-bbaa-565aac6c22f0" alt="QuickStatements 3.0 Homepage" />
+  <p align="center">Detalhes de um novo lote</p>
+</p>
 <p align="right">(<a href="#readme-top">retour en haut</a>)</p>
 
 Un nouveau lot se compose de:
-- **Format de commande :** Votre format de commande peut être au format V1 ou au format CSV.
+1. **Format de commande :** Votre format de commande peut être au format V1 ou au format CSV.
   - **Format V1:** Format basé sur des commandes où chaque ligne représente une commande séparée par des tabulations.
   - **Format CSV:** Composé d'une première ligne⎯l'en-tête⎯qui définit le contenu de chaque colonne. Les lignes suivantes fournissent les informations à appliquer à Wikibase selon le contenu de l'en-tête de chaque colonne.
   
@@ -238,9 +242,9 @@ Doctor Worm,
 1998 song performed by They Might Be Giants,Q128309
 ```
 
-- **Nom de lot personnalisé:** C'est un libellé ou identifiant que vous pouvez attribuer à un lot spécifique de modifications pour une gestion et une référence plus faciles. Par défaut, les lots sont nommés de manière générique, généralement juste un ID de lot. Cependant, vous avez la possibilité de fournir un nom personnalisé lorsque vous créez ou téléchargez un lot. Ce nom personnalisé permet de reconnaître ou de se souvenir plus facilement de l'intention d'un lot particulier, en particulier lorsqu'il s'agit de plusieurs lots au fil du temps.
+2. **Nom de lot personnalisé:** C'est un libellé ou identifiant que vous pouvez attribuer à un lot spécifique de modifications pour une gestion et une référence plus faciles. Par défaut, les lots sont nommés de manière générique, généralement juste un ID de lot. Cependant, vous avez la possibilité de fournir un nom personnalisé lorsque vous créez ou téléchargez un lot. Ce nom personnalisé permet de reconnaître ou de se souvenir plus facilement de l'intention d'un lot particulier, en particulier lorsqu'il s'agit de plusieurs lots au fil du temps.
 
-- **Commandes:** Ce sont les instructions que vous entrez pour effectuer des opérations spécifiques sur des éléments de Wikidata. Ces commandes vous permettent d'ajouter, de modifier ou de supprimer des données d'éléments dans Wikidata. Les commandes sont écrites dans un format spécifique, et chaque ligne représente généralement une action à entreprendre sur un élément Wikidata.
+3. **Commandes:** Ce sont les instructions que vous entrez pour effectuer des opérations spécifiques sur des éléments de Wikidata. Ces commandes vous permettent d'ajouter, de modifier ou de supprimer des données d'éléments dans Wikidata. Les commandes sont écrites dans un format spécifique, et chaque ligne représente généralement une action à entreprendre sur un élément Wikidata.
 <p align="right">(<a href="#readme-top">retour en haut</a>)</p>
 
 ## Voir les Détails et l'Historique d'un Lot
