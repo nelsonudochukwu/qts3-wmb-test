@@ -163,29 +163,34 @@ Pour créer et exécuter des lots, vous devez vous assurer des points suivants :
 <a id="qs-3.0-homepage"></a>
 ## Vue d'ensemble de la page d'accueil de QuickStatements 3.0
 
-La page d'accueil de **QuickStatements 3.0** est conçue pour faciliter l'accès aux fonctionnalités principales de gestion et d'exécution des modifications en lot. Voici un aperçu des éléments visibles :
+La page d'accueil de **QuickStatements 3.0** est conçue pour faciliter l'accès aux fonctionnalités principales de gestion et d'exécution des modifications en lot. Voici un aperçu des éléments visibles:
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/476030c9-efb0-4967-b01c-b6c3586f49dc" alt="QuickStatements 3.0 Homepage" />
+  <p align="center">QuickStatements 3.0 Homepage</p>
+</p>
 
 #### Section d'en-tête:
-- **Nouveau lot:** Un lien qui vous mène à un formulaire où vous pouvez créer un nouveau lot de modifications à télécharger sur Wikidata.
-- **Derniers lots:** Ce lien permet d'accéder à l'historique des lots récemment soumis. Les utilisateurs peuvent suivre le statut et les détails de leurs opérations de lots passées.
+1. **Nouveau lot:** Un lien qui vous mène à un formulaire où vous pouvez créer un nouveau lot de modifications à télécharger sur Wikidata.
+2. **Derniers lots:** Ce lien permet d'accéder à l'historique des lots récemment soumis. Les utilisateurs peuvent suivre le statut et les détails de leurs opérations de lots passées.
 
-- **Git:** Un lien vers le dépôt GitHub de QuickStatements, où les utilisateurs peuvent consulter la base de code, signaler des problèmes ou contribuer au développement de la plateforme.
+3. **Git:** Un lien vers le dépôt GitHub de QuickStatements, où les utilisateurs peuvent consulter la base de code, signaler des problèmes ou contribuer au développement de la plateforme.
   
-- **Connexion:** Permet aux utilisateurs de se connecter à leurs comptes Wikidata. Une fois connectés, ils peuvent accéder à des fonctionnalités telles que soumettre et suivre leurs lots.
+4. **Connexion:** Permet aux utilisateurs de se connecter à leurs comptes Wikidata. Une fois connectés, ils peuvent accéder à des fonctionnalités telles que soumettre et suivre leurs lots.
 
 <p align="right">(<a href="#readme-top">retour en haut</a>)</p>
 
 #### Interface principale:
-- **“Bienvenue sur QuickStatements 3.0” :** Un en-tête accueillant les utilisateurs sur l'interface principale.
+5. **“Bienvenue sur QuickStatements 3.0” :** Un en-tête accueillant les utilisateurs sur l'interface principale.
 
 #### Boutons d'action principaux:
 
-- **Nouveau lot:** En cliquant sur ce bouton, vous initiez la création d'un nouveau lot. Les utilisateurs peuvent saisir des données et des commandes pour traiter et télécharger plusieurs modifications en masse sur Wikidata.
+6. **Nouveau lot:** En cliquant sur ce bouton, vous initiez la création d'un nouveau lot. Les utilisateurs peuvent saisir des données et des commandes pour traiter et télécharger plusieurs modifications en masse sur Wikidata.
   
 #### Section de recherche de lot:
-- **ID du lot:** Les utilisateurs peuvent entrer un ID de lot spécifique pour récupérer des informations détaillées sur ce lot particulier. En cliquant sur le bouton **“Voir les détails du lot”**, vous pouvez voir le statut, la progression et les résultats du lot.
+7. **ID du lot:** Les utilisateurs peuvent entrer un ID de lot spécifique pour récupérer des informations détaillées sur ce lot particulier. En cliquant sur le bouton **“Voir les détails du lot”**, vous pouvez voir le statut, la progression et les résultats du lot.
 
-- **Nom d'utilisateur:** Les utilisateurs peuvent entrer un nom d'utilisateur Wikidata spécifique pour récupérer une liste de tous les lots associés à cet utilisateur. En cliquant sur **“Voir les lots par utilisateur”**, tous les lots soumis par cet utilisateur seront affichés.
+8. **Nom d'utilisateur:** Les utilisateurs peuvent entrer un nom d'utilisateur Wikidata spécifique pour récupérer une liste de tous les lots associés à cet utilisateur. En cliquant sur **“Voir les lots par utilisateur”**, tous les lots soumis par cet utilisateur seront affichés.
 
 <p align="right">(<a href="#readme-top">retour en haut</a>)</p>
 
