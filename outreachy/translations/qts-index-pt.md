@@ -206,8 +206,11 @@ Un **lot** fait référence à un ensemble de commandes ou d'opérations exécut
 #### A. Créer un Nouveau Lot dans QuickStatements
 Pour créer un nouveau lot dans QuickStatements, suivez ces étapes:
 1. Cliquez sur le bouton **Nouveau Lot** situé sur la page d'accueil
-   
-![Capture d'écran 2024-10-15 à 19 03 34](https://github.com/user-attachments/assets/67129eef-b4b9-4e37-bf97-5c85e351bea8)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/aa9adc5c-51d8-43ab-b85e-2d69590a5ec5" alt="QuickStatements 3.0 Homepage" />
+  <p align="center">Clique em Novo lote</p>
+</p>
 
 2. Un formulaire apparaîtra où vous pourrez saisir vos commandes ou télécharger votre fichier de données. Les formats disponibles incluent à la fois le format QuickStatements V1 et le format CSV/TSV.
 <p align="right">(<a href="#readme-top">retour en haut</a>)</p>
@@ -225,8 +228,8 @@ Pour créer un nouveau lot dans QuickStatements, suivez ces étapes:
 
 Un nouveau lot se compose de:
 1. **Format de commande :** Votre format de commande peut être au format V1 ou au format CSV.
-  - **Format V1:** Format basé sur des commandes où chaque ligne représente une commande séparée par des tabulations.
-  - **Format CSV:** Composé d'une première ligne⎯l'en-tête⎯qui définit le contenu de chaque colonne. Les lignes suivantes fournissent les informations à appliquer à Wikibase selon le contenu de l'en-tête de chaque colonne.
+   - **Format V1:** Format basé sur des commandes où chaque ligne représente une commande séparée par des tabulations.
+   - **Format CSV:** Composé d'une première ligne⎯l'en-tête⎯qui définit le contenu de chaque colonne. Les lignes suivantes fournissent les informations à appliquer à Wikibase selon le contenu de l'en-tête de chaque colonne.
   
 Exemple de syntaxe V1:
 ```
