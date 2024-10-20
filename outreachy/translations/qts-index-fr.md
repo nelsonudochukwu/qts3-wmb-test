@@ -228,8 +228,8 @@ Pour créer un nouveau lot dans QuickStatements, suivez ces étapes :
 Un nouveau lot se compose de :
 
 1. **Format de commande :** Votre format de commande peut être au format V1 ou CSV.
-  - **Format V1 :** Format basé sur des commandes où chaque ligne représente une commande séparée par des tabulations.
-  - **Format CSV :** Composé d'une première ligne - l'en-tête - qui définit le contenu de chaque colonne. Les lignes suivantes fournissent des informations à appliquer à Wikibase selon le contenu de chaque colonne d'en-tête.
+     - **Format V1 :** Format basé sur des commandes où chaque ligne représente une commande séparée par des tabulations.
+     - **Format CSV :** Composé d'une première ligne - l'en-tête - qui définit le contenu de chaque colonne. Les lignes suivantes fournissent des informations à appliquer à Wikibase selon le contenu de chaque colonne d'en-tête.
   
 Exemple de syntaxe V1:
 ```
@@ -256,11 +256,11 @@ Vous pouvez suivre la progression et l'état d'un lot spécifique en saisissant 
 Pour voir l'historique des modifications en lot par un utilisateur spécifique :
 1. Saisissez le **nom d'utilisateur** de l'utilisateur dans le champ de nom d'utilisateur (le nom d'utilisateur peut être trouvé lors de la connexion à Wikidata.)
 2. Cliquez sur **Voir les lots par utilisateur** pour afficher la liste de tous les lots soumis par cet utilisateur. La liste inclura :
-- **Identifiants de lot**
-- **Descriptions (si vous avez ajouté des noms personnalisés)**
-- **État (par exemple, en cours, terminé ou échoué)**
-- **Dates**
-- **Nombre de modifications dans le lot**
+   - **Identifiants de lot**
+   - **Descriptions (si vous avez ajouté des noms personnalisés)**
+   - **État (par exemple, en cours, terminé ou échoué)**
+   - **Dates**
+   - **Nombre de modifications dans le lot**
 
 > [!REMARQUE]
 > Chaque lot a une URL unique qui lui est associée. Vous pouvez ajouter cette URL aux favoris ou la partager pour accéder ou surveiller un lot ultérieurement.
