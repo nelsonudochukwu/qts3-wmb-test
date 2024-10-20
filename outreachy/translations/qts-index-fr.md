@@ -2,7 +2,7 @@
 # Documentation de QuickStatements (QS) 3.0
 
 <details>
- <summary>Traductions !!!!</summary>
+ <summary>Traductions:</summary>
   <ul>
   <li><a href="/outreachy/qts-index.md">Anglaise</li>
    <li><a href="/outreachy/translations/qts-index-pt.md">
