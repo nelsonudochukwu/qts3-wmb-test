@@ -259,11 +259,11 @@ You can track the progress and status of a specific batch by entering the **Batc
 To view the history of batch edits by a specific user:
 1. Enter the **username** of the user in the username field (username can be found at wiki-login.)
 2. Click **See batches by user** to list all the batches that the user has submitted. The list will include:
-   - **Batch IDs**
-   - **Descriptions (if you added custom names)**
-   - **Status (e.g., in progress, completed, or failed)**
-   - **Dates**
-   - **Number of edits in the batch**
+  - **Batch IDs**
+  - **Descriptions (if you added custom names)**
+  - **Status (e.g., in progress, completed, or failed)**
+  - **Dates**
+  - **Number of edits in the batch**
 
 > [!NOTE]
 > Each batch has a unique URL associated with it. You can bookmark or share this URL to access or monitor a batch later.
