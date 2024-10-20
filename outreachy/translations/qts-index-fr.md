@@ -262,7 +262,7 @@ Pour voir l'historique des modifications en lot par un utilisateur spécifique :
    - **Dates**
    - **Nombre de modifications dans le lot**
 
-> [!REMARQUE]
+> [!NOTE]
 > Chaque lot a une URL unique qui lui est associée. Vous pouvez ajouter cette URL aux favoris ou la partager pour accéder ou surveiller un lot ultérieurement.
 
 <p align="right">(<a href="#readme-top">retour en haut</a>)</p>
