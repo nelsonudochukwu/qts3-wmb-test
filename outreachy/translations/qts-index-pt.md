@@ -2,7 +2,7 @@
 # QuickStatements (QS) 3.0 Documentation
 
 <details>
- <summary>Traductions!!!!</summary>
+ <summary>Traductions:</summary>
  <ul>
   <li><a href="https://github.com/nelsonudochukwu/qts3-wmb-test/blob/main/outreachy/qts-index.md">
 Inglês</li>
