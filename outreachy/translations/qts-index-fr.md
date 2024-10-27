@@ -164,11 +164,11 @@ Pour créer et exécuter des lots, vous devez vous assurer des éléments suivan
 La page d'accueil de **QuickStatements 3.0** est conçue pour faciliter l'accès aux fonctionnalités principales de gestion et d'exécution des modifications en masse. Voici un aperçu des éléments visibles:
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/476030c9-efb0-4967-b01c-b6c3586f49dc" alt="QuickStatements 3.0 Homepage" />
+  <img src="https://github.com/user-attachments/assets/339297cb-b5e4-46ca-82d1-799ea0b964dd" alt="QuickStatements 3.0 Homepage" />
   <p align="center">Page d'accueil de QuickStatements 3.0</p>
 </p>
 
-#### Section d'en-tête :
+#### menu de navigation:
 1. **Nouveau lot :** Un lien qui vous dirige vers un formulaire où vous pouvez créer un nouveau lot de modifications à télécharger sur Wikidata.
   
 2. **Derniers lots :** Ce lien donne accès à l'historique des lots récemment soumis. Les utilisateurs peuvent suivre l'état et les détails de leurs opérations de lots passées.
@@ -220,7 +220,7 @@ Pour créer un nouveau lot dans QuickStatements, suivez ces étapes :
 #### B. Détails d'un lot dans QuickStatements
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/e79d7d84-a162-47ac-87f0-739ceb36afa8" alt="Détails d'un Nouveau Lot" />
+  <img src="https://github.com/user-attachments/assets/e81cd5a6-e029-454c-b4d6-67b7e607b920" alt="Détails d'un Nouveau Lot" />
   <p align="center">Détails d'un Nouveau Lot</p>
 </p>
 <p align="right">(<a href="#readme-top">retour en haut</a>)</p>
@@ -235,10 +235,19 @@ Exemple de syntaxe V1:
 ```
 CREATE LAST Len Doctor Worm LAST Den 1998 song performed by They Might Be Giants LAST P2650 Q128309
 ```
-Exemple de syntaxe CSV :
+Exemple de syntaxe CSV:
 ```
-qid,Len,Den,P2650,
-Doctor Worm,1998 song performed by They Might Be Giants,Q128309
+qid,Len,Den,P260
+Q128309,Doctor Worm,1998,song performed by They Might Be Giants
+```
+
+Les QuickStatements peuvent également être exécutées via une URL:
+```
+See example: https://quickstatements.toolforge.org/#/v1=Q37887397%7CP214%7C%2296480189%22%7CS143%7CQ565
+Qid: Q37887397
+Property: P214
+Senwiki : S143
+Value: Q565
 ```
 
 2. **Nom de lot personnalisé :** C'est un label ou un identifiant que vous pouvez attribuer à un lot spécifique de modifications pour une gestion et une référence plus facile. Par défaut, les lots sont nommés de manière générique, généralement juste un identifiant de lot. Cependant, vous avez la possibilité de fournir un nom personnalisé lors de la création ou du téléchargement d'un lot. Ce nom personnalisé facilite la reconnaissance ou le rappel de l'objectif d'un lot particulier, en particulier lorsqu'il s'agit de plusieurs lots au fil du temps.
@@ -279,9 +288,9 @@ Cette commande créera un nouvel élément avec un libellé et une description.
 
 ```plaintext
 CREATE
-LAST|Len|"Élément d'exemple"
-LAST|Den|"Ceci est un élément d'exemple à des fins de démonstration."
-LAST|P31|Q5  # Ajoute une déclaration indiquant que l'élément est une instance d'un humain
+LAST  Len  "Élément d'exemple"
+LAST  Den  "Ceci est un élément d'exemple à des fins de démonstration."
+LAST  P31  Q5  # Ajoute une déclaration indiquant que l'élément est une instance d'un humain
 ```
 
 <a id="add-statements"></a>
@@ -289,15 +298,15 @@ LAST|P31|Q5  # Ajoute une déclaration indiquant que l'élément est une instanc
 Ajout de déclarations à un élément existant (par exemple, Douglas Adams - Q42).
 
 ```
-Q42|P569|1952-03-11  # Ajoute la date de naissance (P569) pour Douglas Adams
-Q42|P19|Q84          # Ajoute le lieu de naissance (P19) comme Cambridge (Q84)
+Q42  P569  1952-03-11  # Ajoute la date de naissance (P569) pour Douglas Adams
+Q42  P19  Q84          # Ajoute le lieu de naissance (P19) comme Cambridge (Q84)
 ```
 
 <a id="add-qualifiers"></a>
 #### 3. Ajouter des qualificateurs
 Vous pouvez ajouter des qualificateurs aux déclarations existantes pour donner plus de détails.
 ```
-Q42|P69|Q3918|P580|1971|P582|1974  # Ajoute l'éducation (P69) au St John's College (Q3918) avec des dates de début (P580) et de fin (P582)
+Q42  P69  Q3918  P580  1971  P582  1974  # Ajoute l'éducation (P69) au St John's College (Q3918) avec des dates de début (P580) et de fin (P582)
 ```
 <p align="right">(<a href="#readme-top">retour en haut</a>)</p>
 <a id="add-references"></a>
@@ -305,25 +314,25 @@ Q42|P69|Q3918|P580|1971|P582|1974  # Ajoute l'éducation (P69) au St John's Coll
 #### 4. Ajouter des références
 Ajouter des références à une déclaration existante:
 ```
-Q42|P69|Q3918|S854|"https://example.com/education"  # Ajoute une référence URL pour la déclaration d'éducation
+Q42  P69  Q3918  S854  "https://example.com/education"  # Ajoute une référence URL pour la déclaration d'éducation
 ```
 
 <a id="modify-lda"></a>
 #### 5. Modifier les Libellés, Descriptions et Alias
 Modifier les libellés, descriptions et alias dans différentes langues:
 ```
-Q42|Len|"Douglas Adams"  # Modifie le libellé anglais en "Douglas Adams"
-Q42|Lde|"Douglas Adams"  # Modifie le libellé allemand en "Douglas Adams"
-Q42|Aen|"Douglas Noël Adams"  # Ajoute un alias en anglais
-Q42|Den|"Auteur et scénariste britannique"  # Modifie la description anglaise
+Q42  Len  "Douglas Adams"  # Modifie le libellé anglais en "Douglas Adams"
+Q42  Ade  "Douglas Adams"  # Modifie le libellé allemand en "Douglas Adams"
+Q42  Aen  "Douglas Noël Adams"  # Ajoute un alias en anglais
+Q42  Den  "Auteur et scénariste britannique"  # Modifie la description anglaise
 ```
 
 <a id="remove-items"></a>
 #### 6. Supprimer des Déclarations ou des Éléments
 Supprimer des déclarations ou supprimer des éléments entièrement:
 ```
-Q42|P19|DELETE  # Supprime la déclaration de lieu de naissance (P19) pour Q42
-Q100000|DELETE  # Supprime entièrement l'élément Q100000
+-Q42  P19  # Supprime la déclaration de lieu de naissance (P19) pour Q42
+-Q100000  # Supprime entièrement l'élément Q100000
 ```
 
 <p align="right">(<a href="#readme-top">retour en haut</a>)</p>
@@ -334,7 +343,7 @@ Vous pouvez préparer vos données au format CSV ou TSV, où chaque ligne repré
 ```
 Q42,P69,Q3918,P580,1971,P582,1974
 Q42,P19,Q84
-Q42,P569,1952-03-11
+Q42,P569,+1856-01-01T00:00:00Z/9
 ```
 Téléchargez le fichier via l'interface web pour traiter le lot.
 

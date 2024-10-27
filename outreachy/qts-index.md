@@ -9,6 +9,7 @@
    <li><a href="translations/qts-index-es.md">Spanish</li>
  </ul>
 </details>
+<a href="#mentor-feedback">Implemented Feedback from Mentors</a>
 
 ## Table of Contents
 <!-- TABLE OF CONTENTS -->
@@ -65,7 +66,7 @@ This documentation provides an introduction to the features, usage, and best pra
 
 <a id="a-brief-on-wikidata"></a>
 <details>
- <summary> A brief on Wikidata</summary>
+<summary> A brief on Wikidata</summary>
 Wikidata is a free, collaborative, multilingual, secondary database, managed by the Wikimedia Foundation. It serves as a central storage for structured data that is used in various Wikimedia projects, like Wikipedia, and also provides data to external users and organizations. The primary goal of Wikidata is to allow humans and machines to understand and query information easily.
 
 Some key features include:
@@ -164,11 +165,11 @@ In order to create and run batches, you must ensure the following:
 The homepage of **QuickStatements 3.0** is designed to facilitate easy access to core features for managing and running batch edits. Below is a breakdown of the visible elements:
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/476030c9-efb0-4967-b01c-b6c3586f49dc" alt="QuickStatements 3.0 Homepage" />
+  <img src="https://github.com/user-attachments/assets/339297cb-b5e4-46ca-82d1-799ea0b964dd" alt="QuickStatements 3.0 Homepage" />
   <p align="center">QuickStatements 3.0 Homepage</p>
 </p>
 
-#### Header Section:
+#### Navigation Menu:
 1. **New batch:** A link that takes you to a form where you can create a new batch of edits to be uploaded to Wikidata.
 
 2. **Last batches:** This link provides access to the history of recently submitted batches. Users can track the status and details of their past batch operations.
@@ -220,7 +221,7 @@ To create a new batch in QuickStatements, follow these steps:
 #### B. Details of a Batch in QuickStatements
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/e92159c7-270f-4006-bbaa-565aac6c22f0" alt="QuickStatements 3.0 Homepage" />
+  <img src="https://github.com/user-attachments/assets/e81cd5a6-e029-454c-b4d6-67b7e607b920" alt="QuickStatements 3.0 Homepage" />
   <p align="center">Details of a New Batch</p>
 </p>
 
@@ -241,9 +242,19 @@ A new batch consists of:
   
   Example of CSV syntax:
   ```
-  qid,Len,Den,P2650
-  ,Doctor Worm,1998 song performed by They Might Be Giants,Q128309
+  qid,Len,Den,P260
+  Q128309,Doctor Worm,1998,song performed by They Might Be Giants
   ```
+  
+  QuickStatements can also be run via URL:
+  ```
+  See example: https://quickstatements.toolforge.org/#/v1=Q37887397%7CP214%7C%2296480189%22%7CS143%7CQ565
+  Qid: Q37887397
+  Property: P214
+  Senwiki : S143
+  Value: Q565
+  ```
+
 2. **Custom batch name:** This is a label or identifier that you can assign to a specific batch of edits for easier management and reference. By default, batches are given generic names, typically just a batch ID. However, you have the option to provide a custom name when you create or upload a batch. This custom name makes it easier to recognize or remember what a particular batch was intended to do, especially when dealing with multiple batches over time.
   
 3. **Commands:** These are the instructions you enter to perform specific operations on Wikidata items. These commands allow you to add, modify, or remove data from items in Wikidata. The commands are written in a specific format, and each line typically represents an action to be taken on a Wikidata item.
@@ -282,9 +293,9 @@ This command will create a new item with a label and description.
 
 ```plaintext
 CREATE
-LAST|Len|"Sample Item"
-LAST|Den|"This is a sample item for demonstration purposes."
-LAST|P31|Q5  # Adds a claim that the item is an instance of a human
+LAST  Len  "Sample Item"
+LAST  Den  "This is a sample item for demonstration purposes."
+LAST  P31  Q5  # Adds a claim that the item is an instance of a human
 ```
 
 <a id="add-statements"></a>
@@ -293,8 +304,8 @@ LAST|P31|Q5  # Adds a claim that the item is an instance of a human
 Adding statements to an existing item (e.g., Douglas Adams - Q42).
 
 ```plaintext
-Q42|P569|1952-03-11  # Adds the date of birth (P569) for Douglas Adams
-Q42|P19|Q84          # Adds the place of birth (P19) as Cambridge (Q84)
+Q42  P569  1952-03-11  # Adds the date of birth (P569) for Douglas Adams
+Q42  P19  Q84          # Adds the place of birth (P19) as Cambridge (Q84)
 ```
 
 <a id="add-qualifiers"></a>
@@ -303,7 +314,7 @@ Q42|P19|Q84          # Adds the place of birth (P19) as Cambridge (Q84)
 You can add qualifiers to existing statements to provide more detail.
 
 ```plaintext
-Q42|P69|Q3918|P580|1971|P582|1974  # Adds education (P69) at St John's College (Q3918) with start (P580) and end (P582) dates
+Q42  P69  Q3918  P580  1971  P582  1974  # Adds education (P69) at St John's College (Q3918) with start (P580) and end (P582) dates
 ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -313,42 +324,44 @@ Q42|P69|Q3918|P580|1971|P582|1974  # Adds education (P69) at St John's College (
 Adding references to an existing statement:
 
 ```plaintext
-Q42|P69|Q3918|S854|"https://example.com/education"  # Adds a URL reference for the education claim
+Q42  P69  Q3918  S854  "https://example.com/education"  # Adds a URL reference for the education claim
 ```
 
 <a id="modify-lda"></a>
 #### 5. Modify Labels, Descriptions, and Aliases
 Modify Labels, descriptions, and aliases in different languages:
 ```plaintext
-Q42|Len|"Douglas Adams"  # Changes the English label to "Douglas Adams"
-Q42|Lde|"Douglas Adams"  # Changes the German label to "Douglas Adams"
-Q42|Aen|"Douglas Noel Adams"  # Adds an alias in English
-Q42|Den|"British author and screenwriter"  # Modifies the English description
+Q42  Len  "Douglas Adams"  # Changes the English label to "Douglas Adams"
+Q42  Ade  "Douglas Adams"  # Changes the German label to "Douglas Adams"
+Q42  Aen  "Douglas Noel Adams"  # Adds an alias in English
+Q42  Den  "British author and screenwriter"  # Modifies the English description
 ```
 
 <a id="remove-items"></a>
 #### 6. Remove Statements or Items
 Remove statements or delete items entirely:
 ```plaintext
-Q42|P19|DELETE  # Deletes the place of birth (P19) statement for Q42
-Q100000|DELETE  # Deletes the entire item Q100000
+-Q42  P19  # Deletes the place of birth (P19) statement for Q42
+-Q100000  # Deletes the entire item Q100000
 ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <a id="import-data"></a>
 #### 7. Importing CSV/TSV Data
+
 You can prepare your data in CSV or TSV format, where each line represents one operation. A sample format:
 ```plaintext
 Q42,P69,Q3918,P580,1971,P582,1974
 Q42,P19,Q84
-Q42,P569,1952-03-11
+Q42,P569,+1856-01-01T00:00:00Z/9
 ```
+
 Upload the file through the web interface to process the batch.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 #
 
-### Best Practices
+### Best Practices 
 - **Test with Small Batches:** Always test your commands with a small set of items before large-scale edits to avoid unintended changes.
 - **Use References:** Ensure that statements are properly sourced with references to enhance data quality.
 - **Monitor Progress:** After submission, keep track of your batch’s progress and check for errors.
@@ -376,6 +389,17 @@ For more advanced use cases, refer to the [Wikidata documentation](https://www.w
 
 ### References
 This documentation was inspired from many sources, however, [Diátaxis](https://diataxis.fr/) was the most significant guide for a writing this as it provides a systematic approach to understanding the needs of documentation users. The [Google Technical Writing Course](https://developers.google.com/tech-writing/overview) was instrumental as well.
+
+#
+
+<a id="mentor-feedback"></a>
+### Modifications and Improvements Implemented as Required in the Initial Review
+| Feedback                                         | Modifications                                         | Location                    |
+|--------------------------------------------------|-------------------------------------------------------|-----------------------------|
+| You have more than 200 commits                   | The lengthy commits have been squashed to keep git history clean | Repository history          |
+| DELETE command doesn't exist in QuickStatements  | The command has been rectified across all translations                       | [Remove Items](#remove-items) |
+| Your images make the documentation easy to understand | Improved the images for better clarity                | All images                  |
+
 
 ## ️💚️ THANK YOU MENTORS 💙 
 <!-- ALL-CONTRIBUTORS-LIST:START -->

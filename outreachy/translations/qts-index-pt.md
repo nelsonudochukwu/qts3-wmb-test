@@ -164,11 +164,11 @@ Para criar e executar lotes, você deve garantir o seguinte:
 A página inicial do **QuickStatements 3.0** é projetada para facilitar o acesso a recursos principais para gerenciar e executar edições em lote. Abaixo está um detalhamento dos elementos visíveis:
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/476030c9-efb0-4967-b01c-b6c3586f49dc" alt="QuickStatements 3.0 Homepage" />
+  <img src="https://github.com/user-attachments/assets/339297cb-b5e4-46ca-82d1-799ea0b964dd" alt="QuickStatements 3.0 Homepage" />
   <p align="center">Página Inicial do QuickStatements 3.0</p>
 </p>
 
-#### Seção de Cabeçalho:
+#### menu de navegação:
 1. **Novo lote:** Um link que leva você a um formulário onde pode criar um novo lote de edições para serem carregadas no Wikidata.
 
 2. **Últimos lotes:** Este link fornece acesso ao histórico de lotes submetidos recentemente. Os usuários podem rastrear o status e os detalhes de suas operações de lote anteriores.
@@ -207,7 +207,7 @@ Para criar um novo lote no QuickStatements, siga estas etapas:
 1. Clique no botão ```Novo Lote``` localizado na página inicial
 
 <p align="center">
-  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/157036341/378032322-aa9adc5c-51d8-43ab-b85e-2d69590a5ec5.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20241023%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241023T100617Z&X-Amz-Expires=300&X-Amz-Signature=58a585a17c41bf71f054e84b6e60013ef362eb5249c4301b0fc44f5b98c952e7&X-Amz-SignedHeaders=host" alt="QuickStatements 3.0 Homepage" />
+  <img src="https://github.com/user-attachments/assets/76fe5cb2-584a-45c9-a4d2-9e2815ac015c" alt="QuickStatements 3.0 Homepage" />
   <p align="center">Clique em Novo Lote</p>
 </p>
 
@@ -220,7 +220,7 @@ Para criar um novo lote no QuickStatements, siga estas etapas:
 #### B. Detalhes de um Lote no QuickStatements
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/e92159c7-270f-4006-bbaa-565aac6c22f0" alt="QuickStatements 3.0 Homepage" />
+  <img src="https://github.com/user-attachments/assets/e81cd5a6-e029-454c-b4d6-67b7e607b920" alt="QuickStatements 3.0 Homepage" />
   <p align="center">Detalhes de um Novo Lote</p>
 </p>
 
@@ -240,9 +240,17 @@ LAST P2650 Q12830
 ```
 Exemplo de sintaxe CSV:
 ```
-qid,Len,Den,P265,
-Doctor Worm,
-1998 song performed by They Might Be Giants,Q128309
+qid,Len,Den,P260
+Q128309,Doctor Worm,1998,song performed by They Might Be Giants
+```
+
+QuickStatements também podem ser executados via URL:
+```
+See example: https://quickstatements.toolforge.org/#/v1=Q37887397%7CP214%7C%2296480189%22%7CS143%7CQ565
+Qid: Q37887397
+Property: P214
+Senwiki : S143
+Value: Q565
 ```
 
 2. **Nome personalizado do lote:** Este é um rótulo ou identificador que você pode atribuir a um lote específico de edições para facilitar o gerenciamento e a referência. Por padrão, os lotes recebem nomes genéricos, geralmente apenas um ID de lote. No entanto, você tem a opção de fornecer um nome personalizado quando criar ou carregar um lote. Este nome personalizado facilita o reconhecimento ou a lembrança do que um determinado lote foi destinado a fazer, especialmente quando se lida com vários lotes ao longo do tempo.
@@ -282,9 +290,9 @@ Para visualizar o histórico de edições em lote por um usuário específico:
 Este comando criará um novo item com um rótulo e descrição.
 ```
 CREATE
-LAST|Len|"Élément Exemple"
-LAST|Den|"Ceci est un exemple d'élément à des fins de démonstration."
-LAST|P31|Q5  # Ajoute une revendication selon laquelle l'élément est une instance d'un humain
+LAST  Len  "Élément Exemple"
+LAST  Den  "Ceci est un exemple d'élément à des fins de démonstration."
+LAST  P31  Q5  # Ajoute une revendication selon laquelle l'élément est une instance d'un humain
 ```
 
 <a id="add-statements"></a>
@@ -292,8 +300,8 @@ LAST|P31|Q5  # Ajoute une revendication selon laquelle l'élément est une insta
 #### 2. Adicionar Declarações (Afirmações)
 Adicionando declarações a um item existente (por exemplo, Douglas Adams - Q42). 
 ```
-Q42|P569|1952-03-11  # Ajoute la date de naissance (P569) pour Douglas Adams
-Q42|P19|Q84          # Ajoute le lieu de naissance (P19) comme Cambridge (Q84)
+Q42  P569  1952-03-11  # Ajoute la date de naissance (P569) pour Douglas Adams
+Q42  P19  Q84          # Ajoute le lieu de naissance (P19) comme Cambridge (Q84)
 ```
 
 <a id="add-qualifiers"></a>
@@ -301,7 +309,7 @@ Q42|P19|Q84          # Ajoute le lieu de naissance (P19) comme Cambridge (Q84)
 #### 3. Adicionar Qualificadores
 Você pode adicionar qualificadores às declarações existentes para fornecer mais detalhes.
 ```
-Q42|P69|Q3918|P580|1971|P582|1974  # Ajoute l'éducation (P69) au St John's College (Q3918) avec des dates de début (P580) et de fin (P582)
+Q42  P69  Q3918  P580  1971  P582  1974  # Ajoute l'éducation (P69) au St John's College (Q3918) avec des dates de début (P580) et de fin (P582)
 ```
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
@@ -310,25 +318,25 @@ Q42|P69|Q3918|P580|1971|P582|1974  # Ajoute l'éducation (P69) au St John's Coll
 #### 4. Adicionar Referências
 Adicionando referências a uma declaração existente:
 ```
-Q42|P69|Q3918|S854|"https://exemple.com/education"  # Ajoute une référence URL pour la revendication d'éducation
+Q42  P69  Q3918  S854  "https://exemple.com/education"  # Ajoute une référence URL pour la revendication d'éducation
 ```
 
 <a id="modify-lda"></a>
 5. Modificar Rótulos, Descrições e Apelidos
 Modifique rótulos, descrições e apelidos em diferentes idiomas:
 ```
-Q42|Len|"Douglas Adams"  # Change l'étiquette anglaise en "Douglas Adams"
-Q42|Lde|"Douglas Adams"  # Change l'étiquette allemande en "Douglas Adams"
-Q42|Aen|"Douglas Noel Adams"  # Ajoute un alias en anglais
-Q42|Den|"Auteur et scénariste britannique"  # Modifie la description anglaise
+Q42  Len  "Douglas Adams"  # Change l'étiquette anglaise en "Douglas Adams"
+Q42  Ade  "Douglas Adams"  # Change l'étiquette allemande en "Douglas Adams"
+Q42  Aen  "Douglas Noel Adams"  # Ajoute un alias en anglais
+Q42  Den  "Auteur et scénariste britannique"  # Modifie la description anglaise
 ```
 
 <a id="remove-items"></a>
 6. Remover Declarações ou Itens
 Remova declarações ou exclua itens inteiramente:
 ```
-Q42|P19|DELETE  # Supprime la déclaration du lieu de naissance (P19) pour Q42
-Q100000|DELETE  # Supprime entièrement l'élément Q100000
+-Q42  P19  # Supprime la déclaration du lieu de naissance (P19) pour Q42
+-Q100000  # Supprime entièrement l'élément Q100000
 ```
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
@@ -339,7 +347,7 @@ Você pode preparar seus dados no formato CSV ou TSV, onde cada linha representa
 ```
 Q42,P69,Q3918,P580,1971,P582,1974
 Q42,P19,Q84
-Q42,P569,1952-03-11
+Q42,P569,+1856-01-01T00:00:00Z/9
 ```
 
 Carregue o arquivo através da interface web para processar o lote.
